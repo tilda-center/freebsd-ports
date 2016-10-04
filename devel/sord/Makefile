@@ -18,7 +18,8 @@ USES=		pkgconfig tar:bzip2 waf
 PKG_CONFIG_PATH=	${PREFIX}/libdata/pkgconfig
 CONFIGURE_ARGS+=	PKG_CONFIG_PATH=${PKG_CONFIG_PATH}
 
-LIB_DEPENDS=	libserd-0.so:devel/serd
+LIB_DEPENDS+=	libserd-0.so:devel/serd
+LIB_DEPENDS+=	libpcre.so:devel/pcre
 
 post-install:
 	${MV} ${STAGEDIR}${PREFIX}/lib/pkgconfig ${STAGEDIR}${PREFIX}/libdata/
