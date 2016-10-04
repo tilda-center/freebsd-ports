@@ -3,7 +3,7 @@
 
 PORTNAME=	lv2
 PORTVERSION=	1.14.0
-CATEGORIES=	devel
+CATEGORIES=	audio
 MASTER_SITES=	http://lv2plug.in/spec/
 
 MAINTAINER=	meka@tilda.center
@@ -20,8 +20,7 @@ CONFIGURE_ARGS+=	PKG_CONFIG_PATH=${PKG_CONFIG_PATH}
 
 CONFLICTS=	lv2core-[0-9]*
 
-# LIB_DEPENDS+=	libserd-0.so:devel/serd
-# LIB_DEPENDS+=	libpcre.so:devel/pcre
+LIB_DEPENDS+=	libsndfile.so:audio/libsndfile
 
 post-install:
 	${MV} ${STAGEDIR}${PREFIX}/lib/pkgconfig ${STAGEDIR}${PREFIX}/libdata/
