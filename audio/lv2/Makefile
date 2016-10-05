@@ -22,6 +22,12 @@ CONFLICTS=	lv2core-[0-9]*
 
 LIB_DEPENDS+=	libsndfile.so:audio/libsndfile
 
+OPTIONS_DEFINE=	CAIRO
+OPTIONS_SUB=	yes
+
+CAIRO_DESC=	Use cairo framework
+CAIRO_LIB_DEPENDS+=	libcairo.so.2:graphics/cairo
+
 post-install:
 	${MV} ${STAGEDIR}${PREFIX}/lib/pkgconfig ${STAGEDIR}${PREFIX}/libdata/
 
