@@ -20,6 +20,8 @@ CONFIGURE_ARGS+=	PKG_CONFIG_PATH=${PKG_CONFIG_PATH}
 
 RUN_DEPENDS+=	lv2specgen.py:audio/lv2
 BUILD_DEPENDS+=	lv2specgen.py:audio/lv2
+LIB_DEPENDS+=	libserd-0.so:devel/serd
+LIB_DEPENDS+=	libserd-0.so:devel/sord
 
 post-install:
 	${MV} ${STAGEDIR}${PREFIX}/lib/pkgconfig ${STAGEDIR}${PREFIX}/libdata/
