@@ -96,7 +96,7 @@ BUNDLE_LIBS=	yes
 .endif
 
 # call to implicitly-deleted copy constructor of 'mozilla::WidevineVideoFrame'
-. if ${OPSYS} == FreeBSD && ${OSVERSION} < 1000019 && ${MOZILLA_VER:R:R} >= 49
+.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1000019 && ${MOZILLA_VER:R:R} >= 49
 # XXX USES=compiler:c++11-lib cannot be used due to ports/208538
 USE_GCC=	5+
 .endif

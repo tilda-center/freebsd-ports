@@ -21,6 +21,7 @@
     SUBDIR += R-cran-caret
     SUBDIR += R-cran-chron
     SUBDIR += R-cran-crayon
+    SUBDIR += R-cran-data.table
     SUBDIR += R-cran-doParallel
     SUBDIR += R-cran-evaluate
     SUBDIR += R-cran-foreach
@@ -94,9 +95,14 @@
     SUBDIR += apr2
     SUBDIR += arcanist
     SUBDIR += arduino
+    SUBDIR += arduino-builder
+    SUBDIR += arduino-core
+    SUBDIR += arduino-ctags
     SUBDIR += arduino-glcd
     SUBDIR += arduino-irremote
     SUBDIR += arduino-mk
+    SUBDIR += arduino-sevseg
+    SUBDIR += arduino-tools
     SUBDIR += argouml
     SUBDIR += argp-standalone
     SUBDIR += argtable
@@ -106,6 +112,7 @@
     SUBDIR += arm-none-eabi-gcc
     SUBDIR += arm-none-eabi-gcc492
     SUBDIR += arm-none-eabi-gdb
+    SUBDIR += arm-none-eabi-newlib
     SUBDIR += aros-sdk
     SUBDIR += art
     SUBDIR += artifactory
@@ -503,6 +510,7 @@
     SUBDIR += erlang-goldrush
     SUBDIR += erlang-gpb
     SUBDIR += erlang-gproc
+    SUBDIR += erlang-hut
     SUBDIR += erlang-jobs
     SUBDIR += erlang-jsx
     SUBDIR += erlang-jsxd
@@ -599,7 +607,6 @@
     SUBDIR += funnelweb
     SUBDIR += gaa
     SUBDIR += gamin
-    SUBDIR += gaphor
     SUBDIR += gauche-readline
     SUBDIR += gaul
     SUBDIR += gazpacho
@@ -1161,6 +1168,7 @@
     SUBDIR += libassa
     SUBDIR += libassetml
     SUBDIR += libast
+    SUBDIR += libastylej
     SUBDIR += libatomic_ops
     SUBDIR += libaura
     SUBDIR += libavl
@@ -1436,6 +1444,19 @@
     SUBDIR += linux-c6-nspr
     SUBDIR += linux-c6-qt47
     SUBDIR += linux-c6-sdl12
+    SUBDIR += linux-c7-dbus-glib
+    SUBDIR += linux-c7-dbus-libs
+    SUBDIR += linux-c7-devtools
+    SUBDIR += linux-c7-libgfortran
+    SUBDIR += linux-c7-libglade2
+    SUBDIR += linux-c7-libpciaccess
+    SUBDIR += linux-c7-libsigc++20
+    SUBDIR += linux-c7-libthai
+    SUBDIR += linux-c7-ncurses-base
+    SUBDIR += linux-c7-nspr
+    SUBDIR += linux-c7-qt
+    SUBDIR += linux-c7-sdl12
+    SUBDIR += linux-c7-sdl20
     SUBDIR += linux-f10-allegro
     SUBDIR += linux-f10-dbus-glib
     SUBDIR += linux-f10-dbus-libs
@@ -1449,6 +1470,7 @@
     SUBDIR += linux_kdump
     SUBDIR += linux_libusb
     SUBDIR += lion
+    SUBDIR += listserialc
     SUBDIR += liteide
     SUBDIR += lldb37
     SUBDIR += lldb38
@@ -4030,6 +4052,7 @@
     SUBDIR += py-bluelet
     SUBDIR += py-boto
     SUBDIR += py-botocore
+    SUBDIR += py-cachetools
     SUBDIR += py-calendar
     SUBDIR += py-canonicaljson
     SUBDIR += py-capstone
@@ -4037,6 +4060,7 @@
     SUBDIR += py-celery
     SUBDIR += py-cffi
     SUBDIR += py-cfgparse
+    SUBDIR += py-chainmap
     SUBDIR += py-characteristic
     SUBDIR += py-check-manifest
     SUBDIR += py-cheetah
@@ -4047,10 +4071,12 @@
     SUBDIR += py-click
     SUBDIR += py-click-log
     SUBDIR += py-click-threading
+    SUBDIR += py-cliff
     SUBDIR += py-clint
     SUBDIR += py-clonedigger
     SUBDIR += py-cloudpickle
     SUBDIR += py-cluster
+    SUBDIR += py-cmd2
     SUBDIR += py-cmdln
     SUBDIR += py-codecov
     SUBDIR += py-codegen
@@ -4123,6 +4149,7 @@
     SUBDIR += py-fabric
     SUBDIR += py-fake-factory
     SUBDIR += py-fam
+    SUBDIR += py-fasteners
     SUBDIR += py-fastimport
     SUBDIR += py-filemagic
     SUBDIR += py-fileutils
@@ -4149,6 +4176,7 @@
     SUBDIR += py-fusefs
     SUBDIR += py-future
     SUBDIR += py-futures
+    SUBDIR += py-futurist
     SUBDIR += py-game
     SUBDIR += py-game_sdl2
     SUBDIR += py-gamin
@@ -4161,6 +4189,7 @@
     SUBDIR += py-gflags
     SUBDIR += py-git-up
     SUBDIR += py-gitdb
+    SUBDIR += py-gitless
     SUBDIR += py-gitosis
     SUBDIR += py-gitpython
     SUBDIR += py-glob2
@@ -4292,12 +4321,22 @@
     SUBDIR += py-omnijson
     SUBDIR += py-omniorb
     SUBDIR += py-omniorb-3
+    SUBDIR += py-openstacksdk
     SUBDIR += py-opster
     SUBDIR += py-optik
     SUBDIR += py-option_merge
     SUBDIR += py-orbit
     SUBDIR += py-ordereddict
+    SUBDIR += py-os-client-config
+    SUBDIR += py-osc-lib
+    SUBDIR += py-oslo.concurrency
+    SUBDIR += py-oslo.config
+    SUBDIR += py-oslo.context
+    SUBDIR += py-oslo.db
     SUBDIR += py-oslo.i18n
+    SUBDIR += py-oslo.log
+    SUBDIR += py-oslo.middleware
+    SUBDIR += py-oslo.policy
     SUBDIR += py-oslo.serialization
     SUBDIR += py-oslo.utils
     SUBDIR += py-palm
@@ -4317,6 +4356,7 @@
     SUBDIR += py-phply
     SUBDIR += py-phpserialize
     SUBDIR += py-pika
+    SUBDIR += py-pika-pool
     SUBDIR += py-pinocchio
     SUBDIR += py-pip
     SUBDIR += py-pkgconfig
@@ -4342,6 +4382,7 @@
     SUBDIR += py-py
     SUBDIR += py-pyasn1
     SUBDIR += py-pyasn1-modules
+    SUBDIR += py-pycadf
     SUBDIR += py-pycalendar
     SUBDIR += py-pycallgraph
     SUBDIR += py-pycerberus
@@ -4366,6 +4407,7 @@
     SUBDIR += py-pykde4
     SUBDIR += py-pykdeuic4
     SUBDIR += py-pyke
+    SUBDIR += py-pylru
     SUBDIR += py-pylru-cache
     SUBDIR += py-pymarc
     SUBDIR += py-pympler
@@ -4388,6 +4430,7 @@
     SUBDIR += py-pytest-xdist
     SUBDIR += py-python-bugzilla
     SUBDIR += py-python-distutils-extra
+    SUBDIR += py-python-editor
     SUBDIR += py-python-gist
     SUBDIR += py-python-jenkins
     SUBDIR += py-python-magic
@@ -4444,9 +4487,11 @@
     SUBDIR += py-repoze.who-friendlyform
     SUBDIR += py-repoze.who-testutil
     SUBDIR += py-repoze.xmliter
+    SUBDIR += py-requestsexceptions
     SUBDIR += py-resolver
     SUBDIR += py-resourcepackage
     SUBDIR += py-responses
+    SUBDIR += py-retrying
     SUBDIR += py-riak_pb
     SUBDIR += py-rlcompleter2
     SUBDIR += py-robotframework
@@ -4461,6 +4506,7 @@
     SUBDIR += py-rtree
     SUBDIR += py-ruledispatch
     SUBDIR += py-sanetime
+    SUBDIR += py-sarge
     SUBDIR += py-scripttest
     SUBDIR += py-sdl2
     SUBDIR += py-selection
@@ -4557,6 +4603,7 @@
     SUBDIR += py-ua_parser
     SUBDIR += py-ujson
     SUBDIR += py-uncompyle2
+    SUBDIR += py-unicodecsv
     SUBDIR += py-unipath
     SUBDIR += py-unpaddedbase64
     SUBDIR += py-update_checker
@@ -4574,6 +4621,7 @@
     SUBDIR += py-virtualenv
     SUBDIR += py-virtualenv-clone
     SUBDIR += py-virtualenvwrapper
+    SUBDIR += py-warlock
     SUBDIR += py-watchdog
     SUBDIR += py-wcwidth
     SUBDIR += py-weblib

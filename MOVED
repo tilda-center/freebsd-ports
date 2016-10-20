@@ -8464,7 +8464,6 @@ math/libneural||2016-07-04|Has expired: Broken for more than 6 months
 math/open-axiom||2016-07-04|Has expired: Broken for more than 6 months
 irc/nefarious||2016-07-04|Has expired: Broken for more than 6 months
 irc/slirc||2016-07-04|Has expired: Broken for more than 6 months
-irc/ratbox-respond||2016-07-04|Has expired: Broken for more than 6 months
 irc/qwebirc||2016-07-04|Has expired: Broken for more than 6 months
 biology/platon||2016-07-04|Has expired: Broken for more than 6 months
 news/slnr||2016-07-04|Has expired: Broken for more than 6 months
@@ -8500,7 +8499,6 @@ mail/mailtray||2016-07-04|Has expired: Broken for more than 6 months
 mail/pflogstats||2016-07-04|Has expired: Broken for more than 6 months
 mail/exact||2016-07-04|Has expired: Broken for more than 6 months
 mail/wmpop3||2016-07-04|Has expired: Broken for more than 6 months
-mail/qmail-conf||2016-07-04|Has expired: Broken for more than 6 months
 mail/gld||2016-07-04|Has expired: Broken for more than 6 months
 mail/dsbl-testers||2016-07-04|Has expired: Broken for more than 6 months
 mail/vqregister||2016-07-04|Has expired: Broken for more than 6 months
@@ -8670,3 +8668,18 @@ databases/postgresql91-client||2016-10-03|Has expired: End-of-life is near
 databases/postgresql91-pgtcl||2016-10-03|Has expired: Depends on expired PostgreSQL 9.1
 databases/postgresql91-server||2016-10-03|Has expired: End-of-life is near
 databases/postgresql-pllua||2016-10-03|Has expired: Depends on expired PostgreSQL 9.1
+multimedia/kvazaar-devel|multimedia/kvazaar|2016-10-05|Out of date: use multimedia/kvazaar for now
+emulators/virtualbox-ose-lite|emulators/virtualbox-ose-nox11|2016-10-05|Renamed
+audio/squeezeboxserver|audio/logitechmediaserver|2016-10-05|Squeezebox Server renamed to Logitech Media Server
+audio/squeezeboxserver-dynamicplaylist|audio/logitechmediaserver-dynamicplaylist|2016-10-05|Squeezebox Server renamed to Logitech Media Server
+audio/squeezeboxserver-lazysearch|audio/logitechmediaserver-lazysearch|2016-10-05|Squeezebox Server renamed to Logitech Media Server
+audio/squeezeboxserver-sqlplaylist|audio/logitechmediaserver-sqlplaylist|2016-10-05|Squeezebox Server renamed to Logitech Media Server
+audio/squeezeboxserver-superdatetime|audio/logitechmediaserver-superdatetime|2016-10-05|Squeezebox Server renamed to Logitech Media Server
+audio/squeezeboxserver-trackstat|audio/logitechmediaserver-trackstat|2016-10-05|Squeezebox Server renamed to Logitech Media Server
+net/py-uritemplate.py|net/py-uritemplate|2016-10-12|Upstream has consolidated on net/py-uritemplate
+misc/fortune_strfile||2016-10-14|Has expired: unmaintained and duplicated from base
+mail/elmo-devel|mail/elmo|2016-10-15|Has expired: Same version as mail/elmo, use it instead
+math/libR||2016-10-16|Has expired: math/R LIBR option is now on by default
+security/libbzrtp|security/bzrtp|2016-10-17|Renamed
+devel/gaphor||2016-10-18|Has expired: runtime failure uncorrected for 1 year after first report
+editors/winefish||2016-10-18|Has expired: upstream disappeared (project dead?), segfaults on multiple arches

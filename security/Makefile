@@ -49,6 +49,7 @@
     SUBDIR += bsdsfv
     SUBDIR += bsmtrace
     SUBDIR += bugs
+    SUBDIR += bzrtp
     SUBDIR += ca_root_nss
     SUBDIR += calife
     SUBDIR += cardpeek
@@ -179,6 +180,8 @@
     SUBDIR += gpass
     SUBDIR += gpgdir
     SUBDIR += gpgme
+    SUBDIR += gpgme-cpp
+    SUBDIR += gpgme-qt5
     SUBDIR += gputty
     SUBDIR += greenbone-security-assistant
     SUBDIR += gringotts
@@ -268,11 +271,13 @@
     SUBDIR += kedpm
     SUBDIR += keepass
     SUBDIR += keepassx
+    SUBDIR += keepassx-devel
     SUBDIR += keepassx2
     SUBDIR += keybase
     SUBDIR += keychain
     SUBDIR += keynote
     SUBDIR += keyprint
+    SUBDIR += kdbx-viewer
     SUBDIR += kgpg-kde4
     SUBDIR += knock
     SUBDIR += knocker
@@ -296,7 +301,6 @@
     SUBDIR += libassuan
     SUBDIR += libbeid
     SUBDIR += libbf
-    SUBDIR += libbzrtp
     SUBDIR += libcryptui
     SUBDIR += libecc
     SUBDIR += libfprint
@@ -341,6 +345,15 @@
     SUBDIR += linux-c6-nss
     SUBDIR += linux-c6-openssl
     SUBDIR += linux-c6-openssl-compat
+    SUBDIR += linux-c7-cyrus-sasl2
+    SUBDIR += linux-c7-gnutls
+    SUBDIR += linux-c7-libgcrypt
+    SUBDIR += linux-c7-libgpg-error
+    SUBDIR += linux-c7-libssh2
+    SUBDIR += linux-c7-libtasn1
+    SUBDIR += linux-c7-nss
+    SUBDIR += linux-c7-openssl
+    SUBDIR += linux-c7-openssl-compat
     SUBDIR += linux-f10-cyrus-sasl2
     SUBDIR += linux-f10-gnutls
     SUBDIR += linux-f10-libgcrypt
@@ -382,6 +395,7 @@
     SUBDIR += ncrypt
     SUBDIR += netpgp
     SUBDIR += nettle
+    SUBDIR += ngrok
     SUBDIR += nikto
     SUBDIR += nist-kat
     SUBDIR += nmap
@@ -846,6 +860,7 @@
     SUBDIR += py-flask-httpauth
     SUBDIR += py-gnupg
     SUBDIR += py-gnutls
+    SUBDIR += py-gpgme
     SUBDIR += py-gpsoauth
     SUBDIR += py-halberd
     SUBDIR += py-hkdf
@@ -1016,6 +1031,7 @@
     SUBDIR += rubygem-rex-bin_tools
     SUBDIR += rubygem-rex-core
     SUBDIR += rubygem-rex-encoder
+    SUBDIR += rubygem-rex-exploitation
     SUBDIR += rubygem-rex-java
     SUBDIR += rubygem-rex-mime
     SUBDIR += rubygem-rex-nop

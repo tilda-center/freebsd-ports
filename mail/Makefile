@@ -108,7 +108,6 @@
     SUBDIR += ecartis
     SUBDIR += elm
     SUBDIR += elmo
-    SUBDIR += elmo-devel
     SUBDIR += emailrelay
     SUBDIR += emil
     SUBDIR += enma
@@ -557,6 +556,7 @@
     SUBDIR += qmail-activedir
     SUBDIR += qmail-auditor
     SUBDIR += qmail-autoresponder
+    SUBDIR += qmail-conf
     SUBDIR += qmail-contrib
     SUBDIR += qmail-dk
     SUBDIR += qmail-ldap

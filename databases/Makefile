@@ -172,6 +172,7 @@
     SUBDIR += libzbxpgsql
     SUBDIR += libzdb
     SUBDIR += linux-c6-sqlite3
+    SUBDIR += linux-c7-sqlite3
     SUBDIR += linux-f10-sqlite3
     SUBDIR += linux-oracle-instantclient-basic
     SUBDIR += linux-oracle-instantclient-sdk
@@ -550,6 +551,7 @@
     SUBDIR += pecl-pdo_user
     SUBDIR += pecl-rrd
     SUBDIR += pecl-tokyo_tyrant
+    SUBDIR += percona-pam-for-mysql
     SUBDIR += percona-toolkit
     SUBDIR += percona55-client
     SUBDIR += percona55-server
@@ -775,6 +777,7 @@
     SUBDIR += py-pymssql
     SUBDIR += py-pymysql
     SUBDIR += py-pypuppetdb
+    SUBDIR += py-pypuppetdb03
     SUBDIR += py-pytc
     SUBDIR += py-python-memcached
     SUBDIR += py-python-rrdtool
