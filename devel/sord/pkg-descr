@@ -1,0 +1,5 @@
+Sord is C library for storing RDF data in memory, especially Turtle. Turtle stands for "Terse RDF Triple Language"
+
+The Resource Description Framework (RDF) is a general-purpose language for representing information in the Web.
+
+WWW: https://drobilla.net/software/sord
