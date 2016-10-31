@@ -26,6 +26,7 @@
     SUBDIR += bangarang
     SUBDIR += banshee
     SUBDIR += bino
+    SUBDIR += bitstream
     SUBDIR += bombono
     SUBDIR += bsdbktr_tvtune
     SUBDIR += camserv
@@ -169,7 +170,6 @@
     SUBDIR += kodi
     SUBDIR += kplayer-kde4
     SUBDIR += kvazaar
-    SUBDIR += kvazaar-devel
     SUBDIR += l-smash
     SUBDIR += libaacs
     SUBDIR += libass
@@ -219,6 +219,8 @@
     SUBDIR += libzen
     SUBDIR += linux-c6-libtheora
     SUBDIR += linux-c6-libv4l
+    SUBDIR += linux-c7-libtheora
+    SUBDIR += linux-c7-libv4l
     SUBDIR += linux-f10-libtheora
     SUBDIR += linux-f10-libv4l
     SUBDIR += linux-tsmuxer

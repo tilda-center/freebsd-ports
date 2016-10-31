@@ -355,9 +355,11 @@
     SUBDIR += gnomekiss
     SUBDIR += gnono
     SUBDIR += gnubg
+    SUBDIR += gnubik
     SUBDIR += gnuchess
     SUBDIR += gnudoku
     SUBDIR += gnugo
+    SUBDIR += gnujump
     SUBDIR += gnurobbo
     SUBDIR += gnurobots
     SUBDIR += gnushogi
@@ -1037,6 +1039,7 @@
     SUBDIR += wolfpack
     SUBDIR += wop
     SUBDIR += wordplay
+    SUBDIR += wordwarvi
     SUBDIR += worldofpadman
     SUBDIR += wtf
     SUBDIR += wxlauncher

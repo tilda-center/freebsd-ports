@@ -30,8 +30,8 @@ COMMENT=	BIND DNS suite with updated DNSSEC and DNS64
 LICENSE=	MPL
 
 # ISC releases things like 9.8.0-P1, which our versioning doesn't like
-ISCVERSION=	9.12.0a.2016.10.01
-HASH=		b7d07b8
+ISCVERSION=	9.12.0a.2016.10.20
+HASH=		bcbacc4
 
 USES=	cpe libedit
 
@@ -55,6 +55,7 @@ CONFIGURE_ARGS+=	--localstatedir=/var --disable-linux-caps \
 CONFIGURE_ARGS+=	--disable-shared
 .endif
 ETCDIR=		${PREFIX}/etc/namedb
+LDFLAGS+=	-L${LOCALBASE}/lib	# for ports-based libedit
 
 CONFLICTS+=	bind9*-9.[456789].* bind910-* bind911-*  bind9*-sdb-9.[456789].*
 
@@ -233,14 +234,11 @@ SUB_LIST+=	NOBASE="@comment " BASE=""
 
 PKGDEINSTALL=	${PKGINSTALL}
 
+MAKE_JOBS_UNSAFE=	yes
 
 PORTDOCS=	*
 
 .include <bsd.port.pre.mk>
-
-.if ${OSVERSION} <= 1000000
-MAKE_JOBS_UNSAFE=	yes
-.endif
 
 .if ( ${PORT_OPTIONS:MGOST} || ${PORT_OPTIONS:MGOST_ASN1} ) && ${SSL_DEFAULT} == base
 BROKEN=	OpenSSL from the base system does not support GOST, add \
