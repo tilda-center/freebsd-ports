@@ -159,6 +159,7 @@
     SUBDIR += elasticsearch2
     SUBDIR += elasticsearch2-plugin-hq
     SUBDIR += elasticsearch2-plugin-marvel
+    SUBDIR += elasticsearch2-plugin-migration
     SUBDIR += elasticsearch2-plugin-sql
     SUBDIR += elixir-earmark
     SUBDIR += elixir-ex_doc
@@ -395,6 +396,7 @@
     SUBDIR += libexttextcat
     SUBDIR += libflate
     SUBDIR += libfo
+    SUBDIR += libgepub
     SUBDIR += libguess
     SUBDIR += libkmfl
     SUBDIR += libkolabxml
@@ -1161,8 +1163,6 @@
     SUBDIR += pecl-cld
     SUBDIR += pecl-ctemplate
     SUBDIR += pecl-doublemetaphone
-    SUBDIR += pecl-enchant
-    SUBDIR += pecl-html_parse
     SUBDIR += pecl-stem
     SUBDIR += pecl-syck
     SUBDIR += pecl-wbxml
@@ -1174,16 +1174,6 @@
     SUBDIR += perl2html
     SUBDIR += permute
     SUBDIR += php-mecab
-    SUBDIR += php55-ctype
-    SUBDIR += php55-dom
-    SUBDIR += php55-enchant
-    SUBDIR += php55-pspell
-    SUBDIR += php55-simplexml
-    SUBDIR += php55-wddx
-    SUBDIR += php55-xml
-    SUBDIR += php55-xmlreader
-    SUBDIR += php55-xmlwriter
-    SUBDIR += php55-xsl
     SUBDIR += php56-ctype
     SUBDIR += php56-dom
     SUBDIR += php56-enchant
@@ -1229,6 +1219,7 @@
     SUBDIR += py-bugzillatools
     SUBDIR += py-chardet
     SUBDIR += py-cloud_sptheme
+    SUBDIR += py-colorclass
     SUBDIR += py-creole
     SUBDIR += py-csvkit
     SUBDIR += py-dbfread
@@ -1312,6 +1303,7 @@
     SUBDIR += py-sphinxcontrib-httpdomain
     SUBDIR += py-sphinxcontrib-programoutput
     SUBDIR += py-syck
+    SUBDIR += py-terminaltables
     SUBDIR += py-texttable
     SUBDIR += py-tinycss
     SUBDIR += py-toronado

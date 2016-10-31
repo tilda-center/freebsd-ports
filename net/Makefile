@@ -75,6 +75,7 @@
     SUBDIR += cnd
     SUBDIR += coda6_client
     SUBDIR += coda6_server
+    SUBDIR += concourse-fly
     SUBDIR += corkscrew
     SUBDIR += corosync
     SUBDIR += courier-authlib-ldap
@@ -108,7 +109,6 @@
     SUBDIR += dictd
     SUBDIR += dictd-database
     SUBDIR += dimes
-    SUBDIR += dosdetector
     SUBDIR += dpdk
     SUBDIR += dpinger
     SUBDIR += drawterm
@@ -425,6 +425,7 @@
     SUBDIR += msend
     SUBDIR += mtr
     SUBDIR += mtr-nox11
+    SUBDIR += multicat
     SUBDIR += nakenchat
     SUBDIR += nanomsg
     SUBDIR += nast
@@ -897,7 +898,6 @@
     SUBDIR += pear-XML_RPC2
     SUBDIR += pecl-amqp
     SUBDIR += pecl-apn
-    SUBDIR += pecl-cvsclient
     SUBDIR += pecl-geoip
     SUBDIR += pecl-gupnp
     SUBDIR += pecl-ip2location
@@ -912,10 +912,6 @@
     SUBDIR += pen
     SUBDIR += pfinger
     SUBDIR += phamm
-    SUBDIR += php55-ldap
-    SUBDIR += php55-soap
-    SUBDIR += php55-sockets
-    SUBDIR += php55-xmlrpc
     SUBDIR += php56-ldap
     SUBDIR += php56-soap
     SUBDIR += php56-sockets
@@ -1005,6 +1001,7 @@
     SUBDIR += py-oauth2
     SUBDIR += py-openstackclient
     SUBDIR += py-paho-mqtt
+    SUBDIR += py-pamqp
     SUBDIR += py-pcap
     SUBDIR += py-pcapy
     SUBDIR += py-pcs
@@ -1026,6 +1023,7 @@
     SUBDIR += py-pyzmq
     SUBDIR += py-qt4-network
     SUBDIR += py-qt5-network
+    SUBDIR += py-rabbitpy
     SUBDIR += py-radix
     SUBDIR += py-raet
     SUBDIR += py-rainbowstream

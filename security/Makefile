@@ -268,6 +268,7 @@
     SUBDIR += jbrofuzz
     SUBDIR += john
     SUBDIR += kc
+    SUBDIR += kdbx-viewer
     SUBDIR += kedpm
     SUBDIR += keepass
     SUBDIR += keepassx
@@ -277,7 +278,6 @@
     SUBDIR += keychain
     SUBDIR += keynote
     SUBDIR += keyprint
-    SUBDIR += kdbx-viewer
     SUBDIR += kgpg-kde4
     SUBDIR += knock
     SUBDIR += knocker
@@ -770,7 +770,6 @@
     SUBDIR += pecl-pam
     SUBDIR += pecl-scrypt
     SUBDIR += pecl-ssh2
-    SUBDIR += pecl-tcpwrap
     SUBDIR += pev
     SUBDIR += pft
     SUBDIR += pgp
@@ -778,10 +777,6 @@
     SUBDIR += pgpgpg
     SUBDIR += pgpin
     SUBDIR += php-suhosin
-    SUBDIR += php55-filter
-    SUBDIR += php55-hash
-    SUBDIR += php55-mcrypt
-    SUBDIR += php55-openssl
     SUBDIR += php56-filter
     SUBDIR += php56-hash
     SUBDIR += php56-mcrypt
@@ -870,8 +865,10 @@
     SUBDIR += py-keyczar
     SUBDIR += py-keyring
     SUBDIR += py-keyrings.alt
+    SUBDIR += py-keystone
     SUBDIR += py-libnacl
     SUBDIR += py-m2crypto
+    SUBDIR += py-maec
     SUBDIR += py-mcrypt
     SUBDIR += py-mhash
     SUBDIR += py-oauth2client

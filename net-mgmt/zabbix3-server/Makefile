@@ -16,7 +16,6 @@ LICENSE=	GPLv2
 
 CONFLICTS=	zabbix2${PKGNAMESUFFIX}-[0-9]* zabbix22${PKGNAMESUFFIX}-[0-9]* zabbix24${PKGNAMESUFFIX}-[0-9]* zabbix32${PKGNAMESUFFIX}-[0-9]*
 
-IGNORE_WITH_PHP=	52
 IGNORE_WITH_MYSQL=	41
 
 ZABBIX_BUILD=	${PKGNAMESUFFIX:S/^-//}
@@ -195,7 +194,7 @@ post-patch:
 		-Ee 's|(@sysconfdir@/(\$$\([A-Z]*_CONFIG\)))" ([|][|] cp "../../conf/\$$\([A-Z]*_CONFIG\)" "\$$\(DESTDIR\)@sysconfdir@)"|\1.sample" \3/\2.sample"|;' \
 		${WRKSRC}/src/zabbix_${ZABBIX_BUILD}/Makefile.in
 	@${FIND} ${WRKSRC} -type f \( -name '*.bak' -or -name '*.orig' \) \
-		-exec ${RM} -f {} +
+		-exec ${RM} {} +
 
 post-install:
 
