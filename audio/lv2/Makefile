@@ -1,4 +1,4 @@
-# Created by: meka
+# Created by: Michael Beer <beerml@sigma6audio.de>
 # $FreeBSD$
 
 PORTNAME=	lv2
@@ -6,29 +6,40 @@ PORTVERSION=	1.14.0
 CATEGORIES=	audio
 MASTER_SITES=	http://lv2plug.in/spec/
 
-MAINTAINER=	meka@tilda.center
-COMMENT=	C library for serialising LV2 atoms to and from RDF
+MAINTAINER=	beerml@sigma6audio.de
+COMMENT=	Open standard for audio plugins (successor to LADSPA)
 
-LICENSE=	ISC
-LICENSE_NAME=	ISC
-LICENSE_FILE=	${WRKDIR}/${PORTNAME}-${PORTVERSION}/COPYING
-LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+LICENSE=	ISCL MIT
+LICENSE_COMB=	multi
+# Only lv2specgen.py is under MIT
+LICENSE_FILE_ISCL=	${WRKSRC}/COPYING
 
-USES=		pkgconfig tar:bzip2 waf
-PKG_CONFIG_PATH=	${PREFIX}/libdata/pkgconfig
-CONFIGURE_ARGS+=	PKG_CONFIG_PATH=${PKG_CONFIG_PATH}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml \
+		${PYTHON_PKGNAMEPREFIX}pygments>0:textproc/py-pygments \
+		${PYTHON_PKGNAMEPREFIX}rdflib>0:textproc/py-rdflib
 
-CONFLICTS=	lv2core-[0-9]*
+CONFLICTS_INSTALL=	lv2core
 
-LIB_DEPENDS+=	libsndfile.so:audio/libsndfile
+USES=		python shebangfix tar:bzip2 waf
+SHEBANG_FILES=	lv2specgen/lv2specgen.py
 
-OPTIONS_DEFINE=	CAIRO
+OPTIONS_DEFINE=	DOXYGEN EXAMPLES
 OPTIONS_SUB=	yes
 
-CAIRO_DESC=	Use cairo framework
-CAIRO_LIB_DEPENDS+=	libcairo.so.2:graphics/cairo
+DOXYGEN_BUILD_DEPENDS=	doxygen:devel/doxygen \
+			${PYTHON_PKGNAMEPREFIX}rdflib>0:textproc/py-rdflib
+DOXYGEN_CONFIGURE_ON=	--docs
+DOXYGEN_PORTDOCS=	*
+
+EXAMPLES_CONFIGURE_OFF=	--no-plugins
+EXAMPLES_LIB_DEPENDS=	libsndfile.so:audio/libsndfile
+EXAMPLES_USES=		pkgconfig
+EXAMPLES_USE=		GNOME=cairo,gtk20
+EXAMPLES_CONFIGURE_ENV=	CC='${CC} -Wl,--as-needed' # Gtk deps
 
 post-install:
-	${MV} ${STAGEDIR}${PREFIX}/lib/pkgconfig ${STAGEDIR}${PREFIX}/libdata/
+# Waf doesn't have built-in strip support
+	@${FIND} ${STAGEDIR}${PREFIX}/lib/${PORTNAME} \
+		-name '*.so' -exec ${STRIP_CMD} {} +
 
 .include <bsd.port.mk>
