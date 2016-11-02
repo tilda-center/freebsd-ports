@@ -1404,6 +1404,7 @@
     SUBDIR += libtifiles2
     SUBDIR += libtool
     SUBDIR += libtpl
+    SUBDIR += libtuntap
     SUBDIR += libublio
     SUBDIR += libukcprog
     SUBDIR += libunicode
@@ -4535,8 +4536,6 @@
     SUBDIR += py-sip
     SUBDIR += py-six
     SUBDIR += py-smmap
-    SUBDIR += py-snack
-    SUBDIR += py-snackwich
     SUBDIR += py-sortedcontainers
     SUBDIR += py-sourcemap
     SUBDIR += py-spark
@@ -4874,7 +4873,6 @@
     SUBDIR += ruby-intl
     SUBDIR += ruby-korundum
     SUBDIR += ruby-krossruby
-    SUBDIR += ruby-langscan
     SUBDIR += ruby-locale
     SUBDIR += ruby-ncurses
     SUBDIR += ruby-property
@@ -5054,8 +5052,10 @@
     SUBDIR += rubygem-forwardable-extended
     SUBDIR += rubygem-gdata
     SUBDIR += rubygem-gem_plugin
+    SUBDIR += rubygem-gem-compare
     SUBDIR += rubygem-gemcutter
     SUBDIR += rubygem-gemnasium-gitlab-service
+    SUBDIR += rubygem-gemnasium-parser
     SUBDIR += rubygem-gems
     SUBDIR += rubygem-generator_spec
     SUBDIR += rubygem-generator_spec-rails4
@@ -5142,6 +5142,7 @@
     SUBDIR += rubygem-metaid
     SUBDIR += rubygem-metasm
     SUBDIR += rubygem-method_source
+    SUBDIR += rubygem-micromachine
     SUBDIR += rubygem-minitest
     SUBDIR += rubygem-minitest4
     SUBDIR += rubygem-mixlib-authentication
