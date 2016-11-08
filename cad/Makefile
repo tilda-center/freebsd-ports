@@ -65,6 +65,7 @@
     SUBDIR += p5-Verilog-Perl
     SUBDIR += pcb
     SUBDIR += pdnmesh
+    SUBDIR += py-gdsii
     SUBDIR += py-gdspy
     SUBDIR += py-lcapy
     SUBDIR += py-pycam
@@ -78,6 +79,7 @@
     SUBDIR += rubygem-gdsii
     SUBDIR += sceptre
     SUBDIR += scotch
+    SUBDIR += sp2sp
     SUBDIR += spice
     SUBDIR += stepcode
     SUBDIR += sweethome3d
