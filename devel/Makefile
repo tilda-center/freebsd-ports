@@ -464,6 +464,7 @@
     SUBDIR += elixir-exjsx
     SUBDIR += elixir-exprotobuf
     SUBDIR += elixir-exrm
+    SUBDIR += elixir-gen_state_machine
     SUBDIR += elixir-gettext
     SUBDIR += elixir-hex
     SUBDIR += elixir-inflex
@@ -1439,6 +1440,7 @@
     SUBDIR += linux-c6-dbus-glib
     SUBDIR += linux-c6-dbus-libs
     SUBDIR += linux-c6-devtools
+    SUBDIR += linux-c6-libelf
     SUBDIR += linux-c6-libgfortran
     SUBDIR += linux-c6-libglade2
     SUBDIR += linux-c6-libpciaccess
@@ -1451,6 +1453,7 @@
     SUBDIR += linux-c7-dbus-glib
     SUBDIR += linux-c7-dbus-libs
     SUBDIR += linux-c7-devtools
+    SUBDIR += linux-c7-libelf
     SUBDIR += linux-c7-libgfortran
     SUBDIR += linux-c7-libglade2
     SUBDIR += linux-c7-libpciaccess
@@ -2010,6 +2013,7 @@
     SUBDIR += p5-ConfigReader
     SUBDIR += p5-ConfigReader-Simple
     SUBDIR += p5-Connector
+    SUBDIR += p5-Const-Exporter
     SUBDIR += p5-Const-Fast
     SUBDIR += p5-Context-Preserve
     SUBDIR += p5-Contextual-Return
@@ -3277,7 +3281,6 @@
     SUBDIR += p5-Test-Distribution
     SUBDIR += p5-Test-EOL
     SUBDIR += p5-Test-Exception
-    SUBDIR += p5-Test-Exception-LessClever
     SUBDIR += p5-Test-Expect
     SUBDIR += p5-Test-FailWarnings
     SUBDIR += p5-Test-Fake-HTTPD
@@ -4659,6 +4662,7 @@
     SUBDIR += py-z3c.formwidget.query
     SUBDIR += py-z3c.zcmlhook
     SUBDIR += py-zExceptions
+    SUBDIR += py-zkpython
     SUBDIR += py-zLOG
     SUBDIR += py-zc.buildout
     SUBDIR += py-zclockfile
