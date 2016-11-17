@@ -10,8 +10,12 @@ DISTNAME=	${PORTNAME}
 MAINTAINER=	joerg@FreeBSD.org
 COMMENT=	Bruce's C compiler (with as and ld); can do 16-bit code
 
+BROKEN=		unfetchable (MASTER_SITES not defined)
+
 USES=		uidfix
 
 CONFLICTS=	bin86-[0-9]* dev86-[0-9]*
+
+BROKEN_aarch64=		Fails to link: error adding symbols: File in wrong format
 
 .include <bsd.port.mk>
