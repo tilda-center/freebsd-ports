@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	tome4
-PORTVERSION=	1.4.8
+PORTVERSION=	1.4.9
 CATEGORIES=	games
 MASTER_SITES=	http://te4.org/dl/t-engine/ \
 		SF/lifanov-ports-distfiles/${PORTNAME}/:icons
@@ -20,8 +20,6 @@ BUILD_DEPENDS=	premake4:devel/premake4
 LIB_DEPENDS=	libvorbisfile.so:audio/libvorbis \
 		libpng16.so:graphics/png
 
-BROKEN_arm64=	Fails to build: No support for this architecture (yet)
-
 DESKTOP_ENTRIES="ToME 4" "" "${PORTNAME}" \
 		"${PORTNAME}" "Game;RolePlaying;" ""
 
@@ -35,9 +33,15 @@ USE_CSTD=	gnu89
 SUB_FILES=	tome4
 MAKE_JOBS_UNSAFE=yes
 
+.include <bsd.port.pre.mk>
+
 pre-build:
 	@${REINPLACE_CMD} 's|%%LOCALBASE%%|${LOCALBASE}|' ${WRKSRC}/premake4.lua
+.if ${ARCH} == aarch64
+	(cd ${WRKSRC} && premake4 --lua=default gmake)
+.else
 	(cd ${WRKSRC} && premake4 gmake)
+.endif
 	@${REINPLACE_CMD} 's|-lpthread|-pthread|' ${WRKSRC}/build/TEngine.make
 
 do-install:
@@ -48,4 +52,4 @@ do-install:
 	${INSTALL_DATA} ${_DISTDIR}/${PORTNAME}.png \
 		${STAGEDIR}${PREFIX}/share/pixmaps
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
