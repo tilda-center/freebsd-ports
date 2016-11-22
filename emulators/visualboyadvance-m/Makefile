@@ -3,6 +3,7 @@
 
 PORTNAME=	visualboyadvance-m
 PORTVERSION=	2.0.0b2
+PORTREVISION=	1
 CATEGORIES=	emulators
 
 MAINTAINER=	root@cooltrainer.org
@@ -12,7 +13,7 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libpng.so:graphics/png
 
-BROKEN_arm64=	Fails to build: regparm is not valid on this platform
+BROKEN_aarch64=	Fails to build: regparm is not valid on this platform
 
 USE_GITHUB=	yes
 GH_TAGNAME=	VBA-M_Beta_2

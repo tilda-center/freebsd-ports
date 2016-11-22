@@ -124,6 +124,16 @@
     SUBDIR += keyboardcast
     SUBDIR += keylaunch
     SUBDIR += keynav
+    SUBDIR += kf5-frameworkintegration
+    SUBDIR += kf5-frameworks
+    SUBDIR += kf5-kactivities
+    SUBDIR += kf5-kded
+    SUBDIR += kf5-kdelibs4support
+    SUBDIR += kf5-kglobalaccel
+    SUBDIR += kf5-kinit
+    SUBDIR += kf5-krunner
+    SUBDIR += kf5-kwindowsystem
+    SUBDIR += kf5-plasma-framework
     SUBDIR += kgamma
     SUBDIR += konsole
     SUBDIR += leechcraft
@@ -161,7 +171,9 @@
     SUBDIR += libexo
     SUBDIR += libfakekey
     SUBDIR += libfm
+    SUBDIR += libfmqt-l10n
     SUBDIR += libfm-extra
+    SUBDIR += libfm-qt
     SUBDIR += libgnome
     SUBDIR += libgnome-reference
     SUBDIR += libgnomekbd

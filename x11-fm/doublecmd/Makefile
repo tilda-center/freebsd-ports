@@ -2,7 +2,8 @@
 # $FreeBSD$
 
 PORTNAME=	doublecmd
-PORTVERSION=	0.7.5
+PORTVERSION=	0.7.6
+PORTREVISION=	1
 CATEGORIES=	x11-fm
 MASTER_SITES=	SF/${PORTNAME}/Double%20Commander%20Source
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
@@ -30,7 +31,7 @@ WANT_GNOME=	yes
 PLIST=		${WRKDIR}/pkg-plist
 
 PROJECT_FILE=	src/doublecmd.lpi
-LAZARUS_VER=	1.6.0
+LAZARUS_VER=	1.6.2
 LAZBUILD_CMD=	${LOCALBASE}/bin/lazbuild -d --pcp=${WRKSRC}/tmppcp
 LAZARUS_DIR=	${LOCALBASE}/share/lazarus-${LAZARUS_VER}
 MAKE_ENV+=	LDVER=ld.bfd # for DragonFly
@@ -276,7 +277,7 @@ pre-install:
 
 .for FILE in %%DATADIR%%/doublecmd.ext.example %%DATADIR%%/pixmaps.txt \
 	%%DATADIR%%/multiarc.ini bin/doublecmd share/applications/doublecmd.desktop \
-	share/pixmaps/doublecmd.png share/pixmaps/doublecmd.xpm \
+	share/pixmaps/doublecmd.png share/icons/hicolor/scalable/apps/doublecmd.svg \
 	%%DATADIR%%/doublecmd.xml
 	@${ECHO_CMD} ${FILE} >> ${PLIST}
 .endfor
@@ -374,9 +375,9 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/${FILE} ${STAGEDIR}${DATADIR}
 .endfor
 
-.for FILE in doublecmd.png install/linux/doublecmd.xpm
-	${INSTALL_DATA} ${WRKSRC}/${FILE} ${STAGEDIR}${PREFIX}/share/pixmaps/
-.endfor
+	${INSTALL_DATA} ${WRKSRC}/doublecmd.png ${STAGEDIR}${PREFIX}/share/pixmaps/
+	@${MKDIR} ${STAGEDIR}${PREFIX}/share/icons/hicolor/scalable/apps
+	${INSTALL_DATA} ${WRKSRC}/pixmaps/mainicon/alt/dcfinal.svg ${STAGEDIR}${PREFIX}/share/icons/hicolor/scalable/apps/doublecmd.svg
 
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin
 	${INSTALL_DATA} ${WRKSRC}/install/linux/${PORTNAME}.desktop ${STAGEDIR}${DESKTOPDIR}/

@@ -2,7 +2,8 @@
 # $FreeBSD$
 
 PORTNAME=	qemu
-PORTVERSION=	2.7.50.g20161024
+PORTVERSION=	2.7.90.g20161116
+PORTREVISION=	1
 CATEGORIES=	emulators
 MASTER_SITES=	GH \
 		LOCAL/nox:dtc \
@@ -21,14 +22,14 @@ LICENSE=	GPLv2
 USE_GITHUB=	yes
 GH_ACCOUNT=	seanbruno
 GH_PROJECT=	${PORTNAME}-bsd-user
-GH_TAGNAME=	e0c9a90
+GH_TAGNAME=	ff68442
 HAS_CONFIGURE=	yes
 USES=		gmake pkgconfig bison perl5 python:2,build
 USE_PERL5=	build
 PATCH_STRIP=	-p1
-MAKE_ENV+=	BSD_MAKE="${MAKE}"
+MAKE_ENV+=	BSD_MAKE="${MAKE}" V=1
 ONLY_FOR_ARCHS=	amd64 powerpc powerpc64 # XXX someone wants to debug sparc64 hosts?
-BROKEN_i386=	aarch64 system target is currently broken for i386 hosts, disable for now while dealing with upstream.
+BROKEN_i386=	aarch64 system target is currently broken for i386 hosts, disable for now while dealing with upstream
 
 OPTIONS_DEFINE=	SAMBA X11 GTK2 OPENGL GNUTLS SASL JPEG PNG CURL \
 		CDROM_DMA PCAP USBREDIR X86_TARGETS BSD_USER \
@@ -56,6 +57,9 @@ USE_RC_SUBR=	qemu_user_static
 SUB_LIST=	NAME=qemu_user_static
 CONFIGURE_ARGS+=	--disable-tools
 .endif
+.else
+# qemu-system-* targets require pixman to build, add an explicit dependency.
+USE_XORG=	pixman
 .endif
 
 # When static linking we have a build dependency on libglib-2.0.a, otherwise
@@ -144,7 +148,6 @@ CONFIGURE_ARGS+=	--disable-sdl
 .else
 CONFIGURE_ARGS+=	--enable-sdl
 USE_SDL=	sdl
-USE_XORG=	pixman
 .endif
 
 .if empty(PORT_OPTIONS:MGTK2)
@@ -250,12 +253,8 @@ PLIST_SUB+=	LINUXBOOT_DMA="@comment "
 PLIST_SUB+=	LINUXBOOT_DMA=""
 .endif
 
-# -lprocstat actually only _needs_ -lelf after r249666 or r250870 (MFC)
-# but it shouldn't matter much
 post-patch:
 	@${MV} ${WRKDIR}/dtc ${WRKSRC}
-	@${REINPLACE_CMD} -e '/LIBS/s|-lprocstat|-lprocstat -lelf|' \
-		${WRKSRC}/configure
 	@${REINPLACE_CMD} -e '/libs_qga=/s|glib_libs|glib_libs -lintl|' ${WRKSRC}/configure
 # clang in freebsd 10 is unable to assemble linuxboot_dma.bin
 .if (${OSVERSION} < 1100000)

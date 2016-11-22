@@ -394,6 +394,8 @@
     SUBDIR += kdegraphics4-strigi-analyzer
     SUBDIR += kdegraphics4-svgpart
     SUBDIR += kdegraphics4-thumbnailers
+    SUBDIR += kf5-kimageformats
+    SUBDIR += kf5-kplotting
     SUBDIR += kiconedit
     SUBDIR += kipi-plugin-acquireimages
     SUBDIR += kipi-plugin-advancedslideshow
@@ -577,6 +579,8 @@
     SUBDIR += luminance-qt5
     SUBDIR += luxrender
     SUBDIR += luxrender14
+    SUBDIR += lximage-qt
+    SUBDIR += lximageqt-l10n
     SUBDIR += mahotas
     SUBDIR += maim
     SUBDIR += makehuman
@@ -770,6 +774,7 @@
     SUBDIR += phototonic
     SUBDIR += php-facedetect
     SUBDIR += php-gdal
+    SUBDIR += php-geos
     SUBDIR += php-libpuzzle
     SUBDIR += php-magickwand
     SUBDIR += php5-ffmpeg
@@ -799,6 +804,7 @@
     SUBDIR += pngrewrite
     SUBDIR += pngwriter
     SUBDIR += podofo
+    SUBDIR += polyclipping
     SUBDIR += poppler
     SUBDIR += poppler-data
     SUBDIR += poppler-glib

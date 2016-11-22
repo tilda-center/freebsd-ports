@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	nginx
-PORTVERSION=	1.11.5
-PORTREVISION=	1
+PORTVERSION=	1.11.6
 CATEGORIES=	www
 MASTER_SITES=	http://nginx.org/download/
 MASTER_SITES+=	LOCAL/osa
@@ -67,6 +66,7 @@ OPTIONS_DEFINE=	\
 	CLOJURE \
 	CT \
 	ECHO \
+	FASTDFS \
 	HEADERS_MORE \
 	HTTP_ACCEPT_LANGUAGE \
 	HTTP_ACCESSKEY \
@@ -78,6 +78,7 @@ OPTIONS_DEFINE=	\
 	HTTP_EVAL \
 	HTTP_FANCYINDEX \
 	HTTP_FOOTER \
+	HTTP_GEOIP2 \
 	HTTP_JSON_STATUS \
 	HTTP_MOGILEFS \
 	HTTP_MP4_H264 \
@@ -175,6 +176,7 @@ CACHE_PURGE_DESC=		3rd party cache_purge module
 CLOJURE_DESC=			3rd party clojure module
 CT_DESC=			3rd party cert_transparency module (SSL req.)
 ECHO_DESC=			3rd party echo module
+FASTDFS_DESC=			3rd party fastdfs module
 HEADERS_MORE_DESC=		3rd party headers_more module
 HTTP_ACCEPT_LANGUAGE_DESC=	3rd party accept_language module
 HTTP_ACCESSKEY_DESC=		3rd party http_accesskey module
@@ -186,6 +188,7 @@ HTTP_DAV_EXT_DESC=		3rd party webdav_ext module
 HTTP_EVAL_DESC=			3rd party eval module
 HTTP_FANCYINDEX_DESC=		3rd party http_fancyindex module
 HTTP_FOOTER_DESC=		3rd party http_footer module
+HTTP_GEOIP2_DESC=		3rd party geoip2 module
 HTTP_JSON_STATUS_DESC=		3rd party http_json_status module
 HTTP_MOGILEFS_DESC=		3rd party mogilefs module
 HTTP_MP4_H264_DESC=		3rd party mp4/h264 module
@@ -455,6 +458,21 @@ CONFIGURE_ARGS+=--add-module=${WRKSRC_echo}
 .endif
 .endif
 
+.if ${PORT_OPTIONS:MFASTDFS}
+NGINX_FASTDFS_VERSION=     5a8110f
+GH_ACCOUNT+=    happyfish100:fastdfs
+GH_PROJECT+=    fastdfs-nginx-module:fastdfs
+GH_TAGNAME+=    ${NGINX_FASTDFS_VERSION}:fastdfs
+EXTRA_PATCHES+= ${PATCHDIR}/extra-patch-fastdfs-src-config
+BUILD_DEPENDS+=	${LOCALBASE}/include/fastcommon/logger.h:devel/libfastcommon \
+		${LOCALBASE}/include/fastdfs/fdfs_client.h:ftp/fastdfs
+LIB_DEPENDS+=	libfastcommon.so:devel/libfastcommon \
+		libfdfsclient.so:ftp/fastdfs
+CONFIGURE_ARGS+=--add-module=${WRKSRC_fastdfs}/src \
+		--with-cc-opt="-I ${LOCALBASE}/include/fastdfs \
+		-I ${LOCALBASE}/include/fastcommon"
+.endif
+
 .if ${PORT_OPTIONS:MHEADERS_MORE}
 NGINX_HEADERS_MORE_VERSION=	84241e4
 GH_ACCOUNT+=	openresty:headers_more
@@ -507,6 +525,20 @@ GH_ACCOUNT+=	alibaba:footer
 GH_PROJECT+=	nginx-http-footer-filter:footer
 GH_TAGNAME+=	${NGINX_FOOTER_VERSION}:footer
 CONFIGURE_ARGS+=--add-module=${WRKSRC_footer}
+.endif
+
+.if ${PORT_OPTIONS:MHTTP_GEOIP2}
+# WWW: https://github.com/leev/ngx_http_geoip2_module
+NGINX_HTTP_GEOIP2_VERSION=	2.0
+GH_ACCOUNT+=	leev:geoip2
+GH_PROJECT+=	ngx_http_geoip2_module:geoip2
+GH_TAGNAME+=	${NGINX_HTTP_GEOIP2_VERSION}:geoip2
+.if !empty(PORT_OPTIONS:MDSO)
+CONFIGURE_ARGS+=--add-dynamic-module=${WRKSRC_geoip2}
+.else
+CONFIGURE_ARGS+=--add-module=${WRKSRC_geoip2}
+.endif
+LIB_DEPENDS+=	libmaxminddb.so:net/libmaxminddb
 .endif
 
 .if ${PORT_OPTIONS:MHTTP_FLV}
@@ -704,6 +736,7 @@ DISTFILES+=	nginx_upstream_fair-${NGINX_UPSTREAM_FAIR_VERSION}.tar.gz:upstreamfa
 CONFIGURE_ARGS+=--add-module=${WRKDIR}/nginx_upstream_fair-${NGINX_UPSTREAM_FAIR_VERSION}
 .if !empty(PORT_OPTIONS:MHTTP_UPSTREAM_CHECK)
 EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-ngx_http_upstream_fair_module.c
+IGNORE=	HTTP_UPSTREAM_FAIR: a patch requires
 .endif
 .endif
 
@@ -755,7 +788,8 @@ GH_ACCOUNT+=	openresty:drizzle
 GH_PROJECT+=	drizzle-nginx-module:drizzle
 GH_TAGNAME+=	v${NGINX_DRIZZLE_VERSION}:drizzle
 CONFIGURE_ARGS+=--add-module=${WRKSRC_drizzle}
-EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-openresty-drizzle-nginx-module-config
+EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-openresty-drizzle-nginx-module-config \
+		${PATCHDIR}/extra-patch-ngx_http_drizzle_upstream.c
 .endif
 
 .if ${PORT_OPTIONS:MDYNAMIC_UPSTREAM}
@@ -825,6 +859,7 @@ GH_ACCOUNT+=	openresty:memc
 GH_PROJECT+=	memc-nginx-module:memc
 GH_TAGNAME+=	v${NGINX_MEMC_VERSION}:memc
 CONFIGURE_ARGS+=--add-module=${WRKSRC_memc}
+EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-ngx_http_memc_util.c
 .endif
 
 .if ${PORT_OPTIONS:MMODSECURITY}
@@ -882,7 +917,8 @@ GH_ACCOUNT+=	FRiCKLE:postgres
 GH_PROJECT+=	ngx_postgres:postgres
 GH_TAGNAME+=	${NGINX_POSTGRES_VERSION}:postgres
 CONFIGURE_ARGS+=--add-module=${WRKSRC_postgres}
-EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-ngx_postgres-config
+EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-ngx_postgres-config \
+		${PATCHDIR}/extra-patch-ngx_postgres_module.c
 .endif
 
 .if ${PORT_OPTIONS:MRDS_CSV}
@@ -907,6 +943,7 @@ GH_ACCOUNT+=	openresty:redis2
 GH_PROJECT+=	redis2-nginx-module:redis2
 GH_TAGNAME+=	v${NGINX_REDIS2_VERSION}:redis2
 CONFIGURE_ARGS+=--add-module=${WRKSRC_redis2}
+EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-ngx_http_redis2_util.c
 .endif
 
 .if ${PORT_OPTIONS:MRTMP}
@@ -1178,6 +1215,12 @@ post-patch:
 		's!%%PREFIX%%!${LOCALBASE}!g' \
 		${WRKSRC_drizzle}/config
 .endif
+.if ${PORT_OPTIONS:MFASTDFS}
+	@${REINPLACE_CMD} \
+		's!%%PREFIX%%!${PREFIX}!g; \
+		s!%%LOCALBASE%%!${LOCALBASE}!g' \
+		${WRKSRC_fastdfs}/src/config
+.endif
 # Respect CFLAGS by remove needless --std=c99 flag
 .if ${PORT_OPTIONS:MGRIDFS}
 	@${REINPLACE_CMD} \
@@ -1280,6 +1323,11 @@ do-install:
 		${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/
 .endif
 
+.if ${PORT_OPTIONS:MFASTDFS}
+	${MKDIR} ${STAGEDIR}${PREFIX}/etc/fdfs
+	${INSTALL_DATA} ${WRKSRC_fastdfs}/src/mod_fastdfs.conf ${STAGEDIR}${PREFIX}/etc/fdfs/mod_fastdfs.conf.sample
+.endif
+
 # Install dynamic modules
 .if !empty(PORT_OPTIONS:MDSO)
 	(cd ${WRKSRC}/objs/ && ${FIND} . -name '*.so' -maxdepth 1 -type f \
@@ -1301,6 +1349,10 @@ post-install:
 
 .if ${PORT_OPTIONS:MNAXSI}
 	${ECHO_CMD} etc/nginx/naxsi_core.rules >> ${TMPPLIST}
+.endif
+
+.if ${PORT_OPTIONS:MFASTDFS}
+	${ECHO_CMD} @sample etc/fdfs/mod_fastdfs.conf.sample >> ${TMPPLIST}
 .endif
 
 # Add dynamic modules to the plist

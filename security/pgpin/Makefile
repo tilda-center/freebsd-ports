@@ -14,6 +14,8 @@ COMMENT=	PGP International version - improved for use in IN-CA
 LICENSE=	MIT
 
 PORTSCOUT=	ignore:1
+
+BROKEN_mips64=		Does not build
 BROKEN_powerpc64=	Does not build
 
 USES=		tar:tgz

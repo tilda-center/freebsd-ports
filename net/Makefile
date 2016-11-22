@@ -53,6 +53,7 @@
     SUBDIR += bird6
     SUBDIR += bittwist
     SUBDIR += bmon
+    SUBDIR += bnxt-kmod
     SUBDIR += boclient
     SUBDIR += boinc-client
     SUBDIR += boinc_curses
@@ -290,6 +291,7 @@
     SUBDIR += kdenetwork4-filesharing
     SUBDIR += kdenetwork4-strigi-analyzers
     SUBDIR += kea
+    SUBDIR += kf5-kxmlrpcclient
     SUBDIR += kget
     SUBDIR += kio-upnp-ms
     SUBDIR += kippo
@@ -497,6 +499,7 @@
     SUBDIR += openldap24-sasl-client
     SUBDIR += openldap24-server
     SUBDIR += openmpi
+    SUBDIR += openmpi2
     SUBDIR += openmq
     SUBDIR += openmq-client
     SUBDIR += openntpd
@@ -684,7 +687,6 @@
     SUBDIR += p5-Net-Patricia
     SUBDIR += p5-Net-Pcap
     SUBDIR += p5-Net-PcapUtils
-    SUBDIR += p5-Net-Ping
     SUBDIR += p5-Net-Ping-External
     SUBDIR += p5-Net-Proxy
     SUBDIR += p5-Net-PubSubHubbub-Publisher
@@ -1089,7 +1091,6 @@
     SUBDIR += relayd
     SUBDIR += remmina
     SUBDIR += remmina-plugin-gnome
-    SUBDIR += remmina-plugin-i18n
     SUBDIR += remmina-plugin-nx
     SUBDIR += remmina-plugin-telepathy
     SUBDIR += remmina-plugin-vnc
@@ -1267,6 +1268,7 @@
     SUBDIR += socketpipe
     SUBDIR += socketw
     SUBDIR += sofia-sip
+    SUBDIR += softethervpn
     SUBDIR += spideroak
     SUBDIR += splatd
     SUBDIR += spoofer
@@ -1382,7 +1384,6 @@
     SUBDIR += vinagre
     SUBDIR += vino
     SUBDIR += vmware-vsphere-cli
-    SUBDIR += vnc
     SUBDIR += vncreflector
     SUBDIR += vnstat
     SUBDIR += vortex

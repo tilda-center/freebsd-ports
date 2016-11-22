@@ -3,7 +3,7 @@
 
 PORTNAME=	bino
 PORTVERSION=	1.4.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	multimedia
 MASTER_SITES=	http://download.savannah.nongnu.org/releases/bino/ http://levsha.me/ports/distfiles/
 
@@ -32,6 +32,8 @@ OPTIONS_SUB=	yes
 
 NLS_USES=	gettext
 NLS_CONFIGURE_ENABLE=nls
+
+BROKEN_aarch64=		Fails to compile: error: call to member function insert is ambiguous
 
 # fixes build on non UTF-8 enviroments
 post-patch:

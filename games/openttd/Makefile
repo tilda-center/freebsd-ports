@@ -3,7 +3,7 @@
 
 PORTNAME=	openttd
 DISTVERSION=	1.6.1
-PORTREVISION=	1
+PORTREVISION=	5
 CATEGORIES=	games
 MASTER_SITES=	http://ca.binaries.openttd.org/binaries/releases/${DISTVERSION}/ \
 		http://cz.binaries.openttd.org/binaries/releases/${DISTVERSION}/ \
@@ -57,6 +57,9 @@ CFLAGS+=	-I${LOCALBASE}/include
 USE_RC_SUBR=	${PORTNAME}
 .else
 LIB_DEPENDS+=	libfreetype.so:print/freetype2 \
+		libicui18n.so:devel/icu \
+		libicu-le-hb.so:devel/icu-le-hb \
+		libiculx.so:devel/icu-lx \
 		libfontconfig.so:x11-fonts/fontconfig
 USE_SDL=	sdl
 INSTALLS_ICONS=	yes

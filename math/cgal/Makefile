@@ -3,6 +3,7 @@
 
 PORTNAME=	cgal
 PORTVERSION=	4.9
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	https://github.com/CGAL/cgal/releases/download/releases%2FCGAL-4.9/
 DISTNAME=	CGAL-${PORTVERSION}
@@ -18,7 +19,7 @@ RUN_DEPENDS=	${LOCALBASE}/include/boost/tuple/tuple.hpp:devel/boost-libs
 LIB_DEPENDS=	libmpfr.so:math/mpfr \
 		libgmp.so:math/gmp
 
-BROKEN_sparc64:	Does not build: fails to compile all_files.cpp
+BROKEN_sparc64=	Does not build: fails to compile all_files.cpp
 
 USE_LDCONFIG=		yes
 USES=			cmake shebangfix tar:xz

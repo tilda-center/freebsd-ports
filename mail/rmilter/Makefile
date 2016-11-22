@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	rmilter
-PORTVERSION=	1.9.2
+PORTVERSION=	1.10.0
 CATEGORIES=	mail
 
 MAINTAINER=	vsevolod@FreeBSD.org
@@ -9,9 +9,7 @@ COMMENT=	Milter that performs rspamd, clamav, and other checks
 
 LICENSE=	BSD2CLAUSE
 
-LIB_DEPENDS=	libpcre.so:devel/pcre \
-		libopendkim.so:mail/opendkim \
-		libmemcached.so:databases/libmemcached
+LIB_DEPENDS=	libpcre.so:devel/pcre
 
 BROKEN_armv6=		Fails to configure in cmake
 BROKEN_mips=		Fails to compile: error: Unsupported word size
@@ -27,15 +25,23 @@ USE_GNOME=	glib20
 USERS=		_rmilter
 GROUPS=		_rmilter
 
-CMAKE_ARGS+=	-DENABLE_DKIM=ON
-
 WITH_SENDMAIL_BASE=	yes
+
+OPTIONS_DEFINE=		DKIM
+OPTIONS_DEFAULT=	DKIM
+
+DKIM_DESC=		DKIM signing support
+DKIM_LIB_DEPENDS=	libopendkim.so:mail/opendkim
 
 .include <bsd.port.pre.mk>
 
 # Workaround to prevent bsd.milter.mk from breaking the build with the recent clang
 WITHOUT_MILTER_LDFLAGS=	yes
 .include "${PORTSDIR}/mail/sendmail/bsd.milter.mk"
+
+.if ! ${PORT_OPTIONS:MDKIM}
+CMAKE_ARGS+=	-DENABLE_DKIM=OFF
+.endif
 
 post-patch:
 	${SED} ${SUB_LIST:S/$/!g/:S/^/ -e s!%%/:S/=/%%!/} \
