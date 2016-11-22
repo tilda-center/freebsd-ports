@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	qemu
-PORTVERSION=	2.7.50.g20161111
+PORTVERSION=	2.7.90.g20161116
 PORTREVISION=	1
 CATEGORIES=	emulators
 MASTER_SITES=	GH \
@@ -22,7 +22,7 @@ LICENSE=	GPLv2
 USE_GITHUB=	yes
 GH_ACCOUNT=	seanbruno
 GH_PROJECT=	${PORTNAME}-bsd-user
-GH_TAGNAME=	ec807d10
+GH_TAGNAME=	ff68442
 HAS_CONFIGURE=	yes
 USES=		gmake pkgconfig bison perl5 python:2,build
 USE_PERL5=	build
@@ -57,6 +57,9 @@ USE_RC_SUBR=	qemu_user_static
 SUB_LIST=	NAME=qemu_user_static
 CONFIGURE_ARGS+=	--disable-tools
 .endif
+.else
+# qemu-system-* targets require pixman to build, add an explicit dependency.
+USE_XORG=	pixman
 .endif
 
 # When static linking we have a build dependency on libglib-2.0.a, otherwise
@@ -145,7 +148,6 @@ CONFIGURE_ARGS+=	--disable-sdl
 .else
 CONFIGURE_ARGS+=	--enable-sdl
 USE_SDL=	sdl
-USE_XORG=	pixman
 .endif
 
 .if empty(PORT_OPTIONS:MGTK2)

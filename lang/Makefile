@@ -184,6 +184,7 @@
     SUBDIR += nawk
     SUBDIR += nbc
     SUBDIR += nbfc
+    SUBDIR += neko
     SUBDIR += nesasm
     SUBDIR += newlisp
     SUBDIR += newlisp-devel
@@ -255,6 +256,7 @@
     SUBDIR += php_doc
     SUBDIR += picoc
     SUBDIR += pike78
+    SUBDIR += pocl
     SUBDIR += polyml
     SUBDIR += ptoc
     SUBDIR += pure
