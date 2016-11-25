@@ -92,6 +92,8 @@
     SUBDIR += consul-template
     SUBDIR += crimson
     SUBDIR += cs-aspell
+    SUBDIR += cs-hunspell
+    SUBDIR += cs-hyphen
     SUBDIR += cs-mythes
     SUBDIR += csb-aspell
     SUBDIR += csv2latex
@@ -719,6 +721,7 @@
     SUBDIR += p5-Pod-Eventual
     SUBDIR += p5-Pod-HtmlEasy
     SUBDIR += p5-Pod-Markdown
+    SUBDIR += p5-Pod-MinimumVersion
     SUBDIR += p5-Pod-POM
     SUBDIR += p5-Pod-POM-View-HTML-Filter
     SUBDIR += p5-Pod-Parser
@@ -1438,6 +1441,7 @@
     SUBDIR += rubygem-github-markup
     SUBDIR += rubygem-gitlab-grit
     SUBDIR += rubygem-gitlab-linguist
+    SUBDIR += rubygem-gitlab-markup
     SUBDIR += rubygem-heredoc_unindent
     SUBDIR += rubygem-hikidoc
     SUBDIR += rubygem-html-pipeline
