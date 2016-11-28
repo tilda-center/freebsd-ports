@@ -81,7 +81,6 @@
     SUBDIR += clit
     SUBDIR += clucene
     SUBDIR += clucene-qt4
-    SUBDIR += clucene-qt5
     SUBDIR += cmark
     SUBDIR += coccigrep
     SUBDIR += code2html
@@ -1639,6 +1638,7 @@
     SUBDIR += txt2html
     SUBDIR += txt2man
     SUBDIR += txt2tags
+    SUBDIR += UCD
     SUBDIR += uchardet
     SUBDIR += uim
     SUBDIR += uim-el
