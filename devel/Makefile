@@ -516,6 +516,7 @@
     SUBDIR += erlang-jobs
     SUBDIR += erlang-jsx
     SUBDIR += erlang-jsxd
+    SUBDIR += erlang-katana
     SUBDIR += erlang-lager
     SUBDIR += erlang-lager_syslog
     SUBDIR += erlang-meck
@@ -4048,7 +4049,6 @@
     SUBDIR += py-archetypes.schemaextender
     SUBDIR += py-argcomplete
     SUBDIR += py-argh
-    SUBDIR += py-argparse
     SUBDIR += py-args
     SUBDIR += py-arrow
     SUBDIR += py-aspects
