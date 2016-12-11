@@ -3,6 +3,7 @@
 
 PORTNAME=	numba
 PORTVERSION=	0.29.0
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,8 +15,7 @@ LICENSE=	BSD
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>1.7,1:math/py-numpy
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}llvmlite>=0.12:devel/py-llvmlite \
-		${PYTHON_PKGNAMEPREFIX}argparse>0:devel/py-argparse
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}llvmlite>=0.12:devel/py-llvmlite
 
 # Uses Python 2.7, 3.4+
 USES=		python fortran

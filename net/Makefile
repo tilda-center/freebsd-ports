@@ -52,6 +52,7 @@
     SUBDIR += bird-devel
     SUBDIR += bird6
     SUBDIR += bittwist
+    SUBDIR += bluemix-cli
     SUBDIR += bmon
     SUBDIR += bnxt-kmod
     SUBDIR += boclient
@@ -145,6 +146,7 @@
     SUBDIR += freeradius2
     SUBDIR += freeradius3
     SUBDIR += freerdp
+    SUBDIR += freerdp1
     SUBDIR += freeswitch
     SUBDIR += freevrrpd
     SUBDIR += fspclient
@@ -959,10 +961,12 @@
     SUBDIR += py-amqplib
     SUBDIR += py-avahi
     SUBDIR += py-beanstalkc
+    SUBDIR += py-ceilometerclient
     SUBDIR += py-cinderclient
     SUBDIR += py-cjdns
     SUBDIR += py-cloudfiles
     SUBDIR += py-coherence
+    SUBDIR += py-designateclient
     SUBDIR += py-dpkt
     SUBDIR += py-dugong
     SUBDIR += py-ec2-cli-tools
@@ -972,6 +976,7 @@
     SUBDIR += py-gspread
     SUBDIR += py-gspreadsheet
     SUBDIR += py-haproxy-log-analysis
+    SUBDIR += py-heatclient
     SUBDIR += py-impacket
     SUBDIR += py-ipaddress
     SUBDIR += py-iplib
@@ -1189,6 +1194,7 @@
     SUBDIR += rubygem-opennebula
     SUBDIR += rubygem-packetfu
     SUBDIR += rubygem-pcaprub
+    SUBDIR += rubygem-qiniu
     SUBDIR += rubygem-rabbiter
     SUBDIR += rubygem-rbvmomi
     SUBDIR += rubygem-right_aws

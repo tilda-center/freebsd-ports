@@ -115,6 +115,7 @@
     SUBDIR += doas
     SUBDIR += doorman
     SUBDIR += doscan
+    SUBDIR += dotdotpwn
     SUBDIR += dradis
     SUBDIR += dropbear
     SUBDIR += dsniff
@@ -187,7 +188,6 @@
     SUBDIR += greenbone-security-assistant
     SUBDIR += gringotts
     SUBDIR += gsasl
-    SUBDIR += gsfv
     SUBDIR += gss
     SUBDIR += gstreamer1-plugins-dtls
     SUBDIR += gtk-knocker
@@ -604,6 +604,7 @@
     SUBDIR += p5-Dancer-Plugin-Passphrase
     SUBDIR += p5-Dancer2-Plugin-Auth-Extensible
     SUBDIR += p5-Dancer2-Plugin-Auth-Extensible-Provider-DBIC
+    SUBDIR += p5-Dancer2-Plugin-Auth-Extensible-Provider-Database
     SUBDIR += p5-Dancer2-Plugin-Auth-Extensible-Provider-IMAP
     SUBDIR += p5-Dancer2-Plugin-Auth-Extensible-Provider-Usergroup
     SUBDIR += p5-Dancer2-Plugin-Passphrase

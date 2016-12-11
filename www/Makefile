@@ -520,6 +520,7 @@
     SUBDIR += moodle29
     SUBDIR += moodle30
     SUBDIR += moodle31
+    SUBDIR += moodle32
     SUBDIR += mozplugger
     SUBDIR += multisort
     SUBDIR += multiwatch
@@ -548,7 +549,6 @@
     SUBDIR += node012
     SUBDIR += node4
     SUBDIR += node6
-    SUBDIR += node7
     SUBDIR += nostromo
     SUBDIR += npapi-vlc
     SUBDIR += npapi-xine
@@ -1488,6 +1488,7 @@
     SUBDIR += py-Products.CMFPlone
     SUBDIR += py-Products.PloneLDAP
     SUBDIR += py-Products.TinyMCE
+    SUBDIR += py-Tenjin
     SUBDIR += py-WebError
     SUBDIR += py-WebFlash
     SUBDIR += py-WebTest
@@ -1799,7 +1800,6 @@
     SUBDIR += py-splinter
     SUBDIR += py-spyne
     SUBDIR += py-surl
-    SUBDIR += py-Tenjin
     SUBDIR += py-textile
     SUBDIR += py-tgwebservices
     SUBDIR += py-tmdb3
@@ -2021,6 +2021,7 @@
     SUBDIR += rubygem-rack-protection
     SUBDIR += rubygem-rack-ssl
     SUBDIR += rubygem-rack-test
+    SUBDIR += rubygem-rack14
     SUBDIR += rubygem-rack15
     SUBDIR += rubygem-rack16
     SUBDIR += rubygem-rails
