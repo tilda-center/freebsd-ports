@@ -1567,6 +1567,7 @@
     SUBDIR += luajava
     SUBDIR += lutok
     SUBDIR += lwp
+    SUBDIR += lxqt-build-tools
     SUBDIR += m17n-db
     SUBDIR += m17n-docs
     SUBDIR += m17n-lib
@@ -4129,6 +4130,7 @@
     SUBDIR += py-country
     SUBDIR += py-cov-core
     SUBDIR += py-coverage
+    SUBDIR += py-crank
     SUBDIR += py-crcmod
     SUBDIR += py-ctags
     SUBDIR += py-cuisine
@@ -4803,8 +4805,10 @@
     SUBDIR += py3-libpeas
     SUBDIR += py3-lxml
     SUBDIR += py3-nose
+    SUBDIR += py3-py
     SUBDIR += py3-pyicu
     SUBDIR += py3-pylru-cache
+    SUBDIR += py3-pytest
     SUBDIR += py3-python-magic
     SUBDIR += py3-pytz
     SUBDIR += py3-threema-msgapi
