@@ -611,6 +611,7 @@
     SUBDIR += php56-sybase_ct
     SUBDIR += php70-dba
     SUBDIR += php70-interbase
+    SUBDIR += php70-memcache
     SUBDIR += php70-memcached
     SUBDIR += php70-mysqli
     SUBDIR += php70-odbc
@@ -763,6 +764,7 @@
     SUBDIR += py-python-memcached
     SUBDIR += py-python-rrdtool
     SUBDIR += py-python-sql
+    SUBDIR += py-python-swiftclient
     SUBDIR += py-qt4-sql
     SUBDIR += py-qt5-sql
     SUBDIR += py-queries
@@ -781,9 +783,9 @@
     SUBDIR += py-sqlite3dbm
     SUBDIR += py-sqlobject
     SUBDIR += py-sqlparse
+    SUBDIR += py-sqlparse01
     SUBDIR += py-sqlrelay
     SUBDIR += py-swift
-    SUBDIR += py-swiftclient
     SUBDIR += py-sybase
     SUBDIR += py-tarantool
     SUBDIR += py-umemcache
