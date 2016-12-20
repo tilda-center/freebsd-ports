@@ -365,6 +365,7 @@
     SUBDIR += kenlm
     SUBDIR += kf5-kcodecs
     SUBDIR += kf5-sonnet
+    SUBDIR += kf5-syntax-highlighting
     SUBDIR += kibana3
     SUBDIR += kibana41
     SUBDIR += kibana43
@@ -800,6 +801,7 @@
     SUBDIR += p5-String-Fraction
     SUBDIR += p5-String-HexConvert
     SUBDIR += p5-String-Koremutake
+    SUBDIR += p5-String-LCSS
     SUBDIR += p5-String-Print
     SUBDIR += p5-String-RewritePrefix
     SUBDIR += p5-String-Scanf
@@ -1737,5 +1739,6 @@
     SUBDIR += zsh-syntax-highlighting
     SUBDIR += zu-aspell
     SUBDIR += zu-hunspell
+    SUBDIR += zxing-cpp
 
 .include <bsd.port.subdir.mk>
