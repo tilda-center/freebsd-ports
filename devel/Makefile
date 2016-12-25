@@ -1709,6 +1709,7 @@
     SUBDIR += omniORB-4.1
     SUBDIR += oniguruma4
     SUBDIR += oniguruma5
+    SUBDIR += oniguruma6
     SUBDIR += onscripter
     SUBDIR += onscripter-1byte
     SUBDIR += oozie
@@ -3283,6 +3284,7 @@
     SUBDIR += p5-Term-Size-Any
     SUBDIR += p5-Term-Size-Perl
     SUBDIR += p5-Term-Sk
+    SUBDIR += p5-Term-Table
     SUBDIR += p5-Term-Title
     SUBDIR += p5-Term-UI
     SUBDIR += p5-Term-VT102
@@ -3852,6 +3854,7 @@
     SUBDIR += pecl-qb
     SUBDIR += pecl-raphf
     SUBDIR += pecl-raphf2
+    SUBDIR += pecl-request
     SUBDIR += pecl-runkit
     SUBDIR += pecl-scream
     SUBDIR += pecl-spl_types
@@ -4339,6 +4342,7 @@
     SUBDIR += py-libusb1
     SUBDIR += py-libvirt
     SUBDIR += py-libzfs
+    SUBDIR += py-linecache2
     SUBDIR += py-ll-core
     SUBDIR += py-llfuse
     SUBDIR += py-llvmlite
@@ -4672,6 +4676,7 @@
     SUBDIR += py-total-ordering
     SUBDIR += py-tox
     SUBDIR += py-trace2html
+    SUBDIR += py-traceback2
     SUBDIR += py-traitlets
     SUBDIR += py-traits
     SUBDIR += py-transaction
@@ -4699,6 +4704,7 @@
     SUBDIR += py-uncompyle2
     SUBDIR += py-unicodecsv
     SUBDIR += py-unipath
+    SUBDIR += py-unittest2
     SUBDIR += py-unpaddedbase64
     SUBDIR += py-update_checker
     SUBDIR += py-urlimport
@@ -4872,6 +4878,7 @@
     SUBDIR += qdevelop
     SUBDIR += qgit
     SUBDIR += qjson
+    SUBDIR += qjson-qt5
     SUBDIR += qmake
     SUBDIR += qmake4
     SUBDIR += qmake5
