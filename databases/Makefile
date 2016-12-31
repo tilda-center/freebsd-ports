@@ -173,7 +173,6 @@
     SUBDIR += libzdb
     SUBDIR += linux-c6-sqlite3
     SUBDIR += linux-c7-sqlite3
-    SUBDIR += linux-f10-sqlite3
     SUBDIR += linux-oracle-instantclient-basic
     SUBDIR += linux-oracle-instantclient-sdk
     SUBDIR += linux-oracle-instantclient-sqlplus
@@ -708,6 +707,7 @@
     SUBDIR += py-MySQLdb56
     SUBDIR += py-PyGreSQL
     SUBDIR += py-Pyrseas
+    SUBDIR += py-agate-sql
     SUBDIR += py-alembic
     SUBDIR += py-apsw
     SUBDIR += py-bsddb
@@ -774,7 +774,6 @@
     SUBDIR += py-rrdtool_lgpl
     SUBDIR += py-south
     SUBDIR += py-sqlalchemy-migrate
-    SUBDIR += py-sqlalchemy07
     SUBDIR += py-sqlalchemy08
     SUBDIR += py-sqlalchemy09
     SUBDIR += py-sqlalchemy10
@@ -881,7 +880,6 @@
     SUBDIR += rubygem-dm-chunked_query
     SUBDIR += rubygem-dm-constraints
     SUBDIR += rubygem-dm-core
-    SUBDIR += rubygem-dm-devise
     SUBDIR += rubygem-dm-do-adapter
     SUBDIR += rubygem-dm-migrations
     SUBDIR += rubygem-dm-mysql-adapter
@@ -917,6 +915,7 @@
     SUBDIR += rubygem-rbase
     SUBDIR += rubygem-redis
     SUBDIR += rubygem-redis-actionpack
+    SUBDIR += rubygem-redis-actionpack4
     SUBDIR += rubygem-redis-namespace
     SUBDIR += rubygem-rubyrep
     SUBDIR += rubygem-seed-fu

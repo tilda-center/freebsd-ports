@@ -501,6 +501,7 @@
     SUBDIR += erlang-bear
     SUBDIR += erlang-certifi
     SUBDIR += erlang-cf
+    SUBDIR += erlang-cl
     SUBDIR += erlang-clique
     SUBDIR += erlang-common_lib
     SUBDIR += erlang-cuttlefish
@@ -1027,6 +1028,7 @@
     SUBDIR += hs-scientific
     SUBDIR += hs-securemem
     SUBDIR += hs-setenv
+    SUBDIR += hs-setlocale
     SUBDIR += hs-shake
     SUBDIR += hs-show
     SUBDIR += hs-silently
@@ -1129,7 +1131,6 @@
     SUBDIR += json-glib
     SUBDIR += jsoncpp
     SUBDIR += jsonnet
-    SUBDIR += jtag
     SUBDIR += judy
     SUBDIR += jwasm
     SUBDIR += k8048
@@ -1500,15 +1501,6 @@
     SUBDIR += linux-c7-qt
     SUBDIR += linux-c7-sdl12
     SUBDIR += linux-c7-sdl20
-    SUBDIR += linux-f10-allegro
-    SUBDIR += linux-f10-dbus-glib
-    SUBDIR += linux-f10-dbus-libs
-    SUBDIR += linux-f10-devtools
-    SUBDIR += linux-f10-libglade2
-    SUBDIR += linux-f10-libsigc++20
-    SUBDIR += linux-f10-ncurses-base
-    SUBDIR += linux-f10-nspr
-    SUBDIR += linux-f10-sdl12
     SUBDIR += linux-kernel
     SUBDIR += linux_kdump
     SUBDIR += linux_libusb
@@ -2993,7 +2985,6 @@
     SUBDIR += p5-Params-Validate-Dependencies
     SUBDIR += p5-Params-ValidationCompiler
     SUBDIR += p5-Paranoid
-    SUBDIR += p5-Parse-CPAN-Meta
     SUBDIR += p5-Parse-CPAN-Packages
     SUBDIR += p5-Parse-CPAN-Packages-Fast
     SUBDIR += p5-Parse-ErrorString-Perl
@@ -4191,6 +4182,7 @@
     SUBDIR += py-dexml
     SUBDIR += py-dialog
     SUBDIR += py-diazo
+    SUBDIR += py-dill
     SUBDIR += py-dirspec
     SUBDIR += py-distorm
     SUBDIR += py-django-rq
@@ -4454,6 +4446,7 @@
     SUBDIR += py-plex
     SUBDIR += py-pluggy
     SUBDIR += py-ply
+    SUBDIR += py-podcastparser
     SUBDIR += py-polib
     SUBDIR += py-positional
     SUBDIR += py-posix_ipc
@@ -5115,8 +5108,6 @@
     SUBDIR += rubygem-deprecated2
     SUBDIR += rubygem-descendants_tracker
     SUBDIR += rubygem-devise
-    SUBDIR += rubygem-devise-async
-    SUBDIR += rubygem-devise-async-rails4
     SUBDIR += rubygem-devise-rails4
     SUBDIR += rubygem-directory_watcher
     SUBDIR += rubygem-ditz
@@ -5417,7 +5408,6 @@
     SUBDIR += rubygem-sprockets-helpers
     SUBDIR += rubygem-sprockets-rails
     SUBDIR += rubygem-sprockets-sass
-    SUBDIR += rubygem-sprockets211
     SUBDIR += rubygem-sprockets22
     SUBDIR += rubygem-sprockets3
     SUBDIR += rubygem-spruz
