@@ -19,4 +19,7 @@ USES=		pkgconfig tar:bzip2 waf
 RUN_DEPENDS+=	lv2specgen.py:audio/lv2
 BUILD_DEPENDS+=	lv2specgen.py:audio/lv2
 
+post-install:
+	${MV} ${STAGEDIR}${PREFIX}/lib/pkgconfig ${STAGEDIR}${PREFIX}/libdata/
+
 .include <bsd.port.mk>
