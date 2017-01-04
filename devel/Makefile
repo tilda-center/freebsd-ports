@@ -2741,6 +2741,7 @@
     SUBDIR += p5-Module-Dependency
     SUBDIR += p5-Module-Depends
     SUBDIR += p5-Module-Extract
+    SUBDIR += p5-Module-Extract-Use
     SUBDIR += p5-Module-ExtractUse
     SUBDIR += p5-Module-Find
     SUBDIR += p5-Module-Functions
@@ -4953,6 +4954,9 @@
     SUBDIR += renpy6
     SUBDIR += replay
     SUBDIR += rhtvision
+    SUBDIR += riscv64-binutils
+    SUBDIR += riscv64-gcc
+    SUBDIR += riscv64-xtoolchain-gcc
     SUBDIR += rlog
     SUBDIR += rlvm
     SUBDIR += rlwrap
@@ -5073,6 +5077,7 @@
     SUBDIR += rubygem-coercible
     SUBDIR += rubygem-coffee-rails
     SUBDIR += rubygem-coffee-rails4
+    SUBDIR += rubygem-coffee-rails41
     SUBDIR += rubygem-coffee-script
     SUBDIR += rubygem-coffee-script-source
     SUBDIR += rubygem-colorize
@@ -5469,6 +5474,7 @@
     SUBDIR += rubygem-warden
     SUBDIR += rubygem-wdm
     SUBDIR += rubygem-web-console
+    SUBDIR += rubygem-web-console2
     SUBDIR += rubygem-webby
     SUBDIR += rubygem-windows_error
     SUBDIR += rubygem-wmi-lite
