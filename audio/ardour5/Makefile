@@ -7,14 +7,14 @@ CATEGORIES=	audio
 MASTER_SITES=	https://community.ardour.org/
 DISTNAME=	srctar
 EXTRACT_SUFX=
-WRKSRC=		${WRKDIR}/Ardour-${PORTVERSION}
-
 
 MAINTAINER=	meka@tilda.center
 COMMENT=	Multichannel digital audio and MIDI workstation
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+RUN_DEPENDS=	lv2specgen.py:audio/lv2
 
 LIB_DEPENDS=	liblo.so:audio/liblo \
 		libjack.so:audio/jack \
@@ -34,11 +34,11 @@ LIB_DEPENDS=	liblo.so:audio/liblo \
 		libgtkmm-2.4.so:x11-toolkits/gtkmm24 \
 		libboost_date_time.so:devel/boost-libs
 
-RUN_DEPENDS=	lv2specgen.py:audio/lv2
-
 USES=		cpe gettext waf pkgconfig tar:bzip2
 CONFIGURE_TARGET=	configure --boost-include=${LOCALBASE}/include
 
 BROKEN_powerpc64=	Does not build
+
+WRKSRC=		${WRKDIR}/Ardour-${PORTVERSION}
 
 .include <bsd.port.mk>
