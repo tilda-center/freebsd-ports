@@ -1,7 +1,7 @@
-Lilv is a C library (with Python bindings) for simple use of LV2 plugins in
-applications, which includes utilities for investigating installed LV2 plugins.
+Lilv is a C library to make the use of LV2 plugins as simple as possible
+for applications. Lilv is the successor to SLV2, rewritten to be significantly
+faster and have minimal dependencies. It is stable, well-tested
+software (the included test suite covers over 90% of the code) in use
+by several applications.
 
-Lilv is the successor to SLV2, rewritten to be significantly faster and have
-minimal dependencies.
-
-WWW: https://drobilla.net/software/lilv
+WWW: http://drobilla.net/software/lilv/

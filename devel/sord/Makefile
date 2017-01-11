@@ -1,4 +1,4 @@
-# Created by: meka
+# Created by: Michael Beer <beerml@sigma6audio.de>
 # $FreeBSD$
 
 PORTNAME=	sord
@@ -6,24 +6,24 @@ PORTVERSION=	0.16.0
 CATEGORIES=	devel
 MASTER_SITES=	http://download.drobilla.net/
 
-MAINTAINER=	meka@tilda.center
-COMMENT=	C library for storing RDF data in memory
+MAINTAINER=	beerml@sigma6audio.de
+COMMENT=	Sord is a lightweight C library for storing RDF data in memory
 
-LICENSE=	ISC
-LICENSE_NAME=	ISC
-LICENSE_FILE=	${WRKDIR}/${PORTNAME}-${PORTVERSION}/COPYING
-LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+LICENSE=	ISCL
+LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		pkgconfig tar:bzip2 waf
-PKG_CONFIG_PATH=	${PREFIX}/libdata/pkgconfig
-CONFIGURE_ARGS+=	PKG_CONFIG_PATH=${PKG_CONFIG_PATH}
+LIB_DEPENDS=	libserd-0.so:devel/serd libpcre.so:devel/pcre
 
-LIB_DEPENDS+=	libserd-0.so:devel/serd
-LIB_DEPENDS+=	libpcre.so:devel/pcre
+USES=		pkgconfig python:build tar:bzip2 waf
+
+USE_LDCONFIG=	yes
 
 post-install:
-	${MV} ${STAGEDIR}${PREFIX}/lib/pkgconfig ${STAGEDIR}${PREFIX}/libdata/
-	${MV} ${STAGEDIR}${PREFIX}/share/man/man1 ${STAGEDIR}${PREFIX}/man/
-	${RMDIR} ${STAGEDIR}${PREFIX}/share/man
+	@${MV} ${STAGEDIR}${PREFIX}/lib/pkgconfig/*.pc ${STAGEDIR}${PREFIX}/libdata/pkgconfig/
+	@${MV} ${STAGEDIR}${PREFIX}/share/man/man1 ${STAGEDIR}${PREFIX}/man/
+	@${RMDIR} ${STAGEDIR}${PREFIX}/share/man
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libsord-0.so.0.16.0
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/sord_validate
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/sordi
 
 .include <bsd.port.mk>

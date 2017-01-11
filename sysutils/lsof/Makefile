@@ -22,7 +22,7 @@ MASTER_SITES=	http://ftp.cerias.purdue.edu/pub/tools/unix/sysutils/lsof/ \
 		ftp://ftp.tau.ac.il/pub/unix/admin/
 DISTNAME=	${PORTNAME}_${DISTVERSION}${DISTNAME_SUFFIX}
 
-MAINTAINER=	ler@lerctr.org
+MAINTAINER=	ler@FreeBSD.org
 COMMENT=	Lists information about open files (similar to fstat(1))
 
 LICENSE=lsof
@@ -44,10 +44,6 @@ USES=		shebangfix tar:bzip2
 SHEBANG_FILES=	scripts/sort_res.perl5
 
 .include <bsd.port.pre.mk>
-
-.if !empty(ARCH:Marm*) && ((${OSVERSION} < 1001505) || (${OSVERSION} > 1100000 && ${OSVERSION} < 1100052))
-BROKEN=	Not supported on ARM platform below release 10.1 or a more recent current
-.endif
 
 CONFIGURE_SCRIPT=	Configure
 CONFIGURE_ARGS=	-n freebsd

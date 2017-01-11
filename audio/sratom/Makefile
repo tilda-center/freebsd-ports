@@ -1,4 +1,4 @@
-# Created by: meka
+# Created by: Michael Beer <beerml@sigma6audio.de>
 # $FreeBSD$
 
 PORTNAME=	sratom
@@ -6,24 +6,21 @@ PORTVERSION=	0.6.0
 CATEGORIES=	audio
 MASTER_SITES=	http://download.drobilla.net/
 
-MAINTAINER=	meka@tilda.center
-COMMENT=	C library for serialising LV2 atoms to and from RDF
+MAINTAINER=	beerml@sigma6audio.de
+COMMENT=	Sratom is a library for serialising LV2 atoms to/from RDF
 
-LICENSE=	ISC
-LICENSE_NAME=	ISC
-LICENSE_FILE=	${WRKDIR}/${PORTNAME}-${PORTVERSION}/COPYING
-LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+LICENSE=	ISCL
+LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		pkgconfig tar:bzip2 waf
-PKG_CONFIG_PATH=	${PREFIX}/libdata/pkgconfig
-CONFIGURE_ARGS+=	PKG_CONFIG_PATH=${PKG_CONFIG_PATH}
+LIB_DEPENDS=	libserd-0.so:devel/serd libsord-0.so:devel/sord
+BUILD_DEPENDS=	lv2>=1.14.0:audio/lv2
 
-RUN_DEPENDS+=	lv2specgen.py:audio/lv2
-BUILD_DEPENDS+=	lv2specgen.py:audio/lv2
-LIB_DEPENDS+=	libserd-0.so:devel/serd
-LIB_DEPENDS+=	libsord-0.so:devel/sord
+USES=		pkgconfig python:build tar:bzip2 waf
+
+USE_LDCONFIG=	yes
 
 post-install:
-	${MV} ${STAGEDIR}${PREFIX}/lib/pkgconfig ${STAGEDIR}${PREFIX}/libdata/
+	@${MV} ${STAGEDIR}${PREFIX}/lib/pkgconfig/*.pc ${STAGEDIR}${PREFIX}/libdata/pkgconfig/
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libsratom-0.so.0.6.0
 
 .include <bsd.port.mk>

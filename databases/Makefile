@@ -382,6 +382,7 @@
     SUBDIR += p5-DBIx-Dump
     SUBDIR += p5-DBIx-Ease
     SUBDIR += p5-DBIx-HA
+    SUBDIR += p5-DBIx-Handler
     SUBDIR += p5-DBIx-Inspector
     SUBDIR += p5-DBIx-Introspector
     SUBDIR += p5-DBIx-Log4perl
@@ -556,6 +557,9 @@
     SUBDIR += percona55-server
     SUBDIR += percona56-client
     SUBDIR += percona56-server
+    SUBDIR += percona57-client
+    SUBDIR += percona57-pam-for-mysql
+    SUBDIR += percona57-server
     SUBDIR += pg_activity
     SUBDIR += pg_citus
     SUBDIR += pg_qualstats
@@ -853,11 +857,13 @@
     SUBDIR += ruby-sybct
     SUBDIR += ruby-tokyocabinet
     SUBDIR += rubygem-activemodel4
+    SUBDIR += rubygem-activemodel5
     SUBDIR += rubygem-activerecord-import
     SUBDIR += rubygem-activerecord-jdbc-adapter
     SUBDIR += rubygem-activerecord-jdbcmysql-adapter
     SUBDIR += rubygem-activerecord-session_store
     SUBDIR += rubygem-activerecord4
+    SUBDIR += rubygem-activerecord5
     SUBDIR += rubygem-after_commit_queue
     SUBDIR += rubygem-amalgalite
     SUBDIR += rubygem-arel

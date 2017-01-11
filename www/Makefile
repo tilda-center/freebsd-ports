@@ -308,7 +308,6 @@
     SUBDIR += httpasyncclient
     SUBDIR += httpclient
     SUBDIR += httpcore
-    SUBDIR += httpie
     SUBDIR += httpsqs
     SUBDIR += httptunnel
     SUBDIR += httrack
@@ -408,6 +407,7 @@
     SUBDIR += midori
     SUBDIR += mimetex
     SUBDIR += mini_httpd
+    SUBDIR += miniminiweb
     SUBDIR += minio
     SUBDIR += mitmproxy
     SUBDIR += mkapachepw
@@ -1673,6 +1673,7 @@
     SUBDIR += py-html
     SUBDIR += py-html5lib
     SUBDIR += py-http-parser
+    SUBDIR += py-httpie
     SUBDIR += py-httplib2
     SUBDIR += py-hyper
     SUBDIR += py-imdbpy
@@ -1684,6 +1685,7 @@
     SUBDIR += py-meld3
     SUBDIR += py-mt
     SUBDIR += py-nevow
+    SUBDIR += py-notebook
     SUBDIR += py-octoprint
     SUBDIR += py-pafy
     SUBDIR += py-paste
@@ -1904,7 +1906,9 @@
     SUBDIR += ruby-aws
     SUBDIR += ruby-google
     SUBDIR += rubygem-ace-rails-ap
+    SUBDIR += rubygem-actioncable5
     SUBDIR += rubygem-actionpack4
+    SUBDIR += rubygem-actionpack5
     SUBDIR += rubygem-activeresource4
     SUBDIR += rubygem-acts-as-taggable-on
     SUBDIR += rubygem-acts-as-taggable-on3
@@ -2039,6 +2043,7 @@
     SUBDIR += rubygem-rails4
     SUBDIR += rubygem-rails_autolink
     SUBDIR += rubygem-railties4
+    SUBDIR += rubygem-railties5
     SUBDIR += rubygem-raindrops
     SUBDIR += rubygem-ramaze
     SUBDIR += rubygem-raphael-rails
@@ -2070,6 +2075,7 @@
     SUBDIR += rubygem-sinatra-contrib
     SUBDIR += rubygem-sinatra-r18n
     SUBDIR += rubygem-sinatra-respond_to
+    SUBDIR += rubygem-socksify
     SUBDIR += rubygem-task_list
     SUBDIR += rubygem-thin
     SUBDIR += rubygem-tinyatom
