@@ -1,4 +1,8 @@
 bin/ardour5
+bin/ardour5-copy-mixer
+bin/ardour5-export
+bin/ardour5-fix_bbtppq
+bin/ardour5-lua
 %%ETCDIR%%/ardour.keys
 %%ETCDIR%%/ardour.menus
 %%ETCDIR%%/clearlooks.rc
@@ -26,15 +30,16 @@ lib/ardour5/LV2/a-reverb.lv2/manifest.ttl
 lib/ardour5/LV2/reasonablesynth.lv2/manifest.ttl
 lib/ardour5/LV2/reasonablesynth.lv2/reasonablesynth.so
 lib/ardour5/LV2/reasonablesynth.lv2/reasonablesynth.ttl
-lib/ardour5/ardour-5.5.0
+lib/ardour5/ardour-%%ARDOURVERSION%%
 lib/ardour5/ardour-exec-wrapper
 lib/ardour5/ardour-vst-scanner
+lib/ardour5/backends/libdummy_audiobackend.so
 lib/ardour5/backends/libjack_audiobackend.so
 lib/ardour5/engines/libclearlooks.so
-lib/ardour5/hardour-5.5.0
+lib/ardour5/hardour-%%ARDOURVERSION%%
 lib/ardour5/libardour.so
 lib/ardour5/libardour.so.3
-lib/ardour5/libardour.so.3.0.0
+lib/ardour5/libardour.so.%%GTK3_VERSION%%
 lib/ardour5/libardourcp.so
 lib/ardour5/libaudiographer.so
 lib/ardour5/libaudiographer.so.0
@@ -59,6 +64,7 @@ lib/ardour5/libptformat.so.0
 lib/ardour5/libptformat.so.0.0.0
 lib/ardour5/libqm-dsp.a
 lib/ardour5/libtimecode.so
+lib/ardour5/luasession
 lib/ardour5/panners/libpan1in2out.so
 lib/ardour5/panners/libpan2in2out.so
 lib/ardour5/panners/libpanbalance.so
@@ -70,9 +76,15 @@ lib/ardour5/surfaces/libardour_generic_midi.so
 lib/ardour5/surfaces/libardour_mcp.so
 lib/ardour5/surfaces/libardour_osc.so
 lib/ardour5/surfaces/libardour_push2.so
+lib/ardour5/utils/ardour-util.sh
+lib/ardour5/utils/ardour5-copy-mixer
+lib/ardour5/utils/ardour5-export
+lib/ardour5/utils/ardour5-fix_bbtppq
 lib/ardour5/vamp/libardourvampplugins.so
 lib/ardour5/vamp/libardourvampplugins.so.0
 lib/ardour5/vamp/libardourvampplugins.so.0.0.0
+share/appdata/ardour5.appdata.xml
+share/applications/ardour5.desktop
 %%DATADIR%%/ArdourMono.ttf
 %%DATADIR%%/export/CD (Red Book).format
 %%DATADIR%%/export/CD + DVD-A.preset
@@ -419,3 +431,9 @@ lib/ardour5/vamp/libardourvampplugins.so.0.0.0
 %%DATADIR%%/themes/cubasish-ardour.colors
 %%DATADIR%%/themes/dark-ardour.colors
 %%DATADIR%%/themes/unastudia-ardour.colors
+share/icons/hicolor/16x16/apps/ardour5.png
+share/icons/hicolor/22x22/apps/ardour5.png
+share/icons/hicolor/256x256/apps/ardour5.png
+share/icons/hicolor/32x32/apps/ardour5.png
+share/icons/hicolor/48x48/apps/ardour5.png
+share/icons/hicolor/512x512/apps/ardour5.png

@@ -1,44 +1,105 @@
-# Created by: Goran Mekić <meka@tilda.center>
+# Created by: Michael Beer <beerml@sigma6audio.de>
 # $FreeBSD$
 
 PORTNAME=	ardour5
 PORTVERSION=	5.5.0
 CATEGORIES=	audio
-MASTER_SITES=	https://community.ardour.org/
-DISTNAME=	srctar
-EXTRACT_SUFX=
+MASTER_SITES=	https://github.com/beerml/ardour_releases/raw/master/
+# The original master side points to the latest release only:
+# MASTER_SITES=	https://community.ardour.org/srctar/
+DISTNAME=	Ardour-${PORTVERSION}
 
-MAINTAINER=	meka@tilda.center
-COMMENT=	Multichannel digital audio and MIDI workstation
+MAINTAINER=	beerml@sigma6audio.de
+COMMENT=	Multichannel digital audio workstation
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	lv2specgen.py:audio/lv2
-
-LIB_DEPENDS=	liblo.so:audio/liblo \
-		libjack.so:audio/jack \
-		libaubio.so:audio/aubio \
-		liblrdf.so:textproc/liblrdf \
-		libglib-2.0.so:devel/glib20 \
-		libglibmm-2.4.so:devel/glibmm \
-		libarchive.so.13:archivers/libarchive \
-		libtag.so:audio/taglib \
-		libvamp-sdk.so:audio/vamp-plugin-sdk \
-		librubberband.so:audio/rubberband \
-		libpangomm-1.4.so:x11-toolkits/pangomm \
-		libserd-0.so:devel/serd \
+BUILD_DEPENDS=	lv2>=1.14.0:audio/lv2 itstool>2.0.0:textproc/itstool
+LIB_DEPENDS=	libserd-0.so:devel/serd \
 		libsord-0.so:devel/sord \
 		libsratom-0.so:audio/sratom \
 		liblilv-0.so:audio/lilv \
-		libgtkmm-2.4.so:x11-toolkits/gtkmm24 \
-		libboost_date_time.so:devel/boost-libs
+		libsuil-0.so:audio/suil \
+		libaubio.so:audio/aubio \
+		librubberband.so:audio/rubberband \
+		liblo.so:audio/liblo \
+		liblrdf.so:textproc/liblrdf \
+		libjack.so:audio/jack \
+		libfontconfig.so:x11-fonts/fontconfig \
+		libfreetype.so:print/freetype2 \
+		libboost_date_time.so:devel/boost-libs \
+		libvamp-hostsdk.so:audio/vamp-plugin-sdk \
+		libsamplerate.so:audio/libsamplerate \
+		libsndfile.so:audio/libsndfile \
+		libtag.so:audio/taglib \
+		libfftw3f.so:math/fftw3-float \
+		libcurl.so:ftp/curl \
+		libogg.so:audio/libogg \
+		libFLAC.so:audio/flac \
+		libreadline.so:devel/readline
 
-USES=		cpe gettext waf pkgconfig tar:bzip2
-CONFIGURE_TARGET=	configure --boost-include=${LOCALBASE}/include
+USES=		desktop-file-utils gettext libarchive pkgconfig \
+		python:build readline tar:bzip2 waf
+USE_XORG=	x11
+USE_GNOME=	atk cairo cairomm gdkpixbuf2 glib20 glibmm gtk20 gtkmm24 pango
+USE_LDCONFIG=	yes
+INSTALLS_ICONS=	yes
 
-BROKEN_powerpc64=	Does not build
+PLIST_SUB=	ARDOURVERSION=${PORTVERSION}
+CONFLICTS_BUILD=	 libsmf-*
 
-WRKSRC=		${WRKDIR}/Ardour-${PORTVERSION}
+CONFIGURE_ARGS=	--optimize --ptformat --freedesktop --no-phone-home \
+		--with-backends=jack,dummy --internal-shared-libs \
+		--also-include=${LOCALBASE}/include --also-libdir=${LOCALBASE}/lib
 
-.include <bsd.port.mk>
+post-install:
+	@${MKDIR} ${STAGEDIR}${PREFIX}/share/appdata
+	@${MKDIR} ${STAGEDIR}${PREFIX}/share/applications
+	@${MKDIR} ${STAGEDIR}${PREFIX}/share/icons/hicolor/16x16/apps
+	@${MKDIR} ${STAGEDIR}${PREFIX}/share/icons/hicolor/22x22/apps
+	@${MKDIR} ${STAGEDIR}${PREFIX}/share/icons/hicolor/32x32/apps
+	@${MKDIR} ${STAGEDIR}${PREFIX}/share/icons/hicolor/48x48/apps
+	@${MKDIR} ${STAGEDIR}${PREFIX}/share/icons/hicolor/256x256/apps
+	@${MKDIR} ${STAGEDIR}${PREFIX}/share/icons/hicolor/512x512/apps
+	@${CP} ${WRKSRC}/build/gtk2_ardour/ardour5.appdata.xml \
+		${STAGEDIR}${PREFIX}/share/appdata/ardour5.appdata.xml
+	@${CP} ${WRKSRC}/build/gtk2_ardour/ardour5.desktop \
+		${STAGEDIR}${PREFIX}/share/applications/ardour5.desktop
+	@${CP} ${STAGEDIR}${PREFIX}/share/ardour5/resources/Ardour-icon_16px.png \
+		${STAGEDIR}${PREFIX}/share/icons/hicolor/16x16/apps/ardour5.png
+	@${CP} ${STAGEDIR}${PREFIX}/share/ardour5/resources/Ardour-icon_22px.png \
+		${STAGEDIR}${PREFIX}/share/icons/hicolor/22x22/apps/ardour5.png
+	@${CP} ${STAGEDIR}${PREFIX}/share/ardour5/resources/Ardour-icon_32px.png \
+		${STAGEDIR}${PREFIX}/share/icons/hicolor/32x32/apps/ardour5.png
+	@${CP} ${STAGEDIR}${PREFIX}/share/ardour5/resources/Ardour-icon_48px.png \
+		${STAGEDIR}${PREFIX}/share/icons/hicolor/48x48/apps/ardour5.png
+	@${CP} ${STAGEDIR}${PREFIX}/share/ardour5/resources/Ardour-icon_256px.png \
+		${STAGEDIR}${PREFIX}/share/icons/hicolor/256x256/apps/ardour5.png
+	@${CP} ${STAGEDIR}${PREFIX}/share/ardour5/resources/Ardour-icon_512px.png \
+		${STAGEDIR}${PREFIX}/share/icons/hicolor/512x512/apps/ardour5.png
+	@${FIND} ${STAGEDIR}${PREFIX}/lib/${PORTNAME} \
+		-name '*.so*' -exec ${STRIP_CMD} {} +
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/ardour5/sanityCheck
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/ardour5/utils/ardour5-copy-mixer
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/ardour5/utils/ardour5-export
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/ardour5/ardour-exec-wrapper
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/ardour5/ardour-vst-scanner
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/ardour5/luasession
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/ardour5/ardour-${PORTVERSION}
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/ardour5/utils/ardour5-fix_bbtppq
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/ardour5/hardour-${PORTVERSION}
+
+.include <bsd.port.pre.mk>
+
+.if ${ARCH} == "i386"
+WITH_ARCH_FLAGS=	--arch='-msse -mfpmath=sse' --dist-target=i386          
+.elif ${ARCH} == "amd64"                                                        
+WITH_ARCH_FLAGS=	--arch='-msse -mfpmath=sse' --dist-target=x86_64
+.endif
+                                                                                
+.if defined(WITH_ARCH_FLAGS)
+CONFIGURE_ARGS+=	${WITH_ARCH_FLAGS}
+.endif
+
+.include <bsd.port.post.mk>
