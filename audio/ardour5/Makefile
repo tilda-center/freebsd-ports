@@ -47,11 +47,10 @@ USE_LDCONFIG=	yes
 INSTALLS_ICONS=	yes
 
 PLIST_SUB=	ARDOURVERSION=${PORTVERSION}
-CONFLICTS_BUILD=	 libsmf-*
 
+CONFIGURE_ENV=	LDFLAGS=-L${WRKDIR}/${DISTNAME}/build/libs/evoral
 CONFIGURE_ARGS=	--optimize --ptformat --freedesktop --no-phone-home \
-		--with-backends=jack,dummy --internal-shared-libs \
-		--also-include=${LOCALBASE}/include --also-libdir=${LOCALBASE}/lib
+		--with-backends=jack,dummy --internal-shared-libs
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/share/appdata
@@ -85,7 +84,6 @@ post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/ardour5/utils/ardour5-export
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/ardour5/ardour-exec-wrapper
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/ardour5/ardour-vst-scanner
-	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/ardour5/luasession
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/ardour5/ardour-${PORTVERSION}
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/ardour5/utils/ardour5-fix_bbtppq
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/ardour5/hardour-${PORTVERSION}
@@ -93,11 +91,11 @@ post-install:
 .include <bsd.port.pre.mk>
 
 .if ${ARCH} == "i386"
-WITH_ARCH_FLAGS=	--arch='-msse -mfpmath=sse' --dist-target=i386          
-.elif ${ARCH} == "amd64"                                                        
+WITH_ARCH_FLAGS=	--arch='-msse -mfpmath=sse' --dist-target=i386
+.elif ${ARCH} == "amd64"
 WITH_ARCH_FLAGS=	--arch='-msse -mfpmath=sse' --dist-target=x86_64
 .endif
-                                                                                
+
 .if defined(WITH_ARCH_FLAGS)
 CONFIGURE_ARGS+=	${WITH_ARCH_FLAGS}
 .endif

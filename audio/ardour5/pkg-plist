@@ -2,7 +2,6 @@ bin/ardour5
 bin/ardour5-copy-mixer
 bin/ardour5-export
 bin/ardour5-fix_bbtppq
-bin/ardour5-lua
 %%ETCDIR%%/ardour.keys
 %%ETCDIR%%/ardour.menus
 %%ETCDIR%%/clearlooks.rc
@@ -64,7 +63,6 @@ lib/ardour5/libptformat.so.0
 lib/ardour5/libptformat.so.0.0.0
 lib/ardour5/libqm-dsp.a
 lib/ardour5/libtimecode.so
-lib/ardour5/luasession
 lib/ardour5/panners/libpan1in2out.so
 lib/ardour5/panners/libpan2in2out.so
 lib/ardour5/panners/libpanbalance.so
