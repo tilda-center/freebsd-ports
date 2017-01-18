@@ -4,7 +4,7 @@
 PORTNAME=	drumgizmo
 PORTVERSION=	0.9.12
 CATEGORIES=	audio
-MASTER_SITES=	http://www.drumgizmo.org/releases/
+MASTER_SITES=	http://www.drumgizmo.org/releases/${PORTNAME}-${PORTVERSION}/
 
 MAINTAINER=	meka@tilda.center
 COMMENT=	Multichannel drum sampler
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libsmf.so:audio/libsmf \
 		libexpat.so:textproc/expat2
 
 HAS_CONFIGURE=	YES
-USES=		tar:bzip2 gettext-runtime libtool
+USES=		gettext-runtime libtool
 USE_GNOME=	glib20
 USE_XORG=	x11
 
