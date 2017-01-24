@@ -116,7 +116,6 @@
     SUBDIR += doorman
     SUBDIR += doscan
     SUBDIR += dotdotpwn
-    SUBDIR += dradis
     SUBDIR += dropbear
     SUBDIR += dsniff
     SUBDIR += duo
@@ -404,7 +403,6 @@
     SUBDIR += oinkmaster
     SUBDIR += op
     SUBDIR += openbsm
-    SUBDIR += openbsm-devel
     SUBDIR += openca-tools-forked
     SUBDIR += opencdk
     SUBDIR += openconnect
@@ -1104,7 +1102,6 @@
     SUBDIR += sqlninja
     SUBDIR += srm
     SUBDIR += ssdeep
-    SUBDIR += ssh-copy-id
     SUBDIR += ssh-multiadd
     SUBDIR += ssh_askpass_gtk2
     SUBDIR += sshblock

@@ -26,7 +26,6 @@
     SUBDIR += aft
     SUBDIR += agrep
     SUBDIR += aiksaurus
-    SUBDIR += aiksaurus-gtk
     SUBDIR += align
     SUBDIR += am-aspell
     SUBDIR += amberfish
@@ -1268,6 +1267,7 @@
     SUBDIR += py-nltk
     SUBDIR += py-numpydoc
     SUBDIR += py-openpyxl
+    SUBDIR += py-pandocfilters
     SUBDIR += py-paragrep
     SUBDIR += py-parsimonious
     SUBDIR += py-pdfminer
@@ -1315,6 +1315,7 @@
     SUBDIR += py-sphinxcontrib-httpdomain
     SUBDIR += py-sphinxcontrib-programoutput
     SUBDIR += py-syck
+    SUBDIR += py-tabletext
     SUBDIR += py-terminaltables
     SUBDIR += py-texttable
     SUBDIR += py-tinycss
@@ -1407,6 +1408,7 @@
     SUBDIR += ruby-xmlparser
     SUBDIR += ruby-xmlscan
     SUBDIR += rubygem-actionpack-xml_parser
+    SUBDIR += rubygem-actionpack-xml_parser1
     SUBDIR += rubygem-albino
     SUBDIR += rubygem-amatch
     SUBDIR += rubygem-asciidoctor
@@ -1471,6 +1473,7 @@
     SUBDIR += rubygem-linguistics
     SUBDIR += rubygem-liquid
     SUBDIR += rubygem-liquid2
+    SUBDIR += rubygem-liquid3
     SUBDIR += rubygem-loggability
     SUBDIR += rubygem-loofah
     SUBDIR += rubygem-ltsv
@@ -1500,6 +1503,7 @@
     SUBDIR += rubygem-rich
     SUBDIR += rubygem-rmmseg-cpp
     SUBDIR += rubygem-rouge
+    SUBDIR += rubygem-rouge1
     SUBDIR += rubygem-rttool
     SUBDIR += rubygem-ruby-augeas
     SUBDIR += rubygem-ruby-xslt
@@ -1508,7 +1512,6 @@
     SUBDIR += rubygem-rugments
     SUBDIR += rubygem-sanitize
     SUBDIR += rubygem-sass
-    SUBDIR += rubygem-sass-rails
     SUBDIR += rubygem-sass-rails4
     SUBDIR += rubygem-sass-rails5
     SUBDIR += rubygem-sass32

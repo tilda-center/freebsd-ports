@@ -1,4 +1,4 @@
-# Created by: meka
+# Created by: Michael Beer <beerml@sigma6audio.de>
 # $FreeBSD$
 
 PORTNAME=	lilv
@@ -6,28 +6,28 @@ PORTVERSION=	0.24.0
 CATEGORIES=	audio
 MASTER_SITES=	http://download.drobilla.net/
 
-MAINTAINER=	meka@tilda.center
-COMMENT=	C library to make the use of LV2 plugins as simple as possible
+MAINTAINER=	beerml@sigma6audio.de
+COMMENT=	Lilv makes the use of LV2 plugins as simple as possible
 
-LICENSE=	ISC
-LICENSE_NAME=	ISC
-LICENSE_FILE=	${WRKDIR}/${PORTNAME}-${PORTVERSION}/COPYING
-LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+LICENSE=	ISCL
+LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		pkgconfig tar:bzip2 waf
-PKG_CONFIG_PATH=	${PREFIX}/libdata/pkgconfig
-CONFIGURE_ARGS+=	PKG_CONFIG_PATH=${PKG_CONFIG_PATH}
+BUILD_DEPENDS=	lv2>=1.14.0:audio/lv2
+LIB_DEPENDS=	libserd-0.so:devel/serd libsord-0.so:devel/sord libsratom-0.so:audio/sratom libsndfile.so:audio/libsndfile
 
-LIB_DEPENDS+=	libserd-0.so:devel/serd
-LIB_DEPENDS+=	libsord-0.so:devel/sord
-LIB_DEPENDS+=	libsratom-0.so:audio/sratom
-LIB_DEPENDS+=	libsndfile.so:audio/libsndfile
-RUN_DEPENDS+=	lv2specgen.py:audio/lv2
-BUILD_DEPENDS+=	lv2specgen.py:audio/lv2
+USES=		pkgconfig python:build tar:bzip2 waf
+
+USE_LDCONFIG=	yes
 
 post-install:
-	${MV} ${STAGEDIR}${PREFIX}/lib/pkgconfig ${STAGEDIR}${PREFIX}/libdata/
-	${MV} ${STAGEDIR}${PREFIX}/share/man/man1 ${STAGEDIR}${PREFIX}/man/
-	${RMDIR} ${STAGEDIR}${PREFIX}/share/man
+	@${MV} ${STAGEDIR}${PREFIX}/lib/pkgconfig/*.pc ${STAGEDIR}${PREFIX}/libdata/pkgconfig/
+	@${MV} ${STAGEDIR}${PREFIX}/share/man/man1 ${STAGEDIR}${PREFIX}/man/
+	@${RMDIR} ${STAGEDIR}${PREFIX}/share/man
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/liblilv-0.so.0.24.0
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/lilv-bench
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/lv2apply
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/lv2bench
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/lv2info
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/lv2ls
 
 .include <bsd.port.mk>

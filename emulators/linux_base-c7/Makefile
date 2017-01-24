@@ -2,7 +2,7 @@
 
 PORTNAME=	c7
 PORTVERSION=	${LINUX_DIST_VER}
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	emulators linux
 PKGNAMEPREFIX=	linux_base-
 EXTRACT_ONLY=	${DISTFILES:N*.src.rpm*:Nfilesystem-*}
@@ -122,11 +122,6 @@ REMOVE_FILES=	bin/df bin/su etc/exports etc/group etc/gshadow etc/motd \
 		usr/tmp
 
 .include <bsd.port.pre.mk>
-
-.if ${OPSYS} == FreeBSD && ( ${OSVERSION} < 1002507 || \
-	( ${OSVERSION} >= 1100000 && ${OSVERSION} < 1100074 ))
-IGNORE=		Requires FreeBSD 10.3 or higher
-.endif
 
 .if ${LINUX_ARCH} == x86_64 && ${OPSYS} == FreeBSD && ${OSVERSION} >= 11000105
 SYSCTLMIB=	kern.features.linux64

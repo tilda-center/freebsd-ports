@@ -183,7 +183,7 @@ harfbuzz_LIB_DEPENDS=	libharfbuzz.so:print/harfbuzz
 harfbuzz_MOZ_OPTIONS=	--with-system-harfbuzz
 .endif
 
-hunspell_LIB_DEPENDS=	libhunspell-1.5.so:textproc/hunspell
+hunspell_LIB_DEPENDS=	libhunspell-1.6.so:textproc/hunspell
 hunspell_MOZ_OPTIONS=	--enable-system-hunspell
 
 icu_LIB_DEPENDS=		libicui18n.so:devel/icu
@@ -387,6 +387,9 @@ post-patch-SNDIO-on:
 
 .if ${PORT_OPTIONS:MRUST}
 BUILD_DEPENDS+=	rustc:${RUST_PORT}
+. if ${MOZILLA_VER:R:R} >= 51
+BUILD_DEPENDS+=	cargo:devel/cargo
+. endif
 RUST_PORT?=		lang/rust
 MOZ_OPTIONS+=	--enable-rust
 .else

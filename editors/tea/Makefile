@@ -3,7 +3,7 @@
 
 PORTNAME=	tea
 PORTVERSION=	43.1.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	editors
 MASTER_SITES=	http://semiletov.org/tea/dloads/
 
@@ -19,11 +19,10 @@ OPTIONS_DEFAULT=	ASPELL
 
 USES=		pkgconfig:build qmake tar:bzip2
 USE_GL=		gl
+USE_LOCALE=	en_US.UTF-8
 USE_QT4=	corelib gui moc_build network rcc_build
 
 LDFLAGS+=	-lz
-MAKE_ENV+=	LANG=en_US.UTF-8
-CONFIGURE_ENV+=	LANG=en_US.UTF-8
 PLIST_FILES=	bin/tea share/pixmaps/tea_icon_v2.png
 PORTDOCS=	*
 
@@ -33,7 +32,7 @@ DESKTOP_ENTRIES="TEA" "" "${PREFIX}/share/pixmaps/tea_icon_v2.png" \
 ASPELL_LIB_DEPENDS=	libaspell.so:textproc/aspell
 ASPELL_QMAKE_ON=	CONFIG+=nohunspell
 
-HUNSPELL_LIB_DEPENDS=	libhunspell-1.5.so:textproc/hunspell
+HUNSPELL_LIB_DEPENDS=	libhunspell-1.6.so:textproc/hunspell
 HUNSPELL_QMAKE_ON=	CONFIG+=noaspell
 
 post-patch:

@@ -3,9 +3,8 @@
 
 PORTNAME=	openshadinglanguage
 PORTVERSION=	1.7.2
-PORTREVISION=	1
 DISTVERSIONPREFIX=	Release-
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics devel
 
 MAINTAINER=	FreeBSD@Shaneware.biz
@@ -33,12 +32,6 @@ USES=		bison cmake:outsource compiler:c11
 
 .if ${ARCH} == powerpc
 USE_GCC=	yes
-.endif
-
-.if ${OSVERSION} < 1000033
-BUILD_DEPENDS+=	flex>=2.5.37:textproc/flex
-CMAKE_ARGS+=	-DFLEX_EXECUTABLE:STRING=${LOCALBASE}/bin/flex
-CXXFLAGS+=	-I${LOCALBASE}/include/flex
 .endif
 
 post-patch:

@@ -2,7 +2,7 @@
 
 PORTNAME=	openjdk
 PORTVERSION=	${JDK_MAJOR_VERSION}.${JDK_UPDATE_VERSION}.${JDK_BUILD_NUMBER:S/^0//}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	java devel
 MASTER_SITES=	http://download.java.net/openjdk/jdk${JDK_MAJOR_VERSION}/promoted/b${DIST_BUILD_NUMBER}/:jdk \
 		https://adopt-openjdk.ci.cloudbees.com/job/jtreg/${JTREG_JENKINS_BUILD}/artifact/:jtreg \
@@ -197,8 +197,7 @@ SHEBANG_FILES=	configure
 _MAKE_JOBS=	#
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
-MAKE_ENV=	LANG="C" LC_ALL="C"
-MAKE_ENV+=	CLASSPATH="" JAVA_HOME="" LD_LIBRARY_PATH=""
+MAKE_ENV=	CLASSPATH="" JAVA_HOME="" LD_LIBRARY_PATH=""
 MAKE_ENV+=	IGNORE_OLD_CONFIG=true
 MAKE_ENV+=	COMPILER_WARNINGS_FATAL="false"
 # openjdk8 normally sets X_CFLAGS in the ./configure script, but it won't do
@@ -349,11 +348,6 @@ BUILD_DEPENDS+=		${BOOTSTRAPJDKDIR}/bin/javac:java/bootstrap-openjdk
 BOOTSTRAPJDKDIR?=	${LOCALBASE}/openjdk7
 BUILD_DEPENDS+=		${BOOTSTRAPJDKDIR}/bin/javac:java/openjdk7
 .  endif
-.endif
-
-# PR193009: work around the rtld bug
-.if ${OSVERSION} < 1001511
-CONFIGURE_ARGS+=	--enable-static-libjli
 .endif
 
 .if ${COMPILER_TYPE} == clang

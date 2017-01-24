@@ -144,7 +144,7 @@ mcserver:*:199:
 sympa:*:200:
 privoxy:*:201:
 dspam:*:202:
-# free: 203
+cinder:*:203:
 yate:*:204:
 gnugk:*:205:
 gini:*:206:
@@ -837,7 +837,7 @@ graylog:*:848:
 # free: 893
 # free: 894
 # free: 895
-# free: 896
+istat:*:896:
 znc:*:897:
 ufdb:*:898:
 guacamole:*:899:

@@ -216,6 +216,7 @@
     SUBDIR += maildrop
     SUBDIR += mailest
     SUBDIR += mailfmt
+    SUBDIR += mailfromd
     SUBDIR += mailfront
     SUBDIR += mailgraph
     SUBDIR += mailman
@@ -611,14 +612,13 @@
     SUBDIR += rss2email3
     SUBDIR += ruby-rfilter
     SUBDIR += ruby-rmail
-    SUBDIR += rubygem-actionmailer
     SUBDIR += rubygem-actionmailer4
+    SUBDIR += rubygem-actionmailer5
     SUBDIR += rubygem-email_reply_parser
     SUBDIR += rubygem-email_reply_parser-discourse
     SUBDIR += rubygem-exception_notification
     SUBDIR += rubygem-larch
     SUBDIR += rubygem-mail
-    SUBDIR += rubygem-mail25
     SUBDIR += rubygem-mail_room
     SUBDIR += rubygem-mailboxer
     SUBDIR += rubygem-mailfactory
