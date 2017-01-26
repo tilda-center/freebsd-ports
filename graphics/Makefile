@@ -131,6 +131,7 @@
     SUBDIR += devil
     SUBDIR += dia
     SUBDIR += diacanvas2
+    SUBDIR += diffpdf
     SUBDIR += digikam-kde4
     SUBDIR += digikam-kde4-doc
     SUBDIR += digikam-kde4-l10n
@@ -772,6 +773,8 @@
     SUBDIR += php56-gd
     SUBDIR += php70-exif
     SUBDIR += php70-gd
+    SUBDIR += php71-exif
+    SUBDIR += php71-gd
     SUBDIR += phplot
     SUBDIR += picpuz
     SUBDIR += piddle
