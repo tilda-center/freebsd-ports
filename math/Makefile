@@ -401,6 +401,7 @@
     SUBDIR += openblas
     SUBDIR += openfst
     SUBDIR += openlibm
+    SUBDIR += opensolaris-libm
     SUBDIR += orpie
     SUBDIR += p5-AI-DecisionTree
     SUBDIR += p5-AI-Genetic
@@ -548,6 +549,7 @@
     SUBDIR += p5-Task-Math-Symbolic
     SUBDIR += p5-Text-AsciiTeX
     SUBDIR += p5-bignum
+    SUBDIR += pantheon-calculator
     SUBDIR += pari
     SUBDIR += parmetis
     SUBDIR += parmgridgen
@@ -564,6 +566,8 @@
     SUBDIR += php56-gmp
     SUBDIR += php70-bcmath
     SUBDIR += php70-gmp
+    SUBDIR += php71-bcmath
+    SUBDIR += php71-gmp
     SUBDIR += physcalc
     SUBDIR += picosat
     SUBDIR += plman

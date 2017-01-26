@@ -481,6 +481,7 @@
     SUBDIR += mod_perl2
     SUBDIR += mod_php56
     SUBDIR += mod_php70
+    SUBDIR += mod_php71
     SUBDIR += mod_proctitle
     SUBDIR += mod_proxy_html
     SUBDIR += mod_proxy_uwsgi
@@ -1465,6 +1466,9 @@
     SUBDIR += php70-opcache
     SUBDIR += php70-session
     SUBDIR += php70-tidy
+    SUBDIR += php71-opcache
+    SUBDIR += php71-session
+    SUBDIR += php71-tidy
     SUBDIR += phpbb
     SUBDIR += phpbb3
     SUBDIR += phpgroupware
@@ -1481,7 +1485,6 @@
     SUBDIR += piwik
     SUBDIR += planet
     SUBDIR += plexwatchweb
-    SUBDIR += pligg
     SUBDIR += plone
     SUBDIR += plugger
     SUBDIR += pmwiki

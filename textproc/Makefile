@@ -354,6 +354,7 @@
     SUBDIR += jaxup
     SUBDIR += jdictionary
     SUBDIR += jdictionary-int-eng
+    SUBDIR += jid
     SUBDIR += jing
     SUBDIR += jo
     SUBDIR += jq
@@ -453,6 +454,7 @@
     SUBDIR += linuxdoc-tools
     SUBDIR += localize
     SUBDIR += loook
+    SUBDIR += lowdown
     SUBDIR += lt-aspell
     SUBDIR += lt-hyphen
     SUBDIR += lttoolbox
@@ -1203,6 +1205,16 @@
     SUBDIR += php70-xmlreader
     SUBDIR += php70-xmlwriter
     SUBDIR += php70-xsl
+    SUBDIR += php71-ctype
+    SUBDIR += php71-dom
+    SUBDIR += php71-enchant
+    SUBDIR += php71-pspell
+    SUBDIR += php71-simplexml
+    SUBDIR += php71-wddx
+    SUBDIR += php71-xml
+    SUBDIR += php71-xmlreader
+    SUBDIR += php71-xmlwriter
+    SUBDIR += php71-xsl
     SUBDIR += plover
     SUBDIR += po4a
     SUBDIR += pocketreader
