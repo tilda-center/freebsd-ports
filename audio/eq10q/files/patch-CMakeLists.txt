@@ -1,0 +1,38 @@
+--- CMakeLists.txt.orig	2017-01-26 12:09:30 UTC
++++ CMakeLists.txt
+@@ -3,10 +3,10 @@ cmake_minimum_required(VERSION 2.8)
+ PROJECT(eq10q)
+ 
+ ##ADD_DEFINITIONS(-Wall -O3 -fPIC -finline-functions -finline-functions-called-once  -msse -mfpmath=sse -std=c99)
+-set(CMAKE_C_FLAGS "-Wall -O3 -fPIC -finline-functions -finline-functions-called-once  -msse -mfpmath=sse -std=c99")
++set(CMAKE_C_FLAGS "-I/usr/local/include -Wall -O3 -fPIC -finline-functions -finline-functions-called-once  -msse -mfpmath=sse -std=c99")
+ #set(CMAKE_C_FLAGS "-Wall -O0 -g -fPIC -finline-functions -finline-functions-called-once  -msse -mfpmath=sse -std=c99")
+ 
+-set(CMAKE_CXX_FLAGS "-Wall -fPIC -std=c++11")
++set(CMAKE_CXX_FLAGS "-I/usr/local/include -Wall -fPIC -std=c++11")
+ #set(CMAKE_CXX_FLAGS "-Wall -O0 -g -fPIC -DPIC -std=c++11") ##Debuging GUI
+ 
+ ##ADD_DEFINITIONS(-Wall -O0 -g -fPIC -DPIC) ###USED FOR DEBUG
+@@ -18,7 +18,7 @@ set (LV2_BUNDLE "sapistaEQv2.lv2") #LV2 
+ set(EXECUTABLE_OUTPUT_PATH "${PROJECT_SOURCE_DIR}/bin")
+ set(LIBRARY_OUTPUT_PATH "${PROJECT_SOURCE_DIR}/bin")
+ 
+-add_subdirectory(gui) 
++add_subdirectory(gui)
+ add_subdirectory(dsp)
+ 
+ #===========================BUILD EQ10Q ALL DSP FILES=============================================
+@@ -157,7 +157,7 @@ target_link_libraries( matrix_ms2lr lib_
+ set_target_properties(eq1qm eq1qs eq4qm eq4qs eq6qm eq6qs eq10qm eq10qs gate compressor compressor_sc gate_stereo compressor_stereo compressor_stereo_sc bassup matrix_lr2ms matrix_ms2lr PROPERTIES PREFIX "")
+ 
+ #CLEAN generated .c files on run 'make clean'
+-SET(generatedEqConfigFiles 
++SET(generatedEqConfigFiles
+       ${PROJECT_SOURCE_DIR}/eq1qm.c;${PROJECT_SOURCE_DIR}/eq1qs.c
+       ${PROJECT_SOURCE_DIR}/eq4qm.c;${PROJECT_SOURCE_DIR}/eq4qs.c
+       ${PROJECT_SOURCE_DIR}/eq6qm.c;${PROJECT_SOURCE_DIR}/eq6qs.c
+@@ -176,4 +176,3 @@ INSTALL( TARGETS eq1qm eq1qs eq4qm eq4qs
+ 
+ INCLUDE(CPack)
+ # cpack -G TGZ
+- 

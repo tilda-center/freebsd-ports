@@ -1,0 +1,9 @@
+EQ10Q is an audio plugin bundle over the LV2 standard (http://lv2plug.in)
+implementing a powerful and flexible parametric equalizer and more.
+
+All audio processing developed in this project is written in C language and
+highly optimized focusing on DSP load reduction yet keeping a superb audio
+quality, the audio engine is always working in 64 bits floating point maths but
+interfacing with LV2 ports using the standard 32 bits numbers.
+
+WWW: http://eq10q.sourceforge.net/
