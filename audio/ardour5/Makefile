@@ -46,6 +46,8 @@ USE_GNOME=	atk cairo cairomm gdkpixbuf2 glib20 glibmm gtk20 gtkmm24 pango
 USE_LDCONFIG=	yes
 INSTALLS_ICONS=	yes
 
+BROKEN_aarch64=		Fails to configure: Could not find the program gas,as,gcc
+
 PLIST_SUB=	ARDOURVERSION=${PORTVERSION}
 
 CONFIGURE_ENV=	LDFLAGS=-L${WRKDIR}/${DISTNAME}/build/libs/evoral

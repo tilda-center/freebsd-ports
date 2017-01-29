@@ -259,6 +259,7 @@
     SUBDIR += librsb
     SUBDIR += libtommath
     SUBDIR += libtsnnls
+    SUBDIR += libxls
     SUBDIR += linpack
     SUBDIR += lll_spect
     SUBDIR += lp_solve
@@ -654,7 +655,6 @@
     SUBDIR += rpcalc
     SUBDIR += rpy
     SUBDIR += rpy2
-    SUBDIR += ruby-algebra
     SUBDIR += rubygem-algebra
     SUBDIR += rubygem-expression_parser
     SUBDIR += rubygem-fftw3
@@ -666,6 +666,7 @@
     SUBDIR += saga
     SUBDIR += sage
     SUBDIR += sc
+    SUBDIR += sc-im
     SUBDIR += scalapack
     SUBDIR += scilab
     SUBDIR += scilab-toolbox-sivp
