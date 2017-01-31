@@ -152,6 +152,10 @@
     SUBDIR += php70-phar
     SUBDIR += php70-zip
     SUBDIR += php70-zlib
+    SUBDIR += php71-bz2
+    SUBDIR += php71-phar
+    SUBDIR += php71-zip
+    SUBDIR += php71-zlib
     SUBDIR += pigz
     SUBDIR += pixz
     SUBDIR += plzip
@@ -183,7 +187,6 @@
     SUBDIR += rox-archive
     SUBDIR += rpm2cpio
     SUBDIR += rpm4
-    SUBDIR += ruby-lha
     SUBDIR += rubygem-archive-tar-minitar
     SUBDIR += rubygem-archive-zip
     SUBDIR += rubygem-bzip2-ruby

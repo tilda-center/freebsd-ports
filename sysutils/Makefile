@@ -642,6 +642,7 @@
     SUBDIR += mtxorbd
     SUBDIR += multitail
     SUBDIR += munin-common
+    SUBDIR += munin-contrib
     SUBDIR += munin-master
     SUBDIR += munin-node
     SUBDIR += muse
@@ -797,6 +798,8 @@
     SUBDIR += php56-posix
     SUBDIR += php70-fileinfo
     SUBDIR += php70-posix
+    SUBDIR += php71-fileinfo
+    SUBDIR += php71-posix
     SUBDIR += phybs
     SUBDIR += pick
     SUBDIR += pidof
@@ -930,7 +933,6 @@
     SUBDIR += rsyncrypto
     SUBDIR += rsyslog8
     SUBDIR += rtty
-    SUBDIR += ruby-quota
     SUBDIR += rubygem-SyslogLogger
     SUBDIR += rubygem-backup
     SUBDIR += rubygem-bosh-gen

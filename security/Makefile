@@ -96,6 +96,7 @@
     SUBDIR += cryptlib
     SUBDIR += cryptopp
     SUBDIR += cvm
+    SUBDIR += cyberchef
     SUBDIR += cyrus-sasl2
     SUBDIR += cyrus-sasl2-gssapi
     SUBDIR += cyrus-sasl2-ldapdb
@@ -406,6 +407,7 @@
     SUBDIR += openca-tools-forked
     SUBDIR += opencdk
     SUBDIR += openconnect
+    SUBDIR += openconnect-gui
     SUBDIR += opencryptoki
     SUBDIR += openct
     SUBDIR += openiked
@@ -761,6 +763,7 @@
     SUBDIR += pecl-crack
     SUBDIR += pecl-crypto
     SUBDIR += pecl-gnupg
+    SUBDIR += pecl-krb5
     SUBDIR += pecl-libsodium
     SUBDIR += pecl-pam
     SUBDIR += pecl-scrypt
@@ -780,6 +783,10 @@
     SUBDIR += php70-hash
     SUBDIR += php70-mcrypt
     SUBDIR += php70-openssl
+    SUBDIR += php71-filter
+    SUBDIR += php71-hash
+    SUBDIR += php71-mcrypt
+    SUBDIR += php71-openssl
     SUBDIR += phpdeadlock
     SUBDIR += phpsecinfo
     SUBDIR += pidentd
@@ -943,6 +950,7 @@
     SUBDIR += py-zope.security
     SUBDIR += py-zope.securitypolicy
     SUBDIR += py-zope.session
+    SUBDIR += py-zxcvbn-python
     SUBDIR += py3-libnacl
     SUBDIR += qtkeychain-qt4
     SUBDIR += qtkeychain-qt5
@@ -980,9 +988,6 @@
     SUBDIR += rkhunter
     SUBDIR += rndpassw
     SUBDIR += ruby-camellia
-    SUBDIR += ruby-hmac
-    SUBDIR += ruby-password
-    SUBDIR += ruby-tcpwrap
     SUBDIR += rubygem-airbrussh
     SUBDIR += rubygem-attr_encrypted
     SUBDIR += rubygem-bcrypt

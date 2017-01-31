@@ -157,6 +157,7 @@
     SUBDIR += nedi
     SUBDIR += nefu
     SUBDIR += net-snmp
+    SUBDIR += netdata
     SUBDIR += netdisco
     SUBDIR += netdisco-mibs
     SUBDIR += netdot
@@ -263,6 +264,7 @@
     SUBDIR += pftabled
     SUBDIR += php56-snmp
     SUBDIR += php70-snmp
+    SUBDIR += php71-snmp
     SUBDIR += phpip
     SUBDIR += phpipam
     SUBDIR += phpweathermap

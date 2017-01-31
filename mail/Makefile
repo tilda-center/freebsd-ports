@@ -493,6 +493,7 @@
     SUBDIR += pgpsendmail
     SUBDIR += php56-imap
     SUBDIR += php70-imap
+    SUBDIR += php71-imap
     SUBDIR += phplist
     SUBDIR += phpmailer
     SUBDIR += pine-pgp-filters
@@ -610,8 +611,6 @@
     SUBDIR += rspamd-devel
     SUBDIR += rss2email2
     SUBDIR += rss2email3
-    SUBDIR += ruby-rfilter
-    SUBDIR += ruby-rmail
     SUBDIR += rubygem-actionmailer4
     SUBDIR += rubygem-actionmailer5
     SUBDIR += rubygem-email_reply_parser
