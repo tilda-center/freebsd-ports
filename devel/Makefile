@@ -1312,6 +1312,7 @@
     SUBDIR += libgsf
     SUBDIR += libgta
     SUBDIR += libgtop
+    SUBDIR += libgudev
     SUBDIR += libgutenfetch
     SUBDIR += libhash
     SUBDIR += libhid
@@ -1448,6 +1449,7 @@
     SUBDIR += libtpl
     SUBDIR += libtuntap
     SUBDIR += libublio
+    SUBDIR += libudev-devd
     SUBDIR += libukcprog
     SUBDIR += libunicode
     SUBDIR += libuninum
@@ -2538,7 +2540,6 @@
     SUBDIR += p5-IO-Callback
     SUBDIR += p5-IO-Capture
     SUBDIR += p5-IO-CaptureOutput
-    SUBDIR += p5-IO-Detect
     SUBDIR += p5-IO-Digest
     SUBDIR += p5-IO-Event
     SUBDIR += p5-IO-FDPass
@@ -3746,7 +3747,6 @@
     SUBDIR += pear-PEAR_PackageFileManager_Plugins
     SUBDIR += pear-PHPDoc
     SUBDIR += pear-PHPTAL
-    SUBDIR += pear-PHPUnit3
     SUBDIR += pear-PHPUnit_MockObject
     SUBDIR += pear-PHP_ArrayOf
     SUBDIR += pear-PHP_Beautifier

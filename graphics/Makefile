@@ -338,7 +338,6 @@
     SUBDIR += hs-dia-base
     SUBDIR += hs-dia-functions
     SUBDIR += hs-svgcairo
-    SUBDIR += hsetroot
     SUBDIR += hugin
     SUBDIR += icat
     SUBDIR += icc-profiles-basiccolor
@@ -1051,6 +1050,7 @@
     SUBDIR += vp
     SUBDIR += waffle
     SUBDIR += waifu2x-converter-cpp
+    SUBDIR += wayland
     SUBDIR += webp
     SUBDIR += wings
     SUBDIR += wmicons
