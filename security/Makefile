@@ -36,6 +36,7 @@
     SUBDIR += bcrypt
     SUBDIR += bcwipe
     SUBDIR += bdc
+    SUBDIR += bdes
     SUBDIR += bearssl
     SUBDIR += beecrypt
     SUBDIR += belier
@@ -163,6 +164,7 @@
     SUBDIR += gag
     SUBDIR += gcipher
     SUBDIR += gcr
+    SUBDIR += git-crypt
     SUBDIR += gnome-gpg
     SUBDIR += gnome-keyring
     SUBDIR += gnome-keyring-sharp
@@ -378,6 +380,7 @@
     SUBDIR += mhash
     SUBDIR += mindterm-binary
     SUBDIR += monkeysphere
+    SUBDIR += morphis
     SUBDIR += munge
     SUBDIR += mussh
     SUBDIR += nacl
@@ -929,6 +932,7 @@
     SUBDIR += py-tuf
     SUBDIR += py-twistedConch
     SUBDIR += py-twofish
+    SUBDIR += py-virustotal-api
     SUBDIR += py-volatility
     SUBDIR += py-vulndb
     SUBDIR += py-xmlsec

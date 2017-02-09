@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	neomutt
-PORTVERSION=	20170128
+PORTVERSION=	20170206
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	mail
 
@@ -44,9 +44,9 @@ CONFIGURE_ARGS=	--disable-dependency-tracking \
 		--enable-pop \
 		--enable-nntp \
 		--enable-compressed \
-		--enable-hcache \
 		--enable-sidebar \
 		--disable-fcntl \
+		--enable-locales-fix \
 		--enable-external-dotlock
 
 # Header cache

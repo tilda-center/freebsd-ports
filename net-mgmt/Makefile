@@ -87,6 +87,7 @@
     SUBDIR += icmpmonitor
     SUBDIR += icmpquery
     SUBDIR += iftop
+    SUBDIR += intel-snap
     SUBDIR += iog
     SUBDIR += ipacctd
     SUBDIR += ipaudit
@@ -174,6 +175,7 @@
     SUBDIR += netspoc
     SUBDIR += netustad
     SUBDIR += netwag
+    SUBDIR += networkmgr
     SUBDIR += netwox
     SUBDIR += netxms
     SUBDIR += nfdump

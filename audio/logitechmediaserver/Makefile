@@ -43,8 +43,8 @@ SHEBANG_FILES=	Bin/darwin/check-update.pl \
 
 # Defaults support playback of relativly unrestricted formats on SB2 or
 # SB3 devices and wired SB1 devices.
-OPTIONS_DEFINE=	APE FAAD FLAC LAME SHORTEN SOX DOCS
-OPTIONS_DEFAULT=APE FAAD FLAX SOX
+OPTIONS_DEFINE=	APE FAAD FLAC LAME SHORTEN SOX TEST DOCS
+OPTIONS_DEFAULT=APE FAAD FLAX SOX TEST
 SHORTEN_DESC=	Support Shorten input
 SOX_DESC=	Support OGG Vorbis input via SoX (SliMP3 and SB1)
 
@@ -54,6 +54,7 @@ FLAC_RUN_DEPENDS=	flac:audio/flac
 LAME_RUN_DEPENDS=	lame:audio/lame
 SHORTEN_RUN_DEPENDS=	shorten:audio/shorten
 SOX_RUN_DEPENDS=	sox:audio/sox
+TEST_VARS_OFF=		CONTRIB_FLAGS=-t
 
 USE_RC_SUBR=	logitechmediaserver
 DOCFILES=	Changelog*.html Installation.txt License*.txt
@@ -84,22 +85,24 @@ SLIMGROUP?=	${SLIMUSER}
 
 .include <bsd.port.pre.mk>
 
-ARCHNAME!=	${PERL} -V:archname | ${AWK} -F"'" '{print $$2}'
+ONLY_FOR_ARCHS=	i386 amd64
 
 .if ${ARCH} == "i386"
+ARCHNAME=	i386-freebsd-thread-multi-64int
 PLIST_SUB+=	I386_ONLY=""
 .else
 PLIST_SUB+=	I386_ONLY="@comment "
 .endif
 
 .if ${ARCH} == "amd64"
+ARCHNAME=	amd64-freebsd-thread-multi
 PLIST_SUB+=	AMD64_ONLY=""
 .else
 PLIST_SUB+=	AMD64_ONLY="@comment "
 .endif
 
 do-build:
-	cd ${WRKSRC_vendor}/CPAN && ./buildme.sh
+	cd ${WRKSRC_vendor}/CPAN && ./buildme.sh ${CONTRIB_FLAGS}
 	cd ${WRKSRC}/CPAN/arch && ${CP} -R 5.22 5.24
 
 do-install:
