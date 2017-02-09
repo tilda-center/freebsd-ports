@@ -1250,7 +1250,6 @@
     SUBDIR += libdbusmenu-qt5
     SUBDIR += libdevq
     SUBDIR += libdfui
-    SUBDIR += libdict
     SUBDIR += libdisasm
     SUBDIR += libdisorder
     SUBDIR += libdispatch
@@ -4103,6 +4102,7 @@
     SUBDIR += py-arrow
     SUBDIR += py-aspects
     SUBDIR += py-aspyct
+    SUBDIR += py-astor
     SUBDIR += py-astroid
     SUBDIR += py-asyncio
     SUBDIR += py-atomiclong
@@ -4598,7 +4598,6 @@
     SUBDIR += py-rauth
     SUBDIR += py-raven
     SUBDIR += py-rcsparse
-    SUBDIR += py-re2
     SUBDIR += py-rebulk
     SUBDIR += py-rednose
     SUBDIR += py-repl
@@ -4626,6 +4625,7 @@
     SUBDIR += py-rope
     SUBDIR += py-rose
     SUBDIR += py-roxlib
+    SUBDIR += py-rply
     SUBDIR += py-rq
     SUBDIR += py-rtree
     SUBDIR += py-rtslib-fb
@@ -4779,6 +4779,7 @@
     SUBDIR += py-xerox
     SUBDIR += py-xmltodict
     SUBDIR += py-xoltar-toolkit
+    SUBDIR += py-xxhash
     SUBDIR += py-yaml
     SUBDIR += py-yandex-money-sdk
     SUBDIR += py-yappi
@@ -5748,6 +5749,7 @@
     SUBDIR += xtl
     SUBDIR += xwpe
     SUBDIR += xxgdb
+    SUBDIR += xxhash
     SUBDIR += xxl
     SUBDIR += yaggo
     SUBDIR += yajl
