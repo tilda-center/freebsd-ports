@@ -44,15 +44,21 @@
  
  $(ZITA-RESAMPLER_O):	$(ZITA-RESAMPLER_H)
  
-@@ -58,7 +57,6 @@ install:	$(ZITA-RESAMPLER_MIN)
- 	install -m 644 $(ZITA-RESAMPLER_H) $(DESTDIR)$(PREFIX)/include/zita-resampler
- 	install -m 644 $(ZITA-RESAMPLER_MIN) $(DESTDIR)$(PREFIX)/$(LIBDIR)
+@@ -55,10 +54,10 @@ $(ZITA-RESAMPLER_O):	$(ZITA-RESAMPLER_H)
+ install:	$(ZITA-RESAMPLER_MIN)
+ 	install -d $(DESTDIR)$(PREFIX)/include/zita-resampler
+ 	install -d $(DESTDIR)$(PREFIX)/$(LIBDIR)
+-	install -m 644 $(ZITA-RESAMPLER_H) $(DESTDIR)$(PREFIX)/include/zita-resampler
+-	install -m 644 $(ZITA-RESAMPLER_MIN) $(DESTDIR)$(PREFIX)/$(LIBDIR)
++	${BSD_INSTALL_DATA} $(ZITA-RESAMPLER_H) $(DESTDIR)$(PREFIX)/include/zita-resampler
++	${BSD_INSTALL_LIB} $(ZITA-RESAMPLER_MIN) $(DESTDIR)$(PREFIX)/$(LIBDIR)
  	ln -sf $(ZITA-RESAMPLER_MIN) $(DESTDIR)$(PREFIX)/$(LIBDIR)/$(ZITA-RESAMPLER_SO)
 -	ldconfig
++	ln -sf $(ZITA-RESAMPLER_MIN) $(DESTDIR)$(PREFIX)/$(LIBDIR)/$(ZITA-RESAMPLER_MAJ)
  
  uninstall:
  	/bin/rm -rf $(DESTDIR)$(PREFIX)/include/zita-resampler
-@@ -66,4 +64,3 @@ uninstall:
+@@ -66,4 +65,3 @@ uninstall:
  
  clean:
  	/bin/rm -rf *~ *.o *.a *.d *.so.* zita-resampler/*~

@@ -2,9 +2,9 @@
 # $FreeBSD$
 
 PORTNAME=	rawtherapee
-PORTVERSION=	5.0
+PORTVERSION=	5.0.1
 DISTVERSIONSUFFIX=	-gtk3
-PORTREVISION=	0
+DISTNAME=	${PORTNAME}-${PORTVERSION:R}-r${PORTVERSION:E}${DISTVERSIONSUFFIX}
 CATEGORIES=	graphics
 MASTER_SITES=	http://rawtherapee.com/shared/source/
 PKGNAMESUFFIX=	-devel
@@ -77,10 +77,6 @@ OPTIMIZED_CFLAGS_CFLAGS=	-O3 -funroll-loops -msse2
 #
 
 .if ${OPSYS} == FreeBSD
-.if ${OSVERSION} < 1003000
-IGNORE=	is only for supported FreeBSD releases
-.endif
-
 .if ${OSVERSION} >= 1200000
 # don't waste everybody's time with Tier-2 and moving targets.
 # might add ARM64 or SPARC64 later on if they are established by the
@@ -101,7 +97,6 @@ LDFLAGS+=	${OPENMP_FLAGS}
 .endif
 
 .if defined(WITH_DEBUG)
-CMAKE_BUILD_TYPE=	RelWithDebInfo
 STRIP=
 .endif
 

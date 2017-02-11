@@ -3,7 +3,7 @@
 
 PORTNAME=	pinba_engine
 PORTVERSION=	2011.08.18
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	devel
 
 MAINTAINER=	raven428@gmail.com
@@ -41,6 +41,8 @@ CFLAGS+=	-I${LOCALBASE}/include/mysql
 
 SUB_FILES=	pkg-message
 PORTDOCS=	NEWS TODO README
+
+BROKEN_aarch64=		Fails to configure: failed to find required header file include/mysql_version.h
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DATADIR}

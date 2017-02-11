@@ -547,6 +547,7 @@
     SUBDIR += pecl-leveldb
     SUBDIR += pecl-memcache
     SUBDIR += pecl-memcached
+    SUBDIR += pecl-memcached2
     SUBDIR += pecl-mongo
     SUBDIR += pecl-mongodb
     SUBDIR += pecl-pdo_user
@@ -880,8 +881,6 @@
     SUBDIR += rubygem-amalgalite
     SUBDIR += rubygem-arel
     SUBDIR += rubygem-arel-helpers
-    SUBDIR += rubygem-arel3
-    SUBDIR += rubygem-arel5
     SUBDIR += rubygem-arel6
     SUBDIR += rubygem-awesome_nested_set
     SUBDIR += rubygem-bdb1
