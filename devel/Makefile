@@ -1702,6 +1702,7 @@
     SUBDIR += ocaml-xstr
     SUBDIR += ocaml-xstrp4
     SUBDIR += ocl-icd
+    SUBDIR += oclgrind
     SUBDIR += ode
     SUBDIR += ois
     SUBDIR += okteta
@@ -2258,6 +2259,7 @@
     SUBDIR += p5-Devel-CheckCompiler
     SUBDIR += p5-Devel-CheckLib
     SUBDIR += p5-Devel-CheckOS
+    SUBDIR += p5-Devel-Confess
     SUBDIR += p5-Devel-Constants
     SUBDIR += p5-Devel-CoreStack
     SUBDIR += p5-Devel-Cover
@@ -3826,6 +3828,7 @@
     SUBDIR += pear-pdepend-staticReflection
     SUBDIR += pear-phing
     SUBDIR += pecl-APCu
+    SUBDIR += pecl-APCu4
     SUBDIR += pecl-dio
     SUBDIR += pecl-eio
     SUBDIR += pecl-ev
@@ -3845,6 +3848,7 @@
     SUBDIR += pecl-libevent
     SUBDIR += pecl-memoize
     SUBDIR += pecl-msgpack
+    SUBDIR += pecl-msgpack0
     SUBDIR += pecl-ncurses
     SUBDIR += pecl-newt
     SUBDIR += pecl-params
@@ -3869,6 +3873,7 @@
     SUBDIR += pecl-uploadprogress
     SUBDIR += pecl-uri_template
     SUBDIR += pecl-uuid
+    SUBDIR += pecl-uv
     SUBDIR += pecl-vld
     SUBDIR += pecl-weakref
     SUBDIR += pecl-xhprof
@@ -3903,7 +3908,6 @@
     SUBDIR += php56-sysvsem
     SUBDIR += php56-sysvshm
     SUBDIR += php56-tokenizer
-    SUBDIR += php70-APCu
     SUBDIR += php70-gettext
     SUBDIR += php70-intl
     SUBDIR += php70-json
