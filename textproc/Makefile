@@ -80,7 +80,6 @@
     SUBDIR += cl-ppcre-sbcl
     SUBDIR += clit
     SUBDIR += clucene
-    SUBDIR += clucene-qt4
     SUBDIR += cmark
     SUBDIR += coccigrep
     SUBDIR += code2html
@@ -460,6 +459,7 @@
     SUBDIR += lttoolbox
     SUBDIR += ltxml
     SUBDIR += luaexpat
+    SUBDIR += luaexpat-51
     SUBDIR += lucene
     SUBDIR += lucene4
     SUBDIR += lucene5
@@ -1368,6 +1368,7 @@
     SUBDIR += qprint
     SUBDIR += qrcodegen
     SUBDIR += qstardict
+    SUBDIR += qt4-clucene
     SUBDIR += qt4-xml
     SUBDIR += qt4-xmlpatterns
     SUBDIR += qt4-xmlpatterns-tool
