@@ -106,6 +106,7 @@
     SUBDIR += arduino-sevseg
     SUBDIR += arduino-tools
     SUBDIR += arduino16
+    SUBDIR += argdata
     SUBDIR += argouml
     SUBDIR += argp-standalone
     SUBDIR += argtable
@@ -1226,7 +1227,6 @@
     SUBDIR += libbrotli
     SUBDIR += libbson
     SUBDIR += libburn
-    SUBDIR += libc++
     SUBDIR += libccid
     SUBDIR += libcfg
     SUBDIR += libcfu
@@ -1242,7 +1242,6 @@
     SUBDIR += libcrossguid
     SUBDIR += libcutl
     SUBDIR += libcwd
-    SUBDIR += libcxxrt
     SUBDIR += libdaemon
     SUBDIR += libdap
     SUBDIR += libdatrie
@@ -2657,6 +2656,7 @@
     SUBDIR += p5-List-SomeUtils-XS
     SUBDIR += p5-List-Uniq
     SUBDIR += p5-List-UtilsBy
+    SUBDIR += p5-List-UtilsBy-XS
     SUBDIR += p5-Locale-Maketext
     SUBDIR += p5-Locale-Maketext-Fuzzy
     SUBDIR += p5-Locale-Maketext-Gettext
@@ -5756,7 +5756,6 @@
     SUBDIR += xdg-utils
     SUBDIR += xfce4-dev-tools
     SUBDIR += xfce4-vala
-    SUBDIR += xlocale
     SUBDIR += xmake
     SUBDIR += xmltooling
     SUBDIR += xorg-macros
