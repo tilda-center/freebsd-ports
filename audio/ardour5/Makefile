@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	ardour5
-PORTVERSION=	5.5.0
+PORTVERSION=	5.6.0
 CATEGORIES=	audio
 MASTER_SITES=	https://github.com/beerml/ardour_releases/raw/master/
 # The original master side points to the latest release only:
@@ -53,6 +53,11 @@ PLIST_SUB=	ARDOURVERSION=${PORTVERSION}
 CONFIGURE_ENV=	LDFLAGS=-L${WRKDIR}/${DISTNAME}/build/libs/evoral
 CONFIGURE_ARGS=	--optimize --ptformat --freedesktop --no-phone-home \
 		--with-backends=jack,dummy --internal-shared-libs
+
+post-patch:
+	@${REINPLACE_CMD} -e 's/obj\.use            = '\''libsmf libpbd'\''/obj\.use            = '\''libsmf_internal libpbd'\''/g' ${WRKSRC}/libs/evoral/wscript
+	@${REINPLACE_CMD} -e 's/libsmf\.name         = '\''libsmf'\''/libsmf\.name         = '\''libsmf_internal'\''/g' ${WRKSRC}/libs/evoral/wscript
+	@${REINPLACE_CMD} -e 's/libsmf\.target       = '\''smf'\''/libsmf\.target       = '\''smf_internal'\''/g' ${WRKSRC}/libs/evoral/wscript
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/share/appdata

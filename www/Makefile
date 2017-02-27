@@ -179,6 +179,7 @@
     SUBDIR += formication
     SUBDIR += foswiki
     SUBDIR += fpc-fastcgi
+    SUBDIR += fpc-googleapi
     SUBDIR += fpc-httpd22
     SUBDIR += fpc-httpd24
     SUBDIR += free-sa-devel
@@ -193,6 +194,7 @@
     SUBDIR += gallery3
     SUBDIR += gatling
     SUBDIR += gecko-mediaplayer
+    SUBDIR += geckodriver
     SUBDIR += geeklog
     SUBDIR += geeknote
     SUBDIR += geneweb
@@ -208,6 +210,7 @@
     SUBDIR += glpi
     SUBDIR += gnome-user-share
     SUBDIR += gnome-web-photo
+    SUBDIR += go-fasthttp
     SUBDIR += go-www
     SUBDIR += gohugo
     SUBDIR += google-appengine
@@ -1967,6 +1970,7 @@
     SUBDIR += rubygem-gitlab-grack
     SUBDIR += rubygem-gollum-grit_adapter
     SUBDIR += rubygem-gollum-lib
+    SUBDIR += rubygem-gollum-lib-gitlab
     SUBDIR += rubygem-gollum-rugged_adapter
     SUBDIR += rubygem-gon
     SUBDIR += rubygem-gon-rails4
