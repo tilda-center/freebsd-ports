@@ -325,6 +325,7 @@
     SUBDIR += ibus-m17n
     SUBDIR += ibus-qt
     SUBDIR += ibus-table
+    SUBDIR += ibus-typing-booster
     SUBDIR += icdiff
     SUBDIR += id-aspell
     SUBDIR += id-hyphen
@@ -1323,6 +1324,7 @@
     SUBDIR += py-snowballstemmer
     SUBDIR += py-sparqlwrapper
     SUBDIR += py-sphinx
+    SUBDIR += py-sphinx-hieroglyph
     SUBDIR += py-sphinx-intl
     SUBDIR += py-sphinx-me
     SUBDIR += py-sphinx_numfig
@@ -1364,6 +1366,7 @@
     SUBDIR += py-zpt
     SUBDIR += py2html
     SUBDIR += py3-MarkupSafe
+    SUBDIR += py3-alabaster
     SUBDIR += py3-asciinema
     SUBDIR += py3-chardet
     SUBDIR += py3-hunspell
