@@ -19,6 +19,7 @@
     SUBDIR += abbayedesmorts
     SUBDIR += abe
     SUBDIR += abuse_sdl
+    SUBDIR += ace-of-penguins
     SUBDIR += acm
     SUBDIR += adgali
     SUBDIR += adom
@@ -421,6 +422,7 @@
     SUBDIR += hoverboard-sdl
     SUBDIR += hs-scroll
     SUBDIR += hypatia_engine
+    SUBDIR += hyperrogue
     SUBDIR += iagno
     SUBDIR += icbm3d
     SUBDIR += icebreaker

@@ -2,8 +2,8 @@
 # $FreeBSD$
 
 PORTNAME=		krb5
-PORTVERSION=		1.15
-PORTREVISION=		2
+PORTVERSION=		1.15.1
+PORTREVISION=		1
 CATEGORIES=		security
 MASTER_SITES=		http://web.mit.edu/kerberos/dist/${PORTNAME}/${PORTVERSION:C/^[0-9]*\.[0-9]*/&X/:C/X\.[0-9]*$//:C/X//}/
 .if !defined(MASTERDIR)
@@ -149,13 +149,5 @@ post-install:
 	${ECHO_CMD} @dir share/doc/krb5 >> ${TMPPLIST}
 	@${SED} "s%\${PREFIX}%${PREFIX}%" ${FILESDIR}/README.FreeBSD > ${STAGEDIR}${PREFIX}/share/doc/krb5/README.FreeBSD
 	@${CHMOD} 444 ${STAGEDIR}${PREFIX}/share/doc/krb5/README.FreeBSD
-	@${ECHO} "------------------------------------------------------"
-	@${ECHO} "This port of MIT Kerberos 5 includes remote login     "
-	@${ECHO} "daemons (telnetd and klogind).  These daemons default "
-	@${ECHO} "to using the system login program (/usr/bin/login).   "
-	@${ECHO} "Please see the file                                   "
-	@${ECHO} "${PREFIX}/share/doc/krb5/README.FreeBSD"
-	@${ECHO} "for more information.                                 "
-	@${ECHO} "------------------------------------------------------"
 
 .include <bsd.port.post.mk>

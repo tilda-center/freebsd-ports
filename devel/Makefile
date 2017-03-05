@@ -156,6 +156,7 @@
     SUBDIR += avro
     SUBDIR += avro-c
     SUBDIR += avro-cpp
+    SUBDIR += awless
     SUBDIR += aws-sdk-cpp
     SUBDIR += awscli
     SUBDIR += b2
@@ -426,6 +427,7 @@
     SUBDIR += dreampie
     SUBDIR += drpython
     SUBDIR += ds2
+    SUBDIR += dub
     SUBDIR += dulwich
     SUBDIR += duplo
     SUBDIR += dwarfdump
@@ -476,6 +478,7 @@
     SUBDIR += elixir-inflex
     SUBDIR += elixir-lager_logger
     SUBDIR += elixir-libring
+    SUBDIR += elixir-make
     SUBDIR += elixir-math
     SUBDIR += elixir-msgpax
     SUBDIR += elixir-nadia
@@ -559,6 +562,7 @@
     SUBDIR += fga
     SUBDIR += fhist
     SUBDIR += fib
+    SUBDIR += fifechan
     SUBDIR += firmware-utils
     SUBDIR += fistgen
     SUBDIR += flatbuffers
@@ -576,6 +580,7 @@
     SUBDIR += fortran-utils
     SUBDIR += fortytwo-encore
     SUBDIR += fossil
+    SUBDIR += fossology-nomos-standalone
     SUBDIR += fpc-bfd
     SUBDIR += fpc-dbus
     SUBDIR += fpc-fcl-async
@@ -930,6 +935,7 @@
     SUBDIR += hs-date-cache
     SUBDIR += hs-datetime
     SUBDIR += hs-deepseq-generics
+    SUBDIR += hs-directory
     SUBDIR += hs-directory-tree
     SUBDIR += hs-dlist
     SUBDIR += hs-dlist-instances
@@ -1198,6 +1204,7 @@
     SUBDIR += lasi
     SUBDIR += lcov
     SUBDIR += leaktracer
+    SUBDIR += leatherman
     SUBDIR += leiningen
     SUBDIR += lemon
     SUBDIR += lfcbase
@@ -1274,8 +1281,8 @@
     SUBDIR += libestr
     SUBDIR += libev
     SUBDIR += libevdev
-    SUBDIR += libevent-hiphop
     SUBDIR += libevent
+    SUBDIR += libevent-hiphop
     SUBDIR += libevt
     SUBDIR += libevtx
     SUBDIR += libewf
@@ -1567,6 +1574,7 @@
     SUBDIR += lua-posix
     SUBDIR += lua-pty
     SUBDIR += lua-sysctl
+    SUBDIR += lua51-cjson
     SUBDIR += lua51-libevent
     SUBDIR += luabind
     SUBDIR += luafilesystem
@@ -4004,7 +4012,6 @@
     SUBDIR += py-DocumentTemplate
     SUBDIR += py-ExtensionClass
     SUBDIR += py-InlineEgg
-    SUBDIR += py-Jinja
     SUBDIR += py-Jinja2
     SUBDIR += py-Jinja2-doc
     SUBDIR += py-Missing
@@ -4059,9 +4066,7 @@
     SUBDIR += py-RPyC
     SUBDIR += py-Record
     SUBDIR += py-SymbolType
-    SUBDIR += py-TGScheduler
     SUBDIR += py-ToscaWidgets
-    SUBDIR += py-TurboJinja
     SUBDIR += py-XStatic
     SUBDIR += py-XStatic-Angular
     SUBDIR += py-XStatic-Angular-Bootstrap
@@ -4324,7 +4329,9 @@
     SUBDIR += py-ipaddr
     SUBDIR += py-ipdb
     SUBDIR += py-ipykernel
+    SUBDIR += py-ipyparallel
     SUBDIR += py-ipython_genutils
+    SUBDIR += py-ipywidgets
     SUBDIR += py-iso8601
     SUBDIR += py-isodate
     SUBDIR += py-isort
@@ -4354,6 +4361,7 @@
     SUBDIR += py-jsonrpclib
     SUBDIR += py-jsonschema
     SUBDIR += py-jupyter_client
+    SUBDIR += py-jupyter_console
     SUBDIR += py-jupyter_core
     SUBDIR += py-kaptan
     SUBDIR += py-kayako
@@ -4376,7 +4384,6 @@
     SUBDIR += py-libvirt
     SUBDIR += py-libzfs
     SUBDIR += py-linecache2
-    SUBDIR += py-ll-core
     SUBDIR += py-llfuse
     SUBDIR += py-llvmlite
     SUBDIR += py-lock_file
@@ -4392,10 +4399,10 @@
     SUBDIR += py-manuel
     SUBDIR += py-matrix-angular-sdk
     SUBDIR += py-mccabe
+    SUBDIR += py-mdv
     SUBDIR += py-meliae
     SUBDIR += py-memory_profiler
     SUBDIR += py-mercurialserver
-    SUBDIR += py-mez_xml
     SUBDIR += py-microversion-parse
     SUBDIR += py-mimeparse
     SUBDIR += py-minimongo
@@ -4563,6 +4570,7 @@
     SUBDIR += py-pytest-xdist
     SUBDIR += py-python-bugzilla
     SUBDIR += py-python-distutils-extra
+    SUBDIR += py-python-dtrace
     SUBDIR += py-python-editor
     SUBDIR += py-python-gflags
     SUBDIR += py-python-gist
@@ -4606,6 +4614,7 @@
     SUBDIR += py-qt5-help
     SUBDIR += py-qt5-qscintilla2
     SUBDIR += py-qt5-test
+    SUBDIR += py-qtconsole
     SUBDIR += py-rauth
     SUBDIR += py-raven
     SUBDIR += py-rcsparse
@@ -4712,7 +4721,6 @@
     SUBDIR += py-testoob
     SUBDIR += py-testpath
     SUBDIR += py-testtools
-    SUBDIR += py-tgMochiKit
     SUBDIR += py-thrift
     SUBDIR += py-thriftpy
     SUBDIR += py-timelib
@@ -4729,10 +4737,6 @@
     SUBDIR += py-transaction
     SUBDIR += py-trollius
     SUBDIR += py-ttystatus
-    SUBDIR += py-turbocheetah
-    SUBDIR += py-turbojson
-    SUBDIR += py-turbojson11
-    SUBDIR += py-turbokid
     SUBDIR += py-tvrage
     SUBDIR += py-tw.forms
     SUBDIR += py-twext
@@ -4778,6 +4782,7 @@
     SUBDIR += py-weblib
     SUBDIR += py-websockify
     SUBDIR += py-wheel
+    SUBDIR += py-widgetsnbextension
     SUBDIR += py-wrapt
     SUBDIR += py-wsgi_intercept
     SUBDIR += py-wsgi_xmlrpc
@@ -4887,6 +4892,7 @@
     SUBDIR += py3-babel
     SUBDIR += py3-click
     SUBDIR += py3-dbus
+    SUBDIR += py3-docopt
     SUBDIR += py3-flake8
     SUBDIR += py3-flake8-builtins
     SUBDIR += py3-flake8-docstrings
@@ -4900,6 +4906,7 @@
     SUBDIR += py3-lxml
     SUBDIR += py3-mccabe
     SUBDIR += py3-nose
+    SUBDIR += py3-prompt_toolkit
     SUBDIR += py3-py
     SUBDIR += py3-pycodestyle
     SUBDIR += py3-pydocstyle
@@ -4913,8 +4920,10 @@
     SUBDIR += py3-rubymarshal
     SUBDIR += py3-setproctitle
     SUBDIR += py3-simplejson
+    SUBDIR += py3-six
     SUBDIR += py3-threema-msgapi
     SUBDIR += py3-vcversioner
+    SUBDIR += py3-wcwidth
     SUBDIR += py3-xdg
     SUBDIR += py3-yaml
     SUBDIR += py_static_check
@@ -5109,11 +5118,9 @@
     SUBDIR += rubygem-bosh-template
     SUBDIR += rubygem-bosh_common
     SUBDIR += rubygem-bson
-    SUBDIR += rubygem-bson1
     SUBDIR += rubygem-buftok
     SUBDIR += rubygem-bugspots
     SUBDIR += rubygem-builder
-    SUBDIR += rubygem-builder32
     SUBDIR += rubygem-byebug
     SUBDIR += rubygem-cabin
     SUBDIR += rubygem-caesars
@@ -5317,7 +5324,6 @@
     SUBDIR += rubygem-method_source
     SUBDIR += rubygem-micromachine
     SUBDIR += rubygem-minitest
-    SUBDIR += rubygem-minitest4
     SUBDIR += rubygem-mixlib-authentication
     SUBDIR += rubygem-mixlib-cli
     SUBDIR += rubygem-mixlib-config
@@ -5600,6 +5606,7 @@
     SUBDIR += smv
     SUBDIR += soapui
     SUBDIR += sonar-ant-task
+    SUBDIR += sonar-scanner-cli
     SUBDIR += sonarqube
     SUBDIR += sope2
     SUBDIR += sope3
