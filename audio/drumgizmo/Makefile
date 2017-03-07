@@ -24,7 +24,7 @@ USES=		gettext-runtime libtool
 USE_GNOME=	glib20
 USE_XORG=	x11
 
-CPPFLAGS+=	-I${WRKDIR}/${PORTNAME}-${PORTVERSION}/include
+CPPFLAGS+=	-I../include -I../../include
 EXPAT_CFLAGS=	-I${LOCALBASE}/include
 EXPAT_LDFLAGS=	-L${LOCALBASE}/lib
 ZITA_CPPFLAGS=	-I${LOCALBASE}/include
