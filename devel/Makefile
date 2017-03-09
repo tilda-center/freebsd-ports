@@ -5294,6 +5294,7 @@
     SUBDIR += rubygem-jbuilder
     SUBDIR += rubygem-jekyll-coffeescript
     SUBDIR += rubygem-jeweler
+    SUBDIR += rubygem-jira-ruby
     SUBDIR += rubygem-jmespath
     SUBDIR += rubygem-jquery-ui-themes
     SUBDIR += rubygem-jruby-jars
@@ -5482,6 +5483,7 @@
     SUBDIR += rubygem-shoulda-matchers
     SUBDIR += rubygem-sidekiq
     SUBDIR += rubygem-sidekiq-cron
+    SUBDIR += rubygem-sidekiq-limit_fetch
     SUBDIR += rubygem-sidetiq
     SUBDIR += rubygem-sigdump
     SUBDIR += rubygem-simple_form
@@ -5545,6 +5547,7 @@
     SUBDIR += rubygem-tzinfo
     SUBDIR += rubygem-unicode
     SUBDIR += rubygem-unicode-display_width
+    SUBDIR += rubygem-useragent
     SUBDIR += rubygem-uuid
     SUBDIR += rubygem-uuidtools
     SUBDIR += rubygem-validatable
