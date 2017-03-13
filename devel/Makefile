@@ -148,7 +148,6 @@
     SUBDIR += avce00
     SUBDIR += avr-binutils
     SUBDIR += avr-gcc
-    SUBDIR += avr-gcc-devel
     SUBDIR += avr-gdb
     SUBDIR += avr-libc
     SUBDIR += avra
@@ -4366,6 +4365,7 @@
     SUBDIR += py-jsonlib2
     SUBDIR += py-jsonpatch
     SUBDIR += py-jsonpointer
+    SUBDIR += py-jsonref
     SUBDIR += py-jsonrpclib
     SUBDIR += py-jsonschema
     SUBDIR += py-jupyter_client
@@ -4627,6 +4627,7 @@
     SUBDIR += py-qt5-qscintilla2
     SUBDIR += py-qt5-test
     SUBDIR += py-qtconsole
+    SUBDIR += py-ramlfications
     SUBDIR += py-rauth
     SUBDIR += py-raven
     SUBDIR += py-rcsparse
