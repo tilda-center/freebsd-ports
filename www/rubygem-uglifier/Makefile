@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	uglifier
-PORTVERSION=	3.1.4
+PORTVERSION=	3.1.7
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

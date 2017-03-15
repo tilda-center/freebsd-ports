@@ -233,6 +233,9 @@ MASTER_SITE_CENTOS_LINUX+= \
 
 .if !defined(IGNORE_MASTER_SITE_EPEL)
 MASTER_SITE_EPEL+= \
+	https://dl.fedoraproject.org/pub/epel/6/x86_64/:DEFAULT,amd64 \
+	https://dl.fedoraproject.org/pub/epel/6/i386/:DEFAULT,i386 \
+	https://dl.fedoraproject.org/pub/epel/6/SRPMS/:SOURCE \
 	http://dl.fedoraproject.org/pub/epel/6/x86_64/:DEFAULT,amd64 \
 	http://dl.fedoraproject.org/pub/epel/6/i386/:DEFAULT,i386 \
 	http://dl.fedoraproject.org/pub/epel/6/SRPMS/:SOURCE
@@ -240,12 +243,15 @@ MASTER_SITE_EPEL+= \
 
 .if !defined(IGNORE_MASTER_SITE_EPEL7)
 MASTER_SITE_EPEL7+= \
+	https://dl.fedoraproject.org/pub/epel/7/x86_64/%SUBDIR%/:DEFAULT,amd64 \
+	https://dl.fedoraproject.org/pub/epel/7/SRPMS/%SUBDIR%/:SOURCE \
 	http://dl.fedoraproject.org/pub/epel/7/x86_64/%SUBDIR%/:DEFAULT,amd64 \
 	http://dl.fedoraproject.org/pub/epel/7/SRPMS/%SUBDIR%/:SOURCE
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_FEDORA_LINUX)
 MASTER_SITE_FEDORA_LINUX+= \
+	https://archives.fedoraproject.org/pub/archive/fedora/linux/%SUBDIR%/:DEFAULT,SOURCE \
 	http://archives.fedoraproject.org/pub/archive/fedora/linux/%SUBDIR%/:DEFAULT,SOURCE \
 	ftp://ftp.pbone.net/vol4/archive.fedoraproject.org/fedora/linux/%SUBDIR%/:DEFAULT,SOURCE \
 	ftp://ftp.gmd.de/archives.fedoraproject.org/fedora/linux/%SUBDIR%/:DEFAULT,SOURCE \
@@ -303,7 +309,7 @@ MASTER_SITE_FRUGALWARE+= \
 
 .if !defined(IGNORE_MASTER_SITE_GCC)
 MASTER_SITE_GCC+= \
-	http://mirrors.kernel.org/sources.redhat.com/gcc/%SUBDIR%/ \
+	http://mirrors.kernel.org/sourceware/gcc/%SUBDIR%/ \
 	http://gcc.parentingamerica.com/%SUBDIR%/ \
 	http://gcc.skazkaforyou.com/%SUBDIR%/ \
 	http://gcc.cybermirror.org/%SUBDIR%/ \
@@ -1031,15 +1037,15 @@ MASTER_SITE_SAVANNAH+= \
 	ftp://gnu.mirrors.pair.com/savannah/%SUBDIR%/
 .endif
 
-# List:		http://sourceforge.net/apps/trac/sourceforge/wiki/Mirrors
-# Updated:	2013-03-25
+# List:		https://sourceforge.net/p/forge/documentation/Mirrors/
+# Updated:	2017-03-13
 .if !defined(IGNORE_MASTER_SITE_SOURCEFORGE)
-MASTER_SITE_SOURCEFORGE+= http://downloads.sourceforge.net/project/%SUBDIR%/
-.for mirror in heanet iweb freefr jaist master \
-	nchc ncu internode waix superb-dca3 ufpr tenet \
-	netcologne ignum kent
-MASTER_SITE_SOURCEFORGE+= \
-	http://${mirror}.dl.sourceforge.net/project/%SUBDIR%/
+.for p in https http
+MASTER_SITE_SOURCEFORGE+= ${p}://downloads.sourceforge.net/project/%SUBDIR%/
+.for m in cytranet dronedata excellmedia freefr jaist kent liquidtelecom nchc \
+	netassist netcologne netix superb-dca2 superb-sea2 tenet ufpr vorboss
+MASTER_SITE_SOURCEFORGE+= ${p}://${m}.dl.sourceforge.net/project/%SUBDIR%/
+.endfor
 .endfor
 .endif
 
@@ -1052,7 +1058,7 @@ MASTER_SITE_SOURCEFORGE_JP+= \
 
 .if !defined(IGNORE_MASTER_SITE_SOURCEWARE)
 MASTER_SITE_SOURCEWARE+= \
-	http://mirrors.kernel.org/sources.redhat.com/%SUBDIR%/ \
+	http://mirrors.kernel.org/sourceware/%SUBDIR%/ \
 	http://gd.tuwien.ac.at/gnu/sourceware/%SUBDIR%/ \
 	ftp://ftp.funet.fi/pub/mirrors/sourceware.org/pub/%SUBDIR%/
 .endif

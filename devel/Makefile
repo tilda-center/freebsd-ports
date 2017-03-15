@@ -148,7 +148,6 @@
     SUBDIR += avce00
     SUBDIR += avr-binutils
     SUBDIR += avr-gcc
-    SUBDIR += avr-gcc-devel
     SUBDIR += avr-gdb
     SUBDIR += avr-libc
     SUBDIR += avra
@@ -236,11 +235,14 @@
     SUBDIR += cbrowser
     SUBDIR += cc65
     SUBDIR += ccache
+    SUBDIR += ccache-static
     SUBDIR += ccache-memcached
+    SUBDIR += ccache-memcached-static
     SUBDIR += cccc
     SUBDIR += ccdoc
     SUBDIR += ccons
     SUBDIR += ccrtp
+    SUBDIR += cctz
     SUBDIR += cdash
     SUBDIR += cdecl
     SUBDIR += cdialog
@@ -4239,6 +4241,7 @@
     SUBDIR += py-efl
     SUBDIR += py-eggtestinfo
     SUBDIR += py-entrypoints
+    SUBDIR += py-enum-compat
     SUBDIR += py-enum34
     SUBDIR += py-envisage
     SUBDIR += py-epdb
@@ -4291,6 +4294,7 @@
     SUBDIR += py-game_sdl2
     SUBDIR += py-gamin
     SUBDIR += py-gdata
+    SUBDIR += py-gdbgui
     SUBDIR += py-gearman
     SUBDIR += py-generate
     SUBDIR += py-geojson
@@ -4361,6 +4365,7 @@
     SUBDIR += py-jsonlib2
     SUBDIR += py-jsonpatch
     SUBDIR += py-jsonpointer
+    SUBDIR += py-jsonref
     SUBDIR += py-jsonrpclib
     SUBDIR += py-jsonschema
     SUBDIR += py-jupyter_client
@@ -4537,6 +4542,7 @@
     SUBDIR += py-pyev
     SUBDIR += py-pyface
     SUBDIR += py-pyflakes
+    SUBDIR += py-pygdbmi
     SUBDIR += py-pygit2
     SUBDIR += py-pygithub
     SUBDIR += py-pygpx
@@ -4554,6 +4560,7 @@
     SUBDIR += py-pymtbl
     SUBDIR += py-pyopencl
     SUBDIR += py-pyparsing
+    SUBDIR += py-pypugjs
     SUBDIR += py-pyqi
     SUBDIR += py-pyrfc3339
     SUBDIR += py-pyro
@@ -4575,11 +4582,13 @@
     SUBDIR += py-python-distutils-extra
     SUBDIR += py-python-dtrace
     SUBDIR += py-python-editor
+    SUBDIR += py-python-engineio
     SUBDIR += py-python-gflags
     SUBDIR += py-python-gist
     SUBDIR += py-python-jenkins
     SUBDIR += py-python-magic
     SUBDIR += py-python-pcre
+    SUBDIR += py-python-socketio
     SUBDIR += py-python-statsd
     SUBDIR += py-python2-pythondialog
     SUBDIR += py-pythonbrew
@@ -4618,6 +4627,7 @@
     SUBDIR += py-qt5-qscintilla2
     SUBDIR += py-qt5-test
     SUBDIR += py-qtconsole
+    SUBDIR += py-ramlfications
     SUBDIR += py-rauth
     SUBDIR += py-raven
     SUBDIR += py-rcsparse
@@ -4694,6 +4704,7 @@
     SUBDIR += py-speaklater
     SUBDIR += py-spyder
     SUBDIR += py-sqlcc
+    SUBDIR += py-stackexchange
     SUBDIR += py-statgrab
     SUBDIR += py-statsd
     SUBDIR += py-stdnum
@@ -4909,6 +4920,7 @@
     SUBDIR += py3-lxml
     SUBDIR += py3-mccabe
     SUBDIR += py3-nose
+    SUBDIR += py3-ply
     SUBDIR += py3-prompt_toolkit
     SUBDIR += py3-py
     SUBDIR += py3-pycodestyle
@@ -5287,6 +5299,7 @@
     SUBDIR += rubygem-jbuilder
     SUBDIR += rubygem-jekyll-coffeescript
     SUBDIR += rubygem-jeweler
+    SUBDIR += rubygem-jira-ruby
     SUBDIR += rubygem-jmespath
     SUBDIR += rubygem-jquery-ui-themes
     SUBDIR += rubygem-jruby-jars
@@ -5343,6 +5356,7 @@
     SUBDIR += rubygem-multi_test
     SUBDIR += rubygem-murmurhash3
     SUBDIR += rubygem-mustache
+    SUBDIR += rubygem-mustache0
     SUBDIR += rubygem-mustermann
     SUBDIR += rubygem-mustermann-grape
     SUBDIR += rubygem-mutter
@@ -5475,6 +5489,7 @@
     SUBDIR += rubygem-shoulda-matchers
     SUBDIR += rubygem-sidekiq
     SUBDIR += rubygem-sidekiq-cron
+    SUBDIR += rubygem-sidekiq-limit_fetch
     SUBDIR += rubygem-sidetiq
     SUBDIR += rubygem-sigdump
     SUBDIR += rubygem-simple_form
@@ -5538,6 +5553,7 @@
     SUBDIR += rubygem-tzinfo
     SUBDIR += rubygem-unicode
     SUBDIR += rubygem-unicode-display_width
+    SUBDIR += rubygem-useragent
     SUBDIR += rubygem-uuid
     SUBDIR += rubygem-uuidtools
     SUBDIR += rubygem-validatable
