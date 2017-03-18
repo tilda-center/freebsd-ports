@@ -1966,6 +1966,7 @@
     SUBDIR += rubygem-gitlab-gollum-lib
     SUBDIR += rubygem-gitlab-grack
     SUBDIR += rubygem-gitlab-turbolinks-classic
+    SUBDIR += rubygem-gollum
     SUBDIR += rubygem-gollum-grit_adapter
     SUBDIR += rubygem-gollum-lib
     SUBDIR += rubygem-gollum-lib-gitlab
@@ -2061,6 +2062,7 @@
     SUBDIR += rubygem-rdf
     SUBDIR += rubygem-redcloth
     SUBDIR += rubygem-redis-rack
+    SUBDIR += rubygem-redis-rack1
     SUBDIR += rubygem-redis-rails
     SUBDIR += rubygem-redmine_acts_as_taggable_on
     SUBDIR += rubygem-responders

@@ -9038,8 +9038,8 @@ x11-themes/linux-hicolor-icon-theme||2017-01-31|Merged into linux_base port
 audio/linux-c6-arts||2017-01-31|Old KDE3 component
 audio/linux-c6-esound||2017-01-31|Old sound daemon
 audio/linux-c7-esound||2017-01-31|Old sound daemon
-audio/linux-c6-openssl-compat||2017-01-31|Old OpenSSL
-audio/linux-c7-openssl-compat||2017-01-31|Old OpenSSL
+security/linux-c6-openssl-compat||2017-01-31|Old OpenSSL
+security/linux-c7-openssl-compat||2017-01-31|Old OpenSSL
 databases/rubygem-arel3|databases/rubygem-arel|2017-01-31|Has expired: Use devel/rubygem-arel or devel/rubygem-arel6 instead
 databases/rubygem-arel5|databases/rubygem-arel|2017-01-31|Has expired: Use devel/rubygem-arel or devel/rubygem-arel6 instead
 www/tinymce3|www/tinymce|2017-01-31|Has expired: Use www/tinymce instead
@@ -9132,3 +9132,13 @@ misc/p5-Geo-Coder-Geocoder-US||2017-03-12|Has expired: http://geocoder.us/ disap
 databases/py-sqlalchemy09|databases/py-sqlalchemy10|2017-03-12|Has expired: Upstream has declared this version EoL: please migrate to databases/py-sqlalchemy10
 devel/avr-gcc-devel||2017-03-13|Has expired: There's no longer a point to have both, a -devel and a regular port of GCC for the AVR
 net/py-pysimplesoap|net/py-soap2py|2017-03-13|Rename to match upstream naming
+games/trigger-data|games/trigger-rally|2017-03-15|Merged into games/trigger-rally
+devel/py-setuptools|devel/py27-setuptools|2017-03-16|Renamed to better match other python ports
+devel/py-setuptools27|devel/py27-setuptools|2017-03-16|Renamed to better match other python ports
+devel/py-setuptools33|devel/py33-setuptools|2017-03-16|Renamed to better match other python ports
+devel/py-setuptools34|devel/py34-setuptools|2017-03-16|Renamed to better match other python ports
+devel/py-setuptools35|devel/py35-setuptools|2017-03-16|Renamed to better match other python ports
+devel/py-setuptools36|devel/py36-setuptools|2017-03-16|Renamed to better match other python ports
+devel/rubygem-devise-rails4|devel/rubygem-devise|2017-03-16|Has expired: Please use devel/rubygem-devise instead
+textproc/rubygem-github-markdown||2017-03-16|Has expired: This gem is not maintained and not supported by upstream
+chinese/irssi|irc/irssi|2017-03-17|Use irc/irssi, which can handle Chinese locales
