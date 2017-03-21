@@ -235,7 +235,9 @@
     SUBDIR += djmount
     SUBDIR += dmg2img
     SUBDIR += dmidecode
+    SUBDIR += docker
     SUBDIR += docker-freebsd
+    SUBDIR += docker-machine
     SUBDIR += doinkd
     SUBDIR += dolly
     SUBDIR += downtime
@@ -452,6 +454,7 @@
     SUBDIR += i2c-tools
     SUBDIR += i7z
     SUBDIR += iat
+    SUBDIR += immortal
     SUBDIR += inotify-tools
     SUBDIR += installwatch
     SUBDIR += intel-nvmupdate
@@ -1172,12 +1175,12 @@
     SUBDIR += ucspi-ipc
     SUBDIR += ucspi-proxy
     SUBDIR += ucspi-ssl
-    SUBDIR += ucspi-ssl-tls
     SUBDIR += ucspi-tcp
     SUBDIR += ucspi-unix
     SUBDIR += udfclient
     SUBDIR += uefi-edk2-bhyve
     SUBDIR += uefi-edk2-bhyve-csm
+    SUBDIR += UEFITool
     SUBDIR += ufs_copy
     SUBDIR += uhidd
     SUBDIR += uif2iso

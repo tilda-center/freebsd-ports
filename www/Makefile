@@ -551,7 +551,6 @@
     SUBDIR += nginx-naxsi
     SUBDIR += nibbleblog
     SUBDIR += node
-    SUBDIR += node012
     SUBDIR += node4
     SUBDIR += node6
     SUBDIR += nostromo
@@ -559,7 +558,6 @@
     SUBDIR += npapi-xine
     SUBDIR += npc
     SUBDIR += npm
-    SUBDIR += npm012
     SUBDIR += npm2
     SUBDIR += npm3
     SUBDIR += nspluginwrapper
@@ -1993,6 +1991,7 @@
     SUBDIR += rubygem-httparty
     SUBDIR += rubygem-httpclient
     SUBDIR += rubygem-httpi
+    SUBDIR += rubygem-hurley
     SUBDIR += rubygem-innate
     SUBDIR += rubygem-jekyll
     SUBDIR += rubygem-jekyll-watch
