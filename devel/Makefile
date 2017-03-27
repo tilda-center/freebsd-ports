@@ -201,7 +201,11 @@
     SUBDIR += bugzilla50
     SUBDIR += build
     SUBDIR += buildbot
-    SUBDIR += buildbot-slave
+    SUBDIR += buildbot-console-view
+    SUBDIR += buildbot-pkg
+    SUBDIR += buildbot-waterfall-view
+    SUBDIR += buildbot-worker
+    SUBDIR += buildbot-www
     SUBDIR += buildtool
     SUBDIR += buildtool-doc
     SUBDIR += bullet
@@ -1741,7 +1745,6 @@
     SUBDIR += opengrok
     SUBDIR += openmp
     SUBDIR += openocd
-    SUBDIR += openvex
     SUBDIR += openwince-include
     SUBDIR += openzz
     SUBDIR += orc
@@ -3024,6 +3027,7 @@
     SUBDIR += p5-Parse-PMFile
     SUBDIR += p5-Parse-PerlConfig
     SUBDIR += p5-Parse-Pidl
+    SUBDIR += p5-Parse-Pidl44
     SUBDIR += p5-Parse-PlainConfig
     SUBDIR += p5-Parse-RecDescent
     SUBDIR += p5-Parse-Win32Registry
@@ -5273,6 +5277,7 @@
     SUBDIR += rubygem-glib2
     SUBDIR += rubygem-gobject-introspection
     SUBDIR += rubygem-google-api-client
+    SUBDIR += rubygem-google-protobuf
     SUBDIR += rubygem-graf
     SUBDIR += rubygem-grape
     SUBDIR += rubygem-grape-entity
@@ -5562,6 +5567,7 @@
     SUBDIR += rubygem-turn
     SUBDIR += rubygem-typed-array
     SUBDIR += rubygem-tzinfo
+    SUBDIR += rubygem-tzinfo-data
     SUBDIR += rubygem-uber
     SUBDIR += rubygem-unicode
     SUBDIR += rubygem-unicode-display_width

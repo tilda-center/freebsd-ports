@@ -9057,6 +9057,7 @@ devel/libdict||2017-02-08|Has expired: Broken for more than 6 months
 math/R-cran-SuppDists||2017-02-08|Has expired: Broken for more than 6 months
 devel/py-re2||2017-02-08|Has expired: Broken for more than 6 months
 net-p2p/digitalcoin||2017-02-08|Has expired: Broken for more than 6 months
+textproc/rubygem-mustache|devel/rubygem-mustache|2017-02-08|Duplicate of devel/rubygem-mustache
 devel/php70-APCu|devel/pecl-APCu|2017-02-12|Use devel/pecl-APCu for PHP 7.0+ users
 chinese/mutt|mail/mutt|2017-02-13|Use mail/mutt, which can handle Chinese locales
 lang/libjit||2017-02-14|Has expired: This version is severely out of date and its use is discouraged; see http://www.gnu.org/software/libjit/
@@ -9150,3 +9151,19 @@ net/samba-libsmbclient|net/samba43|2017-03-21|Obsolete
 net/samba-nmblookup|net/samba43|2017-03-21|Obsolete
 net/samba-smbclient|net/samba43|2017-03-21|Obsolete
 net/samba36|net/samba43|2017-03-21|Obsolete
+multimedia/mplayer2|multimedia/mpv|2017-03-25|Has expired: Development ceased in favour of mpv, last release from 2013
+devel/buildbot-slave|devel/buildbot-worker|2017-03-27|Renamed to match new upstream package name/terminology
+print/musixtex||2017-03-27|Has expired: Broken for more than 6 months
+www/wml||2017-03-27|Has expired: Broken for more than 6 months
+www/offline-npm||2017-03-27|Has expired: Broken for more than 6 months
+x11-themes/kde-icons-cezanne||2017-03-27|Has expired: Broken for more than 6 months
+x11-themes/kde-icons-sky||2017-03-27|Has expired: Broken for more than 6 months
+deskutils/gnome-shell-extension-backslide||2017-03-27|Has expired: Broken for more than 6 months
+devel/openvex||2017-03-27|Has expired: Broken for more than 6 months
+mail/mixmaster||2017-03-27|Has expired: Broken for more than 6 months
+net-mgmt/nat||2017-03-27|Has expired: Broken for more than 6 months
+net-p2p/gnunet-gtk||2017-03-27|Has expired: Depends on expiring net-p2p/gnunet
+net-p2p/gnunet||2017-03-27|Has expired: Broken for more than 6 months
+print/abc2mtex||2017-03-27|Has expired: Depends on expiring print/musixtex
+ftp/bareftp||2017-03-27|Has expired: Broken for more than 6 months
+www/rubygem-jquery-rails4|www/rubygem-jquery-rails|2017-03-27|Remove PKGNAMESUFFIX
