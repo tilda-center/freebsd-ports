@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	gcc
-PORTVERSION=	5.4.1.s20170321
+PORTVERSION=	5.4.1.s20170328
 CATEGORIES=	lang java
 MASTER_SITES=	GCC/snapshots/${DISTVERSION}
 PKGNAMESUFFIX=	${SUFFIX}-devel
@@ -23,6 +23,7 @@ RUN_DEPENDS+=	${LOCALBASE}/bin/as:devel/binutils
 BUILD_DEPENDS+=	runtest:misc/dejagnu
 .endif
 
+CONFLICTS=	gcc-5.*
 CPE_VENDOR=	gnu
 CPE_VERSION=	${GCC_VERSION}
 
