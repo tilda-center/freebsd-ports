@@ -1441,7 +1441,6 @@
     SUBDIR += libshhopt
     SUBDIR += libsigc++12
     SUBDIR += libsigc++20
-    SUBDIR += libsigcx
     SUBDIR += libsigrok
     SUBDIR += libsigrokdecode
     SUBDIR += libsigscan
@@ -1496,7 +1495,6 @@
     SUBDIR += libxalloc
     SUBDIR += libxo
     SUBDIR += libxs
-    SUBDIR += libytnef
     SUBDIR += libzookeeper
     SUBDIR += libzrtpcpp
     SUBDIR += libzvbi
@@ -1535,7 +1533,6 @@
     SUBDIR += lion
     SUBDIR += listserialc
     SUBDIR += liteide
-    SUBDIR += lldb37
     SUBDIR += lldb38
     SUBDIR += llnextgen
     SUBDIR += llvm-cheri
@@ -1545,7 +1542,6 @@
     SUBDIR += llvm34
     SUBDIR += llvm35
     SUBDIR += llvm36
-    SUBDIR += llvm37
     SUBDIR += llvm38
     SUBDIR += llvm39
     SUBDIR += llvm40
@@ -1678,6 +1674,7 @@
     SUBDIR += nini
     SUBDIR += ninja
     SUBDIR += ninja-ide
+    SUBDIR += nlohmann-json
     SUBDIR += node-thrift
     SUBDIR += notify-sharp
     SUBDIR += noweb
@@ -2514,6 +2511,7 @@
     SUBDIR += p5-Getopt-Compact-WithCmd
     SUBDIR += p5-Getopt-Declare
     SUBDIR += p5-Getopt-Euclid
+    SUBDIR += p5-Getopt-EX
     SUBDIR += p5-Getopt-GUI-Long
     SUBDIR += p5-Getopt-Long
     SUBDIR += p5-Getopt-Long-Descriptive
@@ -3955,6 +3953,7 @@
     SUBDIR += phpbt
     SUBDIR += phpsh
     SUBDIR += phpunit
+    SUBDIR += phpunit6
     SUBDIR += physfs
     SUBDIR += physfs-devel
     SUBDIR += picp
@@ -4394,6 +4393,7 @@
     SUBDIR += py-liblarch
     SUBDIR += py-libpeas
     SUBDIR += py-libplist
+    SUBDIR += py-libtmux
     SUBDIR += py-libusb1
     SUBDIR += py-libusb115
     SUBDIR += py-libvirt
@@ -4918,6 +4918,7 @@
     SUBDIR += py3-flake8-quotes
     SUBDIR += py3-gobject3
     SUBDIR += py3-hgtools
+    SUBDIR += py3-jedi
     SUBDIR += py3-jsonschema
     SUBDIR += py3-libpeas
     SUBDIR += py3-libzfs
@@ -5133,6 +5134,7 @@
     SUBDIR += rubygem-benelux
     SUBDIR += rubygem-bin_utils
     SUBDIR += rubygem-bindata
+    SUBDIR += rubygem-bindex
     SUBDIR += rubygem-binding_of_caller
     SUBDIR += rubygem-bit-struct
     SUBDIR += rubygem-blankslate
@@ -5292,6 +5294,7 @@
     SUBDIR += rubygem-hashie
     SUBDIR += rubygem-hashie2
     SUBDIR += rubygem-health_check
+    SUBDIR += rubygem-health_check22
     SUBDIR += rubygem-highline
     SUBDIR += rubygem-hike
     SUBDIR += rubygem-hitimes
