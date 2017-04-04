@@ -3907,6 +3907,7 @@
     SUBDIR += phabricator
     SUBDIR += php-Psr_Log
     SUBDIR += php-composer
+    SUBDIR += php-geshi
     SUBDIR += php-jq
     SUBDIR += php-libawl
     SUBDIR += php-maxminddb
@@ -3917,7 +3918,6 @@
     SUBDIR += php5-blitz
     SUBDIR += php5-blitz-devel
     SUBDIR += php5-dav
-    SUBDIR += php5-geshi
     SUBDIR += php5-ice
     SUBDIR += php5-pinba
     SUBDIR += php5-thrift
@@ -4908,6 +4908,7 @@
     SUBDIR += py3-Jinja2
     SUBDIR += py3-babel
     SUBDIR += py3-click
+    SUBDIR += py3-colorama
     SUBDIR += py3-dbus
     SUBDIR += py3-docopt
     SUBDIR += py3-flake8
@@ -5383,6 +5384,7 @@
     SUBDIR += rubygem-netaddr
     SUBDIR += rubygem-newrelic-grape
     SUBDIR += rubygem-newrelic_rpm
+    SUBDIR += rubygem-newrelic_rpm3
     SUBDIR += rubygem-nice-ffi
     SUBDIR += rubygem-nio4r
     SUBDIR += rubygem-nio4r1
