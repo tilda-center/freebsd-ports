@@ -3857,6 +3857,7 @@
     SUBDIR += pecl-event
     SUBDIR += pecl-expect
     SUBDIR += pecl-gearman
+    SUBDIR += pecl-grpc
     SUBDIR += pecl-hrtime
     SUBDIR += pecl-htscanner
     SUBDIR += pecl-inotify
@@ -4393,6 +4394,7 @@
     SUBDIR += py-liblarch
     SUBDIR += py-libpeas
     SUBDIR += py-libplist
+    SUBDIR += py-libtaxii
     SUBDIR += py-libtmux
     SUBDIR += py-libusb1
     SUBDIR += py-libusb115
