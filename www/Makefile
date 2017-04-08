@@ -1622,6 +1622,7 @@
     SUBDIR += py-django-tinymce
     SUBDIR += py-django-voting
     SUBDIR += py-django110
+    SUBDIR += py-django111
     SUBDIR += py-django16
     SUBDIR += py-django16-tastypie
     SUBDIR += py-django18
@@ -2205,6 +2206,7 @@
     SUBDIR += tivoka
     SUBDIR += tntnet
     SUBDIR += tokyopromenade
+    SUBDIR += tomcat-devel
     SUBDIR += tomcat-native
     SUBDIR += tomcat6
     SUBDIR += tomcat7
