@@ -53,8 +53,10 @@
     SUBDIR += SpecTcl
     SUBDIR += aap
     SUBDIR += aarch64-binutils
+    SUBDIR += aarch64-gcc
     SUBDIR += aarch64-none-elf-binutils
     SUBDIR += aarch64-none-elf-gcc
+    SUBDIR += aarch64-xtoolchain-gcc
     SUBDIR += abi-compliance-checker
     SUBDIR += ace
     SUBDIR += ace+tao-doc
@@ -728,6 +730,7 @@
     SUBDIR += gitg0
     SUBDIR += github-backup-utils
     SUBDIR += gitinspector
+    SUBDIR += gitlab-runner
     SUBDIR += gitlab-shell
     SUBDIR += gitlist
     SUBDIR += gitolite
@@ -2546,6 +2549,7 @@
     SUBDIR += p5-Hash-MultiKey
     SUBDIR += p5-Hash-MultiValue
     SUBDIR += p5-Hash-NoRef
+    SUBDIR += p5-Hash-Objectify
     SUBDIR += p5-Hash-Slice
     SUBDIR += p5-Hash-Union
     SUBDIR += p5-Hash-Util-FieldHash-Compat
@@ -5114,6 +5118,7 @@
     SUBDIR += rubygem-apipie-bindings
     SUBDIR += rubygem-apipie-params
     SUBDIR += rubygem-app_config
+    SUBDIR += rubygem-appraisal
     SUBDIR += rubygem-arr-pm
     SUBDIR += rubygem-arrayfields
     SUBDIR += rubygem-ascii85
@@ -5814,6 +5819,8 @@
     SUBDIR += xparam
     SUBDIR += xsd
     SUBDIR += xtl
+    SUBDIR += xtoolchain-llvm-devel
+    SUBDIR += xtoolchain-llvm40
     SUBDIR += xwpe
     SUBDIR += xxgdb
     SUBDIR += xxhash
