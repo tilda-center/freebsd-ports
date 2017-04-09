@@ -2308,8 +2308,8 @@
     SUBDIR += twiki-WysiwygPlugin
     SUBDIR += twill
     SUBDIR += twms
-    SUBDIR += typo3
-    SUBDIR += typo3-lts
+    SUBDIR += typo3-7
+    SUBDIR += typo3-8
     SUBDIR += uchiwa
     SUBDIR += udmsearch
     SUBDIR += ufdbguard
