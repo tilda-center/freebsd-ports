@@ -993,6 +993,7 @@
     SUBDIR += py-libnet
     SUBDIR += py-magic-wormhole
     SUBDIR += py-matrix-synapse
+    SUBDIR += py-matrix-synapse-ldap3
     SUBDIR += py-maxminddb
     SUBDIR += py-miniupnpc
     SUBDIR += py-msrplib
@@ -1054,6 +1055,7 @@
     SUBDIR += py-socketio-client
     SUBDIR += py-speedtest-cli
     SUBDIR += py-sshuttle
+    SUBDIR += py-stomp.py
     SUBDIR += py-suds
     SUBDIR += py-suds-jurko
     SUBDIR += py-terminado
