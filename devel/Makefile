@@ -4248,6 +4248,7 @@
     SUBDIR += py-doit
     SUBDIR += py-durus
     SUBDIR += py-dynrules
+    SUBDIR += py-editdistance
     SUBDIR += py-efilter
     SUBDIR += py-efl
     SUBDIR += py-eggtestinfo
@@ -4921,6 +4922,7 @@
     SUBDIR += py3-click
     SUBDIR += py3-colorama
     SUBDIR += py3-dbus
+    SUBDIR += py3-defusedxml
     SUBDIR += py3-docopt
     SUBDIR += py3-flake8
     SUBDIR += py3-flake8-builtins
@@ -4934,6 +4936,7 @@
     SUBDIR += py3-jsonschema
     SUBDIR += py3-libpeas
     SUBDIR += py3-libzfs
+    SUBDIR += py3-llfuse
     SUBDIR += py3-lxml
     SUBDIR += py3-mccabe
     SUBDIR += py3-nose
@@ -5444,6 +5447,7 @@
     SUBDIR += rubygem-ptreloaded
     SUBDIR += rubygem-pygments.rb
     SUBDIR += rubygem-r18n-core
+    SUBDIR += rubygem-rabl
     SUBDIR += rubygem-racc
     SUBDIR += rubygem-rack-mini-profiler
     SUBDIR += rubygem-rack-raw-upload
@@ -5526,10 +5530,13 @@
     SUBDIR += rubygem-shoulda-matchers
     SUBDIR += rubygem-sidekiq
     SUBDIR += rubygem-sidekiq-cron
+    SUBDIR += rubygem-sidekiq-cron04
     SUBDIR += rubygem-sidekiq-limit_fetch
+    SUBDIR += rubygem-sidekiq-unique-jobs
     SUBDIR += rubygem-sidetiq
     SUBDIR += rubygem-sigdump
     SUBDIR += rubygem-simple_form
+    SUBDIR += rubygem-simple-navigation
     SUBDIR += rubygem-simplecov
     SUBDIR += rubygem-slack-notifier
     SUBDIR += rubygem-slack-notifier1
@@ -5548,6 +5555,7 @@
     SUBDIR += rubygem-state_machine
     SUBDIR += rubygem-state_machines
     SUBDIR += rubygem-statsd
+    SUBDIR += rubygem-statsd-instrument
     SUBDIR += rubygem-stella
     SUBDIR += rubygem-stemmer
     SUBDIR += rubygem-stomp
@@ -5605,6 +5613,7 @@
     SUBDIR += rubygem-web-console
     SUBDIR += rubygem-web-console2
     SUBDIR += rubygem-webby
+    SUBDIR += rubygem-will_paginate
     SUBDIR += rubygem-windows_error
     SUBDIR += rubygem-wmi-lite
     SUBDIR += rubygem-xpath

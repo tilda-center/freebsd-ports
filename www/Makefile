@@ -1390,6 +1390,7 @@
     SUBDIR += p5-webservice-validator-css-w3c
     SUBDIR += p5-webservice-validator-html-w3c
     SUBDIR += paros
+    SUBDIR += payara
     SUBDIR += pear-HTML_AJAX
     SUBDIR += pear-HTML_TagCloud
     SUBDIR += pear-HTTP
@@ -2041,6 +2042,7 @@
     SUBDIR += rubygem-nicovideo
     SUBDIR += rubygem-ntlm-http
     SUBDIR += rubygem-octopress
+    SUBDIR += rubygem-oembed
     SUBDIR += rubygem-ostatus2
     SUBDIR += rubygem-pagerduty
     SUBDIR += rubygem-passenger
@@ -2060,10 +2062,15 @@
     SUBDIR += rubygem-rack-proxy
     SUBDIR += rubygem-rack-ssl
     SUBDIR += rubygem-rack-test
+    SUBDIR += rubygem-rack-timeout
     SUBDIR += rubygem-rack15
     SUBDIR += rubygem-rack16
     SUBDIR += rubygem-rails4
+    SUBDIR += rubygem-rails_12factor
     SUBDIR += rubygem-rails_autolink
+    SUBDIR += rubygem-rails_serve_static_assets
+    SUBDIR += rubygem-rails-settings-cached
+    SUBDIR += rubygem-rails_stdout_logging
     SUBDIR += rubygem-railties4
     SUBDIR += rubygem-railties5
     SUBDIR += rubygem-raindrops
@@ -2481,6 +2488,7 @@
     SUBDIR += yarn
     SUBDIR += yaws
     SUBDIR += yii
+    SUBDIR += you-get
     SUBDIR += yourls
     SUBDIR += youtube_dl
     SUBDIR += yuicompressor

@@ -146,6 +146,7 @@
     SUBDIR += dmtx-utils
     SUBDIR += dri
     SUBDIR += driconf
+    SUBDIR += dspdfviewer
     SUBDIR += duhdraw
     SUBDIR += dynamechs
     SUBDIR += easypaint
@@ -503,6 +504,7 @@
     SUBDIR += libimg
     SUBDIR += libiptcdata
     SUBDIR += libjpeg-turbo
+    SUBDIR += libjxr
     SUBDIR += libkdcraw-kde4
     SUBDIR += libkexiv2-kde4
     SUBDIR += libkface
