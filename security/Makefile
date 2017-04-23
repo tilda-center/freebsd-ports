@@ -850,7 +850,6 @@
     SUBDIR += py-certifi
     SUBDIR += py-cpe
     SUBDIR += py-cracklib
-    SUBDIR += py-crits
     SUBDIR += py-cryptkit
     SUBDIR += py-cryptography
     SUBDIR += py-cybox
@@ -1037,6 +1036,7 @@
     SUBDIR += rubygem-omniauth-oauth2-generic
     SUBDIR += rubygem-omniauth-saml
     SUBDIR += rubygem-omniauth-shibboleth
+    SUBDIR += rubygem-openssl
     SUBDIR += rubygem-openssl-ccm
     SUBDIR += rubygem-openvas-omp
     SUBDIR += rubygem-origami
