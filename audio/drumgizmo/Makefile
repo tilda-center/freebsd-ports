@@ -2,14 +2,14 @@
 # $FreeBSD$
 
 PORTNAME=	drumgizmo
-PORTVERSION=	0.9.12
+PORTVERSION=	0.9.13
 CATEGORIES=	audio
 MASTER_SITES=	http://www.drumgizmo.org/releases/${PORTNAME}-${PORTVERSION}/
 
 MAINTAINER=	meka@tilda.center
 COMMENT=	Multichannel drum sampler
 
-LICENSE=	GPLv2+
+LICENSE=	LGPL3+
 
 BUILD_DEPENDS=	lv2>=1.14.0:audio/lv2 \
 		pkg-config:devel/pkgconf
@@ -24,7 +24,7 @@ USES=		gettext-runtime libtool
 USE_GNOME=	glib20
 USE_XORG=	x11
 
-CPPFLAGS+=	-I../include -I../../include
+CPPFLAGS+=	-I../include -I../../include -I../src -I../../src
 EXPAT_CFLAGS=	-I${LOCALBASE}/include
 EXPAT_LDFLAGS=	-L${LOCALBASE}/lib
 ZITA_CPPFLAGS=	-I${LOCALBASE}/include
