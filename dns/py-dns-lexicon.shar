@@ -1,0 +1,57 @@
+# This is a shell archive.  Save it in a file, remove anything before
+# this line, and then unpack it by entering "sh file".  Note, it may
+# create directories; files and directories will be owned by you and
+# have default permissions.
+#
+# This archive contains:
+#
+#	py-dns-lexicon
+#	py-dns-lexicon/Makefile
+#	py-dns-lexicon/distinfo
+#	py-dns-lexicon/pkg-descr
+#
+echo c - py-dns-lexicon
+mkdir -p py-dns-lexicon > /dev/null 2>&1
+echo x - py-dns-lexicon/Makefile
+sed 's/^X//' >py-dns-lexicon/Makefile << 'b43b4e0ea5bbf14f3fdf499f2d608cd2'
+X# Created by: Goran Mekić <meka@tilda.center>
+X# $FreeBSD$
+X
+XPORTNAME=	dns-lexicon
+XPORTVERSION=	2.0.7
+XCATEGORIES=	dns python
+XMASTER_SITES=	CHEESESHOP
+XPKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
+X
+XMAINTAINER=	meka@tilda.center
+XCOMMENT=	Manipulate DNS records on various DNS providers in a standardized way
+X
+XLICENSE=	MIT
+X
+XRUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}future>=0.16:devel/py-future \
+X		${PYTHON_PKGNAMEPREFIX}tldextract>=1.7.5:dns/py-tldextract \
+X		${PYTHON_PKGNAMEPREFIX}requests>=2.11:www/py-requests
+X
+XUSES=		python
+XUSE_PYTHON=	distutils autoplist
+XNO_ACRH=	yes
+X
+X.include <bsd.port.mk>
+b43b4e0ea5bbf14f3fdf499f2d608cd2
+echo x - py-dns-lexicon/distinfo
+sed 's/^X//' >py-dns-lexicon/distinfo << 'ef2b989206e3d98ff4b1c8718ac700e0'
+XTIMESTAMP = 1492705960
+XSHA256 (dns-lexicon-2.0.7.tar.gz) = e22b5ce4476e6c1658dc5e504b268403e752212abe3c0710fbc1c4d89cfa2a8f
+XSIZE (dns-lexicon-2.0.7.tar.gz) = 26225
+ef2b989206e3d98ff4b1c8718ac700e0
+echo x - py-dns-lexicon/pkg-descr
+sed 's/^X//' >py-dns-lexicon/pkg-descr << '0d27c5e5410ec13c64a3144f9a0fbc9e'
+XLexicon provides a way to manipulate DNS records on multiple DNS providers in a
+Xstandardized way. Lexicon has a CLI but it can also be used as a python library.
+X
+XLexicon was designed to be used in automation, specifically letsencrypt.
+X
+XWWW: https://github.com/AnalogJ/lexicon
+0d27c5e5410ec13c64a3144f9a0fbc9e
+exit
+
