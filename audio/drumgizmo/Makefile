@@ -1,4 +1,4 @@
-# Created by: Michael Beer <beerml@sigma6audio.de>
+# Created by: Goran Mekić <meka@tilda.center>
 # $FreeBSD$
 
 PORTNAME=	drumgizmo
