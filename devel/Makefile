@@ -5361,6 +5361,7 @@
     SUBDIR += rubygem-licensee
     SUBDIR += rubygem-listen
     SUBDIR += rubygem-little-plugger
+    SUBDIR += rubygem-local_time
     SUBDIR += rubygem-locale
     SUBDIR += rubygem-lockfile
     SUBDIR += rubygem-logging
@@ -5402,6 +5403,7 @@
     SUBDIR += rubygem-mustermann
     SUBDIR += rubygem-mustermann-grape
     SUBDIR += rubygem-mutter
+    SUBDIR += rubygem-native-package-installer
     SUBDIR += rubygem-naught
     SUBDIR += rubygem-needle
     SUBDIR += rubygem-nenv
