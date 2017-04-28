@@ -243,9 +243,9 @@
     SUBDIR += cbrowser
     SUBDIR += cc65
     SUBDIR += ccache
-    SUBDIR += ccache-static
     SUBDIR += ccache-memcached
     SUBDIR += ccache-memcached-static
+    SUBDIR += ccache-static
     SUBDIR += cccc
     SUBDIR += ccdoc
     SUBDIR += ccons
@@ -817,6 +817,7 @@
     SUBDIR += gradle
     SUBDIR += grantlee
     SUBDIR += grantlee5
+    SUBDIR += grpc
     SUBDIR += grumpy
     SUBDIR += gsettings-desktop-schemas
     SUBDIR += gsoap
@@ -1485,6 +1486,7 @@
     SUBDIR += libvanessa_logger
     SUBDIR += libvanessa_socket
     SUBDIR += libvc
+    SUBDIR += libversion
     SUBDIR += libvhdi
     SUBDIR += libvirt
     SUBDIR += libvirt-glib
@@ -2513,8 +2515,8 @@
     SUBDIR += p5-Getopt-Compact
     SUBDIR += p5-Getopt-Compact-WithCmd
     SUBDIR += p5-Getopt-Declare
-    SUBDIR += p5-Getopt-Euclid
     SUBDIR += p5-Getopt-EX
+    SUBDIR += p5-Getopt-Euclid
     SUBDIR += p5-Getopt-GUI-Long
     SUBDIR += p5-Getopt-Long
     SUBDIR += p5-Getopt-Long-Descriptive
@@ -4167,6 +4169,7 @@
     SUBDIR += py-castellan
     SUBDIR += py-cclib
     SUBDIR += py-celery
+    SUBDIR += py-certsrv
     SUBDIR += py-cffi
     SUBDIR += py-cfgparse
     SUBDIR += py-chainmap
@@ -4328,6 +4331,7 @@
     SUBDIR += py-greenlet
     SUBDIR += py-grizzled
     SUBDIR += py-grouch
+    SUBDIR += py-grpcio
     SUBDIR += py-gyp
     SUBDIR += py-hash_ring
     SUBDIR += py-hghooks
@@ -5189,6 +5193,7 @@
     SUBDIR += rubygem-cloudfiles
     SUBDIR += rubygem-cocaine
     SUBDIR += rubygem-coercible
+    SUBDIR += rubygem-coffee-rails-rails5
     SUBDIR += rubygem-coffee-rails4
     SUBDIR += rubygem-coffee-rails41
     SUBDIR += rubygem-coffee-script
@@ -5247,8 +5252,8 @@
     SUBDIR += rubygem-extras
     SUBDIR += rubygem-facets
     SUBDIR += rubygem-faraday_middleware-multi_json
-    SUBDIR += rubygem-fast_blank
     SUBDIR += rubygem-fast-stemmer
+    SUBDIR += rubygem-fast_blank
     SUBDIR += rubygem-fast_gettext
     SUBDIR += rubygem-fast_stack
     SUBDIR += rubygem-fast_xor
@@ -5356,6 +5361,7 @@
     SUBDIR += rubygem-licensee
     SUBDIR += rubygem-listen
     SUBDIR += rubygem-little-plugger
+    SUBDIR += rubygem-local_time
     SUBDIR += rubygem-locale
     SUBDIR += rubygem-lockfile
     SUBDIR += rubygem-logging
@@ -5397,6 +5403,7 @@
     SUBDIR += rubygem-mustermann
     SUBDIR += rubygem-mustermann-grape
     SUBDIR += rubygem-mutter
+    SUBDIR += rubygem-native-package-installer
     SUBDIR += rubygem-naught
     SUBDIR += rubygem-needle
     SUBDIR += rubygem-nenv
@@ -5453,6 +5460,7 @@
     SUBDIR += rubygem-rack-mini-profiler
     SUBDIR += rubygem-rack-raw-upload
     SUBDIR += rubygem-rails-deprecated_sanitizer
+    SUBDIR += rubygem-rails-i18n
     SUBDIR += rubygem-rails-observers
     SUBDIR += rubygem-rainbow
     SUBDIR += rubygem-rake
@@ -5536,8 +5544,8 @@
     SUBDIR += rubygem-sidekiq-unique-jobs
     SUBDIR += rubygem-sidetiq
     SUBDIR += rubygem-sigdump
-    SUBDIR += rubygem-simple_form
     SUBDIR += rubygem-simple-navigation
+    SUBDIR += rubygem-simple_form
     SUBDIR += rubygem-simplecov
     SUBDIR += rubygem-slack-notifier
     SUBDIR += rubygem-slack-notifier1
